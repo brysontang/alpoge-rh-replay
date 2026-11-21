@@ -1,0 +1,1218 @@
+# P0015 port build transcript
+date: 2026-11-21T16:40:54Z
+host: Darwin 27.2.0 arm64
+lean-toolchain: leanprover/lean4:v4.36.0
+lean --version: Lean (version 4.36.0, arm64-apple-darwin24.6.0, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+port/target.json: {"lean":"leanprover/lean4:v4.36.0","mathlib":"fc4f59e577feb1a4956671bc04ac18aaaf8cd842","mathlib_note":"Mathlib'sreleasetagv4.36.0(matchesLeanv4.36.0).Approvedbythemaintainer2026-11-21.","replay_pins_unchanged":{"lean":"leanprover/lean4:v4.33.1","mathlib":"0df444a360eaa60ab8c11dca51a86af692955474"}}
+replay repo commit the patches were cut against: 3654867cc471c012648aed749106be24753a349d
+
+## Sources: pinned archive files (SHA-256 checked against tracker/modules.jsonl.gz), then port/patches applied
+M036430 unchanged pinned=4f870eda83d642b9da6a4df386c253fd8dc1e75de73071449b5bf2fb5e0b1e5f Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsFurtherFurther
+M036431 patched   pinned=2f310f4063fea51b7cb13998dde66b2c235bac5f325c5f32f74d5479ff02e114 built=4095ec8854f9fab275f4096fe1c701ff847d4e792dd4c6b742b1e4d1b4c00429 Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsFurtherLast
+M036432 unchanged pinned=c1fcef3227530d966b8acdd91d7e2772ff56c47e2bb00b6c36a30100a16f4600 Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsFurtherMore
+M036433 unchanged pinned=9c4168b3c039af8652f2d979e208f9991cacca5518ef7187c01ddfb1897f2d3b Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsFurtherRest
+M036434 unchanged pinned=831ae3ddb64cb15a4062d04ca9d58ebb11d69c68e20172082588cf49e1cded4b Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsFurtherSide
+M036435 unchanged pinned=69f0d02ba80d001b7ff30aea9d0fb8b69510ed6207e40126c430caf32eb46f3d Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsFurtherTail
+M036436 unchanged pinned=b97644aa62b773ae049de78eba541736dd00b898b04fbb35932a4fda555342da Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsFurtherTer
+M036442 unchanged pinned=0fb393cfd7a401f2fbd31461ab82bc93b54ba33ea593e8e252725eb09823c931 Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsLastRest
+M036446 unchanged pinned=564845ecce1dd794b2be8957ee78fce1f3eed123b60b8127c863400664c0fb3a Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsMoreAlt
+M036447 unchanged pinned=b21c70a7e186bdbc4781b814a1d600628ebbaae69ed99b74f14f9c778ff73706 Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsMoreBis
+M036448 unchanged pinned=354a978aaea7169ed67a79147c1a6ec14a51f4f1697087c61a4c344c21f379f1 Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsMoreExtra
+M036449 unchanged pinned=334e15175593634004523280b5151fccde0606ad476d31d05aa196f7dd9ef343 Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsMoreFurther
+M036450 unchanged pinned=9bbbc889a18e5207defbd3ccaaa8afe18ee9f2124d91364ab5f163f60f52a26f Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsMoreLast
+M036451 unchanged pinned=301c5146ccfa533608ab0a5b12b7d934365c0ce07cc70f95670497caf60ce36d Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsMoreMore
+M036452 unchanged pinned=6024fabb6fda1eab3ac83880e6e1e321060243fe23e5b98e842aabcaf2277609 Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsMoreRest
+M036453 unchanged pinned=8130bd9ae2043d88cdcdbc859eb3ba01581b032b28acd655278438867fe2bb7a Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsMoreSide
+M036454 patched   pinned=e94d120e32223ef1f1559a67262fcacd4d461a17f77f5ff283894842763eace1 built=fe725bdb7d99e73081172d836d62b1692eb05e952d6e3a01a6e7920ce684ce56 Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsMoreTail
+M036455 patched   pinned=fdfe9c6fe0548d91969dbb695236696d7f93952eb699ecf467a98bfb28306b7e built=b72f3decfd245af7c88d4864cd75afd047b722073d36b22a9992ea657c23b3d8 Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsMoreTer
+M036478 unchanged pinned=37e69f7d08132817abfd63a35521eda9922216d5ccccc9151ba5620955bb5d73 Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsTerAlt
+M036479 unchanged pinned=059e1bb7c97e52929e038797a92153c1c559f35ed4e937225a4a6e7d164bc675 Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsTerBis
+M036481 unchanged pinned=f241ec34aa24a2dfa1b7d985231aa3493b41bc35508d74775797ca6f73a106be Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsTerFurther
+M036482 unchanged pinned=52d9ad35dbb41fa3c3f6c6989a8ca065cfa7ccf04aee6701c3cb39cafbc7832f Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsTerLast
+M036483 unchanged pinned=8097c3b9c5d6a58b6af55c4a0bbdd1853c0fcc16ced1b23adef739e5341d68b4 Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsTerMore
+M036484 patched   pinned=3a08b9d2f660c4f1a41b56100b9188e76f1d8670938e324078ddaf1db13c7808 built=c204ffa9602a16a6b3661b1db3ac84dd3775de3c5801dc65202930fae72dc026 Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsTerRest
+M036486 unchanged pinned=a354733545bb31e1aa51a7d7b6cfa57e1c3fec83f321bab28ab70ef66c4b3dbf Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsTerTail
+M036487 unchanged pinned=5c0ab854f07519516c4c0782767a6136551b6b899d3e9eca2341f4a3fdb614b7 Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsTerTer
+M036498 unchanged pinned=fc12c19a54489f0c0eba0802d13680ebe79e1fb279124da2267a11f4de4b6a9e Development.AbelianVarietyTheory.Proofs.DivisorProofs.IndEtaleIncomparability
+M036696 unchanged pinned=67fb406f9182f25dab6096600f8cfae683998602d03f8d42af410698b6ad8b77 Development.AbelianVarietyTheory.Proofs.DivisorProofs.InertiaDegBotEqFinrankFiniteDomain
+M036720 unchanged pinned=af0bd42132578db530d9f2ef2cfb5a20cbe36a5ae8dc798187a13be03ec2c782 Development.AbelianVarietyTheory.Proofs.DivisorProofs.InfSupPowEqOfTorsionArtinRees
+M036759 unchanged pinned=9643376f28a20368e05f2fc4331e5a3d10f451c80d96b7ad363e689598860ef5 Development.AbelianVarietyTheory.Proofs.DivisorProofs.InjectiveCotangentComplexBaseChangeOfFormsExtend
+M036772 unchanged pinned=c6f414c2321e569ca48623b89993f481786f5dff230989c37eca7baed34bd864 Development.AbelianVarietyTheory.Proofs.DivisorProofs.InjectiveMulVecMapBasis
+M036781 patched   pinned=6e854d111a52d92f81a745662c964ee58d593fb185ac01014a0d0679ab12635d built=6f7cd6efa21a066c98b67fee419856b09fe6dbebde04106fbe9f68746cc4b94a Development.AbelianVarietyTheory.Proofs.DivisorProofs.InjectiveOfMapPderivEqAndMapOneNeZero
+M036807 unchanged pinned=e78775d939e1053f2c9ad9176e98e2be581a1789a858672b35929f38b2c87bd9 Development.AbelianVarietyTheory.Proofs.DivisorProofs.InstPreorder
+M036885 unchanged pinned=4f248a684693f7d6e2c01b0fe1f324fbbab01ef79e165f0f2bccb42064338ee9 Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegrableSqPowMulIteratedFDerivSchwartz
+M036919 patched   pinned=113c42a1148ad6aeea55b4ad2e34f02978aed67e40d3092f762405ee89a7a77b built=4c1d90045654e5ef39da5394854afccfba4d9e713dc5e695b28d727d081322be Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralBasisChangeDeterminant
+M036967 unchanged pinned=1630db3150a5a0a8905cee38122f45f53cb7a7931ad6d88818bcc16eaf9ecab8 Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralCoefficients
+M037018 patched   pinned=d72e41d740f444f72144a39675c3f2158a3ca882b7aaf404fe41a94b0658eb5f built=5921b8feebc65ecd75232f7239e60aec58b4699f443716f4e8901c891c8f1aac Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralDoubleSeriesInterchange
+M037047 unchanged pinned=060240f7245851de8e091d38ea9132899f127fde308dd0a15b951ed2b1eb37fe Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralFlagLiftOfResidue
+M037067 patched   pinned=13e2ed550860646d25399f07ee485b7dea3a0b7b249fef37489b0115bc236cef built=6528c973b13441b117d657bc1b03ba37f88c9bedfdf5bc28cfda259c60151d97 Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralFundamentalDomainEqSum
+M037084 patched   pinned=059fcec975747a1b66bb4585b473f1a0fb3501619b750d38657341c913ee3bb5 built=a1c4aa567e78ec6bfb1369446afd4dcf5e2ae840f9621544845a6e830cf3d343 Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralHasSumEqIntegralIndicatorHasSum
+M037104 unchanged pinned=4548961e6567295c393a3091b7f50b8559d333203ce0d41cf777bd84796ff354 Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralMemFinDimSpace
+M037159 unchanged pinned=a84ecc58bfa9ba3656ee64bc93f66989cb484e6abd8f4c70f050fd158382928d Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralMulConvolutionEq
+M037180 unchanged pinned=9a6cbf511a0d88032b0e801efef6b76b6f67fdbb5a40508206fdd68a2a9b4b53 Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralPiecewiseConstant
+M037221 patched   pinned=eb330ebc9c03f02db4f96af447bcf4cc010f6e7a0c9211c54eec002f2a829e3d built=63128c8be2e0ad7f8b9098d213acf5336b18b846133350ba6d360a7f44cdbc31 Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralRowSpaceBasisExists
+M037276 unchanged pinned=03098801c72570449f2e71acb5be974154d55e960b60387b8b12790aa1d803b0 Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegrallyClosedFiniteDedekindClassFinite
+M037354 unchanged pinned=aa69bddb3a1e882697097d15b7fc252b7b2786e8ae8727dba078300d092fb943 Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntertwinerNonzeroRestriction
+M037368 patched   pinned=f2105e2676e558f03ceea830eb89fd4a23ee09bfccbfc70bc1cb88001e015ffd built=d15b1549e65b32cbdacb8a092965649f7aba926cc31c5e59caddb2a0da99c64a Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvDer
+M037371 unchanged pinned=3b2f8d0aaca29f3f04313fb8df5ffcee6b7e1ced69086bc1b1cc7fc7d1c39c26 Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvEntryDifferentiableAt
+M037373 unchanged pinned=99f9e45de39f6f5c846aa8bfe61cf8ff996653b984731f779e5ee72454d0a2fc Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvFiveLogLeSumInvPrimes
+M037377 unchanged pinned=26f79da68961032715d1decb6987ab9a5a21e6ac8a56724c90506f980a6148de Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvMemConnectedComponentInFibre
+M037439 unchanged pinned=3d912b09e7a6cffa88cc99d122e0edf68b635c1e6be12b6db7e52b02aa153a29 Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvariantMeasurableModification
+M037475 unchanged pinned=ede725469ef36ca59eebe0bf0973f0ba3c004ab1c7c13a1f337ab2569255e71c Development.AbelianVarietyTheory.Proofs.DivisorProofs.InverseMapCoordDerivativeNeZero
+M037489 unchanged pinned=2d9ca4e144347f9f5747d1d3a410492b668eb0c6fc6a066944c9a420f41661a2 Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvolutionNormClassRemoveRationalFactor
+M037516 unchanged pinned=838091a48dbc059ff93789e8d61c32ffdfcdc159af4d34f1b7ab2c49d27998b3 Development.AbelianVarietyTheory.Proofs.DivisorProofs.IrreducibleDvdOfDvdCharpolyOfAevalMatrix
+M037536 unchanged pinned=20d44a99e773054b656e6332ff4dc306dcd27e664750fd9bbbf53ab906871e15 Development.AbelianVarietyTheory.Proofs.DivisorProofs.IrreducibleXSqAddOne
+M037580 patched   pinned=85b45d179d6747cae63d74dad62fe4bc64d1c7c368edc9246abada7358c1d68d built=d76f4e409dc67fd1b3a5c6765080172204828133fb03248e7eeb68111a7217e4 Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAdicCompleteOfLeOfIsNoetherianRing
+M037584 unchanged pinned=7449388b6f04398aa1062d734971045e551c8ae29d8df675820b75d013d11234 Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAdicCompleteSpanNatCastFiniteProjectiveAlgebra
+M037606 unchanged pinned=d524cf68f33cc96d6fc5d5889013bc2e8700122e20799d3e3cc43907e12ebe7a Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAffineOpenInfOfSeparatedOverAffineOpen
+M037629 patched   pinned=e24491e21f5bebdf818fc4fb85312295380ebc5cf4704ade9b825447e2443f05 built=a150dc8b80b4b68d07fd71ffeccce59ff3da9ad4d7b4f57128bbd18c2bd21f22 Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAlgebraicInt
+M037633 patched   pinned=c6951ba87edeeef4c3e83e7f7f6bc9249e5b1f02eefc01fea03e68a01aa9a56a built=8d781bbeb93ae7781626dbc54325699f40faff6fc88d6435e378b2f526a3b807 Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAlgebraicOfFiniteTypeOfComapEqBot
+M037639 unchanged pinned=c87b6005599a7152d348ceb71573ea32fe8a20c78e75d3aafa396875d66436be Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAlgebraicOfSubringIsAlgebraic
+M037674 unchanged pinned=9bd28ce7f79761df9d13cea582049e01cb964fbf4eba6657757f6c58b5f75f30 Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsArtinianRingKummerAdjoinRootQuotientRoot
+M037677 unchanged pinned=f60e60e883d7a76126040a6b711d6f0219f1017ca90c767325bbc9d55425450f Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAut
+M037746 unchanged pinned=804c5cb2bcb698becdfd628eaae4e22ba6da116d92f7b5e34c84dec59aa55642 Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsClopenBasicOpenSpecProdSelfFirstIdempotent
+
+## lake build
+M036430 M036431 M036432 M036433 M036434 M036435 M036436 M036442 
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsFurtherFurther:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsFurtherLast:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsFurtherMore:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsFurtherRest:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsFurtherSide:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsFurtherTail:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsFurtherTer:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsLastRest:olean 
+⚠ [18250/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsFurtherFurther (7.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsFurtherFurther.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsFurtherFurther.lean:5:41: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsFurtherFurther.lean:5:67: Variable name `inst_1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsFurtherFurther.lean:5:261: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsFurtherFurther.lean:5:285: Variable name `inst_1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [18251/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsFurtherMore (7.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsFurtherMore.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsFurtherMore.lean:7:260: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsFurtherMore.lean:7:292: Variable name `inst_1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [18252/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsFurtherRest (7.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsFurtherRest.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsFurtherRest.lean:5:207: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [18253/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsFurtherSide (7.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsFurtherSide.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsFurtherSide.lean:5:207: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [18254/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsFurtherTer (7.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsFurtherTer.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsFurtherTer.lean:7:260: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [18255/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsFurtherLast (7.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsFurtherLast.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsFurtherLast.lean:39:13: `IsLocalRing.local_hom_TFAE` has been deprecated: Use `IsLocalRing.local_hom_tfae` instead
+
+Hint: Replace the deprecated name:
+  IsLocalRing.local_hom_T̵F̵A̵E̵t̲f̲a̲e̲
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsFurtherLast.lean:32:33: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsFurtherLast.lean:33:5: Variable name `inst_3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsFurtherLast.lean:33:56: Variable name `inst_6` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_6
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsFurtherLast.lean:32:8: Overlapping instance parameters in `main`:
+
+⚠️ `[IsDomain V]` and `[IsLocalRing V]` each imply `[Nontrivial V]`.
+💡️ Of these, `[IsDomain V]` and `[IsLocalRing V]` may be removed.
+⚠️ `[IsDomain R]` and `[IsLocalRing R]` each imply `[Nontrivial R]`.
+💡️ Of these, `[IsDomain R]` and `[IsLocalRing R]` may be removed.
+
+Note: This linter can be disabled with `set_option linter.overlappingInstances false`
+⚠ [18256/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsFurtherTail (7.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsFurtherTail.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18257/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsLastRest (8.0s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsLastRest.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18257 jobs).
+exit_code = 0
+elapsed_seconds = 12
+
+M036446 M036447 M036448 M036449 M036450 M036451 M036452 M036453 
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsMoreAlt:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsMoreBis:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsMoreExtra:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsMoreFurther:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsMoreLast:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsMoreMore:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsMoreRest:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsMoreSide:olean 
+⚠ [18250/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsMoreFurther (8.3s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsMoreFurther.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsMoreFurther.lean:26:35: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsMoreFurther.lean:26:60: Variable name `inst_1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsMoreFurther.lean:26:81: Variable name `inst_2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [18251/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsMoreLast (8.3s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsMoreLast.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsMoreLast.lean:5:167: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [18252/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsMoreAlt (8.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsMoreAlt.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsMoreAlt.lean:5:29: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [18253/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsMoreRest (8.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsMoreRest.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsMoreRest.lean:7:29: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsMoreRest.lean:20:23: This simp argument is unused:
+  Matrix.diagonal_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [ha i]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsMoreRest.lean:21:12: This simp argument is unused:
+  Matrix.diagonal_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hij]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsMoreRest.lean:25:23: This simp argument is unused:
+  Matrix.diagonal_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hb i]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsMoreRest.lean:26:12: This simp argument is unused:
+  Matrix.diagonal_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hij]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsMoreRest.lean:40:26: This simp argument is unused:
+  Matrix.zero_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Matrix.add_mul, Matrix.mul_add, Matrix.mul_assoc, Matrix.mul_one, Matrix.one_mul, e1, e2, e3, e4,
+    Matrix.mul_zero, add_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [18254/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsMoreSide (8.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsMoreSide.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsMoreSide.lean:9:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsMoreSide.lean:10:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsMoreSide.lean:11:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsMoreSide.lean:7:41: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsMoreSide.lean:7:61: Variable name `inst_1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsMoreSide.lean:7:84: Variable name `inst_2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsMoreSide.lean:7:106: Variable name `inst_3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsMoreSide.lean:7:128: Variable name `inst_4` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_4
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsMoreSide.lean:7:151: Variable name `inst_5` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_5
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsMoreSide.lean:7:170: Variable name `inst_6` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_6
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsMoreSide.lean:7:194: Variable name `inst_7` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_7
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsMoreSide.lean:7:217: Variable name `inst_8` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_8
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsMoreSide.lean:7:240: Variable name `inst_9` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_9
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsMoreSide.lean:7:264: Variable name `inst_10` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_10
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsMoreSide.lean:7:288: Variable name `inst_11` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_11
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsMoreSide.lean:7:321: Variable name `inst_12` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_12
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsMoreSide.lean:7:382: Variable name `inst_14` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_14
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsMoreSide.lean:7:407: Variable name `inst_15` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_15
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsMoreSide.lean:7:486: Variable name `inst_18` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_18
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsMoreSide.lean:7:511: Variable name `inst_19` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_19
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [18255/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsMoreBis (8.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsMoreBis.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18256/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsMoreMore (8.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsMoreMore.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18257/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsMoreExtra (8.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsMoreExtra.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsMoreExtra.lean:5:31: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsMoreExtra.lean:5:61: Variable name `inst_2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsMoreExtra.lean:5:87: Variable name `inst_3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Build completed successfully (18257 jobs).
+exit_code = 0
+elapsed_seconds = 12
+
+M036454 M036455 M036478 M036479 M036481 M036482 M036483 M036484 
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsMoreTail:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsMoreTer:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsTerAlt:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsTerBis:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsTerFurther:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsTerLast:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsTerMore:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsTerRest:olean 
+⚠ [18250/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsMoreTer (7.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsMoreTer.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18251/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsTerBis (7.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsTerBis.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsTerBis.lean:20:29: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [18252/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsTerLast (7.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsTerLast.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsTerLast.lean:36:24: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [18253/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsTerRest (7.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsTerRest.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsTerRest.lean:20:8: `Polynomial.coeff_smul` has been deprecated: Use `AddMonoidAlgebra.coeff_smul_apply` instead
+
+Note: The updated constant has a different type:
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] {A : Type u_8} [inst_1 : SMulZeroClass A R] (a : A)
+    (x : AddMonoidAlgebra R M) (m : M), (a • x).coeff m = a • x.coeff m
+instead of
+  ∀ {R : Type u} {S : Type v} [inst : Semiring R] [inst_1 : SMulZeroClass S R] (r : S) (p : R[X]) (n : ℕ),
+    (r • p).coeff n = r • p.coeff n
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coeff_smul` to `AddMonoidAlgebra.coeff_smul_apply x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsTerRest.lean:23:35: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsTerRest.lean:23:68: Variable name `inst_2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsTerRest.lean:23:87: Variable name `inst_3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsTerRest.lean:23:131: Variable name `inst_5` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_5
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsTerRest.lean:23:150: Variable name `inst_6` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_6
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsTerRest.lean:23:173: Variable name `inst_7` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_7
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [18254/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsTerAlt (7.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsTerAlt.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18255/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsTerFurther (7.0s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsTerFurther.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18256/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsTerMore (7.0s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsTerMore.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18257/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsMoreTail (8.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsMoreTail.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsMoreTail.lean:18:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsMoreTail.lean:19:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsMoreTail.lean:20:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsMoreTail.lean:21:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsMoreTail.lean:7:29: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Build completed successfully (18257 jobs).
+exit_code = 0
+elapsed_seconds = 12
+
+M036486 M036487 M036498 M036696 M036720 M036759 M036772 M036781 
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsTerTail:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsTerTer:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.IndEtaleIncomparability:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.InertiaDegBotEqFinrankFiniteDomain:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.InfSupPowEqOfTorsionArtinRees:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.InjectiveCotangentComplexBaseChangeOfFormsExtend:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.InjectiveMulVecMapBasis:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.InjectiveOfMapPderivEqAndMapOneNeZero:olean 
+⚠ [18250/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsTerTail (7.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsTerTail.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18251/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsTerTer (7.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsTerTer.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ImportsTerTer.lean:7:29: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [18252/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IndEtaleIncomparability (7.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IndEtaleIncomparability.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IndEtaleIncomparability.lean:10:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IndEtaleIncomparability.lean:14:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IndEtaleIncomparability.lean:15:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [18253/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.InertiaDegBotEqFinrankFiniteDomain (7.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/InertiaDegBotEqFinrankFiniteDomain.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/InertiaDegBotEqFinrankFiniteDomain.lean:7:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/InertiaDegBotEqFinrankFiniteDomain.lean:8:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/InertiaDegBotEqFinrankFiniteDomain.lean:10:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [18254/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.InfSupPowEqOfTorsionArtinRees (7.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/InfSupPowEqOfTorsionArtinRees.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18255/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.InjectiveMulVecMapBasis (7.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/InjectiveMulVecMapBasis.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18256/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.InjectiveOfMapPderivEqAndMapOneNeZero (7.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/InjectiveOfMapPderivEqAndMapOneNeZero.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/InjectiveOfMapPderivEqAndMapOneNeZero.lean:21:41: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+⚠ [18257/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.InjectiveCotangentComplexBaseChangeOfFormsExtend (8.3s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/InjectiveCotangentComplexBaseChangeOfFormsExtend.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18257 jobs).
+exit_code = 0
+elapsed_seconds = 12
+
+M036807 M036885 M036919 M036967 M037018 M037047 M037067 M037084 
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.InstPreorder:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegrableSqPowMulIteratedFDerivSchwartz:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralBasisChangeDeterminant:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralCoefficients:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralDoubleSeriesInterchange:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralFlagLiftOfResidue:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralFundamentalDomainEqSum:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralHasSumEqIntegralIndicatorHasSum:olean 
+⚠ [18250/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegrableSqPowMulIteratedFDerivSchwartz (7.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegrableSqPowMulIteratedFDerivSchwartz.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18251/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralHasSumEqIntegralIndicatorHasSum (7.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegralHasSumEqIntegralIndicatorHasSum.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegralHasSumEqIntegralIndicatorHasSum.lean:43:22: This simp argument is unused:
+  Set.indicator_of_mem hp
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hp]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegralHasSumEqIntegralIndicatorHasSum.lean:44:22: This simp argument is unused:
+  Set.indicator_of_notMem hp
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hp]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [18252/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralCoefficients (7.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegralCoefficients.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegralCoefficients.lean:35:10: `Matrix.linearIndependent_rows_iff_isUnit` has been deprecated: Use `Matrix.linearIndependent_row_iff_isUnit` instead
+
+Hint: Replace the deprecated name:
+  M̵a̵t̵r̵i̵x̵.̵l̵i̵n̵e̵a̵r̵I̵n̵d̵e̵p̵e̵n̵d̵e̵n̵t̵_̵r̵o̵w̵s̵_̵i̵f̵f̵_̵i̵s̵U̵n̵i̵t̵l̲i̲n̲e̲a̲r̲I̲n̲d̲e̲p̲e̲n̲d̲e̲n̲t̲_̲r̲o̲w̲_̲i̲f̲f̲_̲i̲s̲U̲n̲i̲t̲
+⚠ [18253/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralDoubleSeriesInterchange (7.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegralDoubleSeriesInterchange.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegralDoubleSeriesInterchange.lean:12:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [18254/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.InstPreorder (7.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/InstPreorder.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18255/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralFundamentalDomainEqSum (7.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegralFundamentalDomainEqSum.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegralFundamentalDomainEqSum.lean:15:23: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵S̲e̲t̲.̲m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegralFundamentalDomainEqSum.lean:38:73: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵S̲e̲t̲.̲m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegralFundamentalDomainEqSum.lean:40:46: `ENNReal.tsum_eq_zero` has been deprecated: Use `tsum_eq_zero_iff` instead
+
+Note: The updated constant has a different type:
+  ∀ {ι : Type u_1} {α : Type u_3} [inst : AddCommMonoid α] [inst_1 : CompleteLattice α] [CanonicallyOrderedAdd α]
+    [inst_3 : TopologicalSpace α] [SupConvergenceClass α] {f : ι → α} [IsOrderedAddMonoid α] [OrderClosedTopology α],
+    ∑' (i : ι), f i = 0 ↔ ∀ (i : ι), f i = 0
+instead of
+  ∀ {α : Type u_1} {f : α → ENNReal}, ∑' (i : α), f i = 0 ↔ ∀ (i : α), f i = 0
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.tsum_eq_zero` to `tsum_eq_zero_iff x`).
+⚠ [18256/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralBasisChangeDeterminant (8.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegralBasisChangeDeterminant.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegralBasisChangeDeterminant.lean:18:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegralBasisChangeDeterminant.lean:30:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegralBasisChangeDeterminant.lean:62:44: This simp argument is unused:
+  Pi.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [h]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegralBasisChangeDeterminant.lean:114:40: This simp argument is unused:
+  Pi.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [h]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [18257/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralFlagLiftOfResidue (8.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegralFlagLiftOfResidue.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegralFlagLiftOfResidue.lean:85:47: This simp argument is unused:
+  Pi.smul_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Pi.sub_apply, Pi.add_apply, smul_eq_mul, Algebra.smul_def]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegralFlagLiftOfResidue.lean:85:62: This simp argument is unused:
+  smul_eq_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Pi.sub_apply, Pi.add_apply, Pi.smul_apply, Algebra.smul_def]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegralFlagLiftOfResidue.lean:86:17: This simp argument is unused:
+  f
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [k]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegralFlagLiftOfResidue.lean:6:8: Overlapping instance parameters in `integral_flag_lift_of_residue`:
+
+⚠️ `[IsDomain O]` and `[IsDiscreteValuationRing O]` each imply `[Nontrivial O]`.
+💡️ Of these, `[IsDomain O]` and `[IsDiscreteValuationRing O]` may be removed.
+
+Note: This linter can be disabled with `set_option linter.overlappingInstances false`
+Build completed successfully (18257 jobs).
+exit_code = 0
+elapsed_seconds = 12
+
+M037104 M037159 M037180 M037221 M037276 M037354 M037368 M037371 
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralMemFinDimSpace:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralMulConvolutionEq:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralPiecewiseConstant:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralRowSpaceBasisExists:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegrallyClosedFiniteDedekindClassFinite:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntertwinerNonzeroRestriction:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvDer:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvEntryDifferentiableAt:olean 
+⚠ [18250/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvDer (7.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/InvDer.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18251/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralPiecewiseConstant (7.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegralPiecewiseConstant.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18252/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvEntryDifferentiableAt (7.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/InvEntryDifferentiableAt.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/InvEntryDifferentiableAt.lean:54:29: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/InvEntryDifferentiableAt.lean:54:59: Variable name `inst_1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/InvEntryDifferentiableAt.lean:55:5: Variable name `inst_2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/InvEntryDifferentiableAt.lean:55:26: Variable name `inst_3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [18253/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegrallyClosedFiniteDedekindClassFinite (7.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegrallyClosedFiniteDedekindClassFinite.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegrallyClosedFiniteDedekindClassFinite.lean:7:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegrallyClosedFiniteDedekindClassFinite.lean:10:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegrallyClosedFiniteDedekindClassFinite.lean:16:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegrallyClosedFiniteDedekindClassFinite.lean:27:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegrallyClosedFiniteDedekindClassFinite.lean:28:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegrallyClosedFiniteDedekindClassFinite.lean:29:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegrallyClosedFiniteDedekindClassFinite.lean:33:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [18254/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntertwinerNonzeroRestriction (7.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntertwinerNonzeroRestriction.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntertwinerNonzeroRestriction.lean:90:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [18255/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralMulConvolutionEq (8.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegralMulConvolutionEq.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegralMulConvolutionEq.lean:13:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegralMulConvolutionEq.lean:30:42: This simp argument is unused:
+  mul_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [h1, zero_mul, norm_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [18256/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralMemFinDimSpace (8.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegralMemFinDimSpace.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18257/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralRowSpaceBasisExists (8.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegralRowSpaceBasisExists.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegralRowSpaceBasisExists.lean:54:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegralRowSpaceBasisExists.lean:56:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegralRowSpaceBasisExists.lean:57:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegralRowSpaceBasisExists.lean:59:16: `Submodule.IsLattice.finrank_of_pi` has been deprecated: Use `IsFullLattice.finrank` and `Module.finrank_fintype_fun_eq_card`.
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IntegralRowSpaceBasisExists.lean:76:12: `Matrix.linearIndependent_rows_iff_isUnit` has been deprecated: Use `Matrix.linearIndependent_row_iff_isUnit` instead
+
+Hint: Replace the deprecated name:
+  Matrix.linearIndependent_rows̵_iff_isUnit
+Build completed successfully (18257 jobs).
+exit_code = 0
+elapsed_seconds = 12
+
+M037373 M037377 M037439 M037475 M037489 M037516 M037536 M037580 
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvFiveLogLeSumInvPrimes:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvMemConnectedComponentInFibre:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvariantMeasurableModification:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.InverseMapCoordDerivativeNeZero:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvolutionNormClassRemoveRationalFactor:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.IrreducibleDvdOfDvdCharpolyOfAevalMatrix:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.IrreducibleXSqAddOne:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAdicCompleteOfLeOfIsNoetherianRing:olean 
+⚠ [18250/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvMemConnectedComponentInFibre (7.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/InvMemConnectedComponentInFibre.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/InvMemConnectedComponentInFibre.lean:11:13: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵S̲e̲t̲.̲m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+⚠ [18251/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IrreducibleDvdOfDvdCharpolyOfAevalMatrix (7.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IrreducibleDvdOfDvdCharpolyOfAevalMatrix.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18252/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAdicCompleteOfLeOfIsNoetherianRing (7.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsAdicCompleteOfLeOfIsNoetherianRing.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18253/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IrreducibleXSqAddOne (7.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IrreducibleXSqAddOne.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18254/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvariantMeasurableModification (7.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/InvariantMeasurableModification.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/InvariantMeasurableModification.lean:14:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/InvariantMeasurableModification.lean:15:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/InvariantMeasurableModification.lean:16:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/InvariantMeasurableModification.lean:19:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/InvariantMeasurableModification.lean:20:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/InvariantMeasurableModification.lean:55:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵S̲e̲t̲.̲m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+⚠ [18255/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvolutionNormClassRemoveRationalFactor (7.0s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/InvolutionNormClassRemoveRationalFactor.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18256/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.InverseMapCoordDerivativeNeZero (8.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/InverseMapCoordDerivativeNeZero.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/InverseMapCoordDerivativeNeZero.lean:54:15: This simp argument is unused:
+  Pi.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [v, Ne.symm hl, hk]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [18257/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvFiveLogLeSumInvPrimes (14s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/InvFiveLogLeSumInvPrimes.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/InvFiveLogLeSumInvPrimes.lean:169:14: `Finset.prod_le_prod'` has been deprecated: Use `Finset.prod_le_prod` instead
+
+Hint: Replace the deprecated name:
+  Finset.prod_le_prod'̵
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/InvFiveLogLeSumInvPrimes.lean:177:14: `Finset.prod_le_prod'` has been deprecated: Use `Finset.prod_le_prod` instead
+
+Hint: Replace the deprecated name:
+  Finset.prod_le_prod'̵
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/InvFiveLogLeSumInvPrimes.lean:181:13: `Finset.prod_le_prod_of_subset_of_one_le'` has been deprecated: Use `Finset.prod_le_prod_of_subset_of_one_le` instead
+
+Hint: Replace the deprecated name:
+  Finset.prod_le_prod_of_subset_of_one_le'̵
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/InvFiveLogLeSumInvPrimes.lean:183:12: `Finset.prod_le_prod'` has been deprecated: Use `Finset.prod_le_prod` instead
+
+Hint: Replace the deprecated name:
+  Finset.prod_le_prod'̵
+Build completed successfully (18257 jobs).
+exit_code = 0
+elapsed_seconds = 18
+
+M037584 M037606 M037629 M037633 M037639 M037674 M037677 M037746 
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAdicCompleteSpanNatCastFiniteProjectiveAlgebra:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAffineOpenInfOfSeparatedOverAffineOpen:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAlgebraicInt:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAlgebraicOfFiniteTypeOfComapEqBot:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAlgebraicOfSubringIsAlgebraic:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsArtinianRingKummerAdjoinRootQuotientRoot:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAut:olean +Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsClopenBasicOpenSpecProdSelfFirstIdempotent:olean 
+⚠ [18250/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAut (7.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsAut.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18251/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAffineOpenInfOfSeparatedOverAffineOpen (7.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsAffineOpenInfOfSeparatedOverAffineOpen.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsAffineOpenInfOfSeparatedOverAffineOpen.lean:10:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsAffineOpenInfOfSeparatedOverAffineOpen.lean:11:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [18252/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAlgebraicInt (7.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsAlgebraicInt.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18253/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsClopenBasicOpenSpecProdSelfFirstIdempotent (7.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsClopenBasicOpenSpecProdSelfFirstIdempotent.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsClopenBasicOpenSpecProdSelfFirstIdempotent.lean:18:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsClopenBasicOpenSpecProdSelfFirstIdempotent.lean:25:73: This simp argument is unused:
+  IsIdempotentElem
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [18254/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAdicCompleteSpanNatCastFiniteProjectiveAlgebra (7.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsAdicCompleteSpanNatCastFiniteProjectiveAlgebra.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18255/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAlgebraicOfSubringIsAlgebraic (7.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsAlgebraicOfSubringIsAlgebraic.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18256/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAlgebraicOfFiniteTypeOfComapEqBot (8.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsAlgebraicOfFiniteTypeOfComapEqBot.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsAlgebraicOfFiniteTypeOfComapEqBot.lean:20:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsAlgebraicOfFiniteTypeOfComapEqBot.lean:43:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsAlgebraicOfFiniteTypeOfComapEqBot.lean:46:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsAlgebraicOfFiniteTypeOfComapEqBot.lean:47:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsAlgebraicOfFiniteTypeOfComapEqBot.lean:75:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsAlgebraicOfFiniteTypeOfComapEqBot.lean:76:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [18257/18257] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsArtinianRingKummerAdjoinRootQuotientRoot (8.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsArtinianRingKummerAdjoinRootQuotientRoot.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsArtinianRingKummerAdjoinRootQuotientRoot.lean:19:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsArtinianRingKummerAdjoinRootQuotientRoot.lean:20:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsArtinianRingKummerAdjoinRootQuotientRoot.lean:21:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsArtinianRingKummerAdjoinRootQuotientRoot.lean:22:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsArtinianRingKummerAdjoinRootQuotientRoot.lean:48:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsArtinianRingKummerAdjoinRootQuotientRoot.lean:53:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsArtinianRingKummerAdjoinRootQuotientRoot.lean:54:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsArtinianRingKummerAdjoinRootQuotientRoot.lean:55:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Build completed successfully (18257 jobs).
+exit_code = 0
+elapsed_seconds = 12
+
+## Compiled objects
+M036430 d6871d3d461c98463006f72fef1d20faa68affdab6066b134f85fe8fc63e7337 Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsFurtherFurther.olean
+M036431 967ce4e8db788eb46a5e6f6336435b5c5cdf8f8de3f909d59ec7b11ee555c0dd Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsFurtherLast.olean
+M036432 0eb075d3ffaf560017cfc51adb1dffb57ae619858e4e6b29c53b9d178882ce6d Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsFurtherMore.olean
+M036433 6028b2d7d62a546e662d4d469c0a2b45df7d5998f6f656501699babe6da5bf65 Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsFurtherRest.olean
+M036434 5cc4c290dae794b04f2678c566f9619ccd54d1c3badfc89ad059c1bace12279a Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsFurtherSide.olean
+M036435 50bacd145768f11ce2e9ae857b6082c540f72582a746d899389b831c1eb3730c Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsFurtherTail.olean
+M036436 574ddfd3029603047414f2ffa894ed257c944a1d676afe6c33e4dd37273a2ddd Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsFurtherTer.olean
+M036442 9571eba7a1fbbbf3949b91dec47fedc1ca424c7c0c04c776967e1805f950fc7f Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsLastRest.olean
+M036446 32e35f00aef6f5012f896e620b0555a997e06f730806610a0534ae2470df6475 Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsMoreAlt.olean
+M036447 7080d6367d8589062c32099756261e8e88b7a25750d9c49fd84504cb4494ee07 Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsMoreBis.olean
+M036448 6b05d2ab3d19c545adfa75d984781bfcadcf5699d9232d23db3b3bec04f5fb64 Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsMoreExtra.olean
+M036449 05809e49934df4a176c40b5987ca0e2ef7457a278101f87aae318d7852db65d4 Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsMoreFurther.olean
+M036450 84307fc0e31b44366b0646ff553495699b9e6f92ef4dbd03c9f3a6d7770d5c11 Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsMoreLast.olean
+M036451 d7d64eaa1bcb8874069c850dac6ca8a7881e256100dc9ffd027145509e4814d5 Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsMoreMore.olean
+M036452 b98395ef61300b0fe1fbae160667d9ee528c4f39964244b883746df6ba5d9cf9 Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsMoreRest.olean
+M036453 4279bf17181cffce776437febdfd2736fb3b0df04b6796e512685e67794bedeb Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsMoreSide.olean
+M036454 2162e43a6d94690282bfb9673c9d5915c60820a5fe47d755049cda49c17cd518 Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsMoreTail.olean
+M036455 051a43dcabbeb4ff8e4bb5fba91d2f0e043a468c9ccdad784b319e07df07267a Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsMoreTer.olean
+M036478 e61358dc7867262979d84ff8a4176d028b124ae4350e9d5ab141d42ea74c5487 Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsTerAlt.olean
+M036479 48f5c316d96393d8fed83617b6c328d1c203113daa3368c40a8565efaf98608e Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsTerBis.olean
+M036481 89aefbb62e5230635ce73682e5d2498c9cdc32d838911e7be873aeee97d6205a Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsTerFurther.olean
+M036482 66fae01ae93fd9ee23a38af893e1518d94006760fc7f8d8dfac2a4c3537db504 Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsTerLast.olean
+M036483 816dda0e13d0c0e11a194b3156e7483ca7c67540c9d4c3dec74fe80e34e956a9 Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsTerMore.olean
+M036484 6752a6c8a34ef627d4c9758d74f7482699e351a685ea1db0c417644a234b99f3 Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsTerRest.olean
+M036486 8546f7efe5bdeac3c80523f8c564a33ff443b9a0ab00d9349c92b528e69ea49c Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsTerTail.olean
+M036487 a2f9b15fe58fbd59ab646c8b84d0d1913c9383ed8a26100eef852be6b36be3b6 Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsTerTer.olean
+M036498 92468d5f881888962bfca0b3533811e6a71e4236562c606b94c77d681c5d6f5b Development.AbelianVarietyTheory.Proofs.DivisorProofs.IndEtaleIncomparability.olean
+M036696 e7a1c0a53135d233e7f83dcb1d0b6bddfcf9e5374e6491dfe3dd4d0a91fa241d Development.AbelianVarietyTheory.Proofs.DivisorProofs.InertiaDegBotEqFinrankFiniteDomain.olean
+M036720 e506452a57f361141df7cef67c6348a47bce7d1168279e708a64525fdcffbf28 Development.AbelianVarietyTheory.Proofs.DivisorProofs.InfSupPowEqOfTorsionArtinRees.olean
+M036759 ad1b949fac2d9a2f95f7d9753b5e86961a417855bdf92cbf396f2a380a624c91 Development.AbelianVarietyTheory.Proofs.DivisorProofs.InjectiveCotangentComplexBaseChangeOfFormsExtend.olean
+M036772 e2bdb510dd1a6284bd21dd9e373aff920440f179c53ad4e6adcb3e8b533a85c8 Development.AbelianVarietyTheory.Proofs.DivisorProofs.InjectiveMulVecMapBasis.olean
+M036781 6537bd1e461d74a462d4ce80f94a5375e542f2899d6cf4c1fc60dbca76cf6ffe Development.AbelianVarietyTheory.Proofs.DivisorProofs.InjectiveOfMapPderivEqAndMapOneNeZero.olean
+M036807 e5db0a013ea3bac32a8c3671658b09ab0a459df4e75210d523dbb15106813959 Development.AbelianVarietyTheory.Proofs.DivisorProofs.InstPreorder.olean
+M036885 54e70a6c5d11a0db0c68a3ab36da612439c5fc7779ac5d3abec9682dc852576e Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegrableSqPowMulIteratedFDerivSchwartz.olean
+M036919 31fa103a0872b76ae2ed89f9728e278f95ff40827d96ae8a4f3beceaee8130a0 Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralBasisChangeDeterminant.olean
+M036967 8505b1fe807a6f31482f41f0230b4f6ddc453012ec316ea038918ba9ee6d9ed4 Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralCoefficients.olean
+M037018 0b2f3a7a305f517bcc115f578b894761f4a9d4910a8e7bd8f0705789d71f48e0 Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralDoubleSeriesInterchange.olean
+M037047 231d8a26cc9409f9d5265edfa2de91dd4c5a5884daaf4f2d2198e285b7c200bc Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralFlagLiftOfResidue.olean
+M037067 2997d168431e902ef0fd0af0c5949e41ce564b454fd3b8c55d04dbae80e4f6bb Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralFundamentalDomainEqSum.olean
+M037084 bdd3414e3984b163afceaa2f9b9ff74ed515ef72fc5ea4cd0de22fd9b178087e Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralHasSumEqIntegralIndicatorHasSum.olean
+M037104 4f8ef593b739ca378372e21fcae017d1bb07122dd097161f764b999de41bb153 Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralMemFinDimSpace.olean
+M037159 f4b3122fa23b57373ed4221d3919bae95437cb13c63e0b929238015eb1b3e010 Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralMulConvolutionEq.olean
+M037180 bdde0bc0f19b7cad43dcc6d066671fcaf16e5ae8429a406f6a753d5bbcfc3689 Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralPiecewiseConstant.olean
+M037221 cdea4d3f2137e73ae5b96f3f01e3603577da5329bd93b248c21f92a96f3317da Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralRowSpaceBasisExists.olean
+M037276 50aa5fe067d47f706c701ac8a7d60dad3b78c48c3a9e8bf1478a912d86d46e52 Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegrallyClosedFiniteDedekindClassFinite.olean
+M037354 201d894301061806c4f7f937a0d102a2400eca966b04fa30067144b4c09de1c3 Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntertwinerNonzeroRestriction.olean
+M037368 985621f07384c7285296fa7b16fb1130abbf0e15184ab755097f594f85e14885 Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvDer.olean
+M037371 81aade03d71bab6fb31708920ca42d3a27b32ddf771ecbaaa8d1ac6022880971 Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvEntryDifferentiableAt.olean
+M037373 289df6f78e6ec6d02166d5ced3ab96bc5a6d80877354cd0f2ce77800f5bda049 Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvFiveLogLeSumInvPrimes.olean
+M037377 bcb096c9673ecb5a42b82bf4fe6ef9b1accacfcbae94e40845ea948938860762 Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvMemConnectedComponentInFibre.olean
+M037439 94acc44f5d8743e4f5dfd157f69735538a3d072bcc85fd554d7812a24a0c7018 Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvariantMeasurableModification.olean
+M037475 b204d95d5d39c1a57dcfbf17f5c7d73d71efccb07e58405fc38b35b1e4e40bd5 Development.AbelianVarietyTheory.Proofs.DivisorProofs.InverseMapCoordDerivativeNeZero.olean
+M037489 bef95afa53bb33d03a9b3bb44c9b3267f7e8c7cb6dceee362ecd1679a52b0414 Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvolutionNormClassRemoveRationalFactor.olean
+M037516 577adf4275e3fb528a94bd8cbf410aaef7ca6300022bda6d19892bdaa65d0590 Development.AbelianVarietyTheory.Proofs.DivisorProofs.IrreducibleDvdOfDvdCharpolyOfAevalMatrix.olean
+M037536 b6a8379a7ba3acf1421ff30bf1905114f6400ada5a7f701834723c24aeec4033 Development.AbelianVarietyTheory.Proofs.DivisorProofs.IrreducibleXSqAddOne.olean
+M037580 7b97af6a7c1c5309746d6e1af7c5edda795d5e1601cb3e63fa92a8a04500e522 Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAdicCompleteOfLeOfIsNoetherianRing.olean
+M037584 6fbcc3d4728c0fa2ce464df09ef4c3c2f2836a535bc050e55d4727b519b82b49 Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAdicCompleteSpanNatCastFiniteProjectiveAlgebra.olean
+M037606 b122727ad5d5b7427fa6c2cb1331e283ce627f2a28ae8099b22ac13fd623fd7e Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAffineOpenInfOfSeparatedOverAffineOpen.olean
+M037629 3e4e7e13a708c46c1c280302e8cf6a15af516cde4a551eb86741a6c52c1f9e7f Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAlgebraicInt.olean
+M037633 a3cccd42d145561c2c3cc26bd00ca3fa99880c134624cd38dd9d2f62dc3b93e5 Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAlgebraicOfFiniteTypeOfComapEqBot.olean
+M037639 8e7452d89ab756251f674d8b27ff1ade1c97635051bd824b301bfe591e959ad1 Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAlgebraicOfSubringIsAlgebraic.olean
+M037674 93c668fa4a90b8e932e719dea931f8f6381102ef69863074ea14ada8eaa70a73 Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsArtinianRingKummerAdjoinRootQuotientRoot.olean
+M037677 0bd5e2593b14ef94d787926cf3653783bf5241f428b83975b8ca18bfc868f119 Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAut.olean
+M037746 4c26e7d9e398a8aa6e9a016897b617c70c1372d14c5c9dc237f47a0c950a6778 Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsClopenBasicOpenSpecProdSelfFirstIdempotent.olean
+
+overall: SUCCESS
