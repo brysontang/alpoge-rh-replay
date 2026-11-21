@@ -1,0 +1,1408 @@
+# P0026 port build transcript
+date: 2026-11-21T16:30:03Z
+host: Darwin 27.2.0 arm64
+lean-toolchain: leanprover/lean4:v4.36.0
+lean --version: Lean (version 4.36.0, arm64-apple-darwin24.6.0, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+port/target.json: {"lean":"leanprover/lean4:v4.36.0","mathlib":"fc4f59e577feb1a4956671bc04ac18aaaf8cd842","mathlib_note":"Mathlib'sreleasetagv4.36.0(matchesLeanv4.36.0).Approvedbythemaintainer2026-11-21.","replay_pins_unchanged":{"lean":"leanprover/lean4:v4.33.1","mathlib":"0df444a360eaa60ab8c11dca51a86af692955474"}}
+replay repo commit the patches were cut against: 8630a3a590207667731cc57205f09e9cb24bdfe7
+
+## Sources: pinned archive files (SHA-256 checked against tracker/modules.jsonl.gz), then port/patches applied
+M061758 unchanged pinned=a554e5a34b88ae8ced1bfa719aa8592ee8663c66f37e137328105157b63162b0 Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIntegralPolyOfPrimitiveRootTotallyRamified
+M061774 patched   pinned=414b0f611bf829a2dbcf6163acdbd1854d5cb14c25aeb4d9e967dfbc04cb3b12 built=b0a513fedae9d9d7470c613115911b2dff6b1a02abf155b2cfef03681fd1d824 Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIsDiscreteValuationRingOfMaximalIdealEqSpa
+M061834 unchanged pinned=c5c4124b09beb257364d6182545730a27d44f8759a95eeb6529a6c764001c891 Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsLowDegreeCoordsModMul
+M061843 unchanged pinned=9bf262a731169e6dda0d05dc15af373841e8d50f1c4aec56b2dddd89f0fb7902 Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsMemPowSubMemPowSucc
+M061858 unchanged pinned=bec86378dd8f4b980c26e1560eccb02f138b84ee0d1e9d41c3a66607b9de3e86 Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsMulOfDetZero
+M061865 unchanged pinned=3346916af4c2a1165262fa287b73ff196d0c493f9d49e148d522e54a01c668ef Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsNatCoeffsDetSumSmulNeZero
+M061875 patched   pinned=8b24b61d671b0f882a8c7020122336d9bf9fbbee78ef9d850159253a343dd17a built=9a6500ca1b011097e42b0da65f4cce2cda923932db7947555076e3187e98a60b Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsNormForm
+M061926 patched   pinned=33ddbe1579b4931f36d57393f3b7d0edbfaabd1688836e5cb390ef8f2baf263e built=88353b8bd30228bda8272d131fa15d356e23828eb959852ebb6975c88aff46d3 Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsPosFiniteDensityOfAlmostTranslationInvaria
+M061929 patched   pinned=fedacdccd733d90ef13100a189e40fb3e6fd42d7f7addaad3e67d819ee85b3cb built=02a456fd136349feb9a19d8221cf1e985862bc415eda914ba146e36375d989d2 Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsPowSmulMemRangeOfSurjectiveBaseChange
+M061930 unchanged pinned=37bbfcacce9649382a8dcfa02820d8c93640b6329be36421544349e1639fd679 Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsPowSubOneNormLtOne
+M061933 unchanged pinned=c75ae482838f2c8fc20f6536d62e183f3d8e2937d2c76674b502bf227a56862b Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsPrimeDvdMem
+M061934 unchanged pinned=31b7300ad9e25ecc92c6084cce1d2064ec8fb9cd109dbe806ebc41ac91db3f1a Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsPrimeNatCastMem
+M061962 unchanged pinned=75ac6c374b0b807d4f7de25226ea420c1aaeebad3a8b8797d2b8756cfae9cc2b Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsRelationGradient
+M061967 patched   pinned=36f248c7c907b3432c9f2492c1a9f154b35ccf5e8f956acafd0addf88f48397c built=076b2984f74ff6db545ef7de6292adef798bf2936a6b06b85614422087e4ba83 Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsRepresentativesQuotientRangeMulVecLin
+M061995 unchanged pinned=5da6232b4d409079ca78aac6be8d49525e4130f90bc4e3f31f2c8dae6f54da17 Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsSpectralValuationAlgebraicExtension
+M062046 patched   pinned=94fa217f9481d576ef8d2eadabe90870eb9b0ddde418432871d9eaa5a206785c built=6a1066dbedbe80644be6fb15a03ee7e5611d9523ca1622fa39492feaaed3be4a Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsUniqueAlgEquivOfCompatibleQuotient
+M062055 patched   pinned=e794175cc50192df626f58c5b717e1a7afb02c6ab315359637ebedb5131c9b38 built=cf6c653f4d0e5e5d304074df7ab9df0c9af5446dc43526ed0db5bcd89e598671 Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsUnitAlgebraMapEqOfValuationEqOne
+M062061 unchanged pinned=50bc10c9ce494428ba73db4d38c0235ab599efd9ee95d7128b43d8a27f303221 Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsUnitNormOfSelfDualHermitianLattice
+M062115 unchanged pinned=a40ba1945f2ae00ba3c90199f3ae1582c6c98728258da8407545f95f7318e002 Development.AbelianVarietyTheory.Proofs.FoundationProofs.FiniteDimensionalFixedFieldMapOfFiniteIndex
+M062129 unchanged pinned=204620185192ba319c166e4a867b574983fd3f26e8ac36774961f6a4df9981bc Development.AbelianVarietyTheory.Proofs.FoundationProofs.FiniteIndexOfGammaLe
+M062134 patched   pinned=e20efeb1a546368c21303c67e08cea8f1aced4b20e5f24375e120f71b5efd8c2 built=c3dad7eec43dbae221997d185962d848a0b1df965972bcd0ca725ee1fe8a8f51 Development.AbelianVarietyTheory.Proofs.FoundationProofs.FiniteMaximalSpectrumOfFiniteOfIsLocalRing
+M062135 patched   pinned=d9928971eeca1eddff63b46a430582f6c6d949b198cfc4b4c324d88550b4e266 built=2060b43836886bfb44f234419ef59cfe96d36d51a01b266f6739bb88cd7f7458 Development.AbelianVarietyTheory.Proofs.FoundationProofs.FiniteOfIsClosedTorusZariskiOfPowEqOne
+M062137 unchanged pinned=10c9fbc2d115f738ddc1f1b433b7afbe05ea33eb65681fd9ea748c072dbfb735 Development.AbelianVarietyTheory.Proofs.FoundationProofs.FiniteQuotientComap
+M062162 unchanged pinned=5bce01ecaad6000d9cd670201042a834819f08a6d66f9463c559d9f28c133694 Development.AbelianVarietyTheory.Proofs.FoundationProofs.FirstOrderRigid
+M062219 unchanged pinned=288c67763b912c9b69c5c4199a7137fb221b70d1aade328c2d94eb39db44fc15 Development.AbelianVarietyTheory.Proofs.FoundationProofs.FromBlocksMulInv
+M062284 unchanged pinned=b5ed73303b4cabd19369e878c38f2e1adee6ce69385a0bc1047eb1a262a8a724 Development.AbelianVarietyTheory.Proofs.FoundationProofs.GaussPowFourHom
+M062293 unchanged pinned=b63ba239ad6aa7b528f720e06f2122fec4811d056ae2bb5b0905780328ff07f3 Development.AbelianVarietyTheory.Proofs.FoundationProofs.GeNatCastIff
+M062337 unchanged pinned=46a08a0bef948194e1037fbb839284f969a0a5ec2f6bdbd5422695c2a3348bac Development.AbelianVarietyTheory.Proofs.FoundationProofs.GramDetIndexSublattice
+M062385 unchanged pinned=497c9a698ac6e3a14b9c805741bb9c56ab8d4e1b705ab309a3dd3532e754f28b Development.AbelianVarietyTheory.Proofs.FoundationProofs.HasDerivAtDetOfOne
+M062516 unchanged pinned=52c59176857fac55f1785db77a52fa2b7262451610a7ebed4808211457b17139 Development.AbelianVarietyTheory.Proofs.FoundationProofs.HermitianLatticeNormOneOfNormOneModPrime
+M062536 unchanged pinned=18ffcadab3e773029b7434eabd619f87a9da42e17b21444060608740e0f2b3a0 Development.AbelianVarietyTheory.Proofs.FoundationProofs.IdealEqComap
+M062549 unchanged pinned=040350b6930cde536321840cd52771b099d4c35c8a081c47e1344f82fe1c2b2c Development.AbelianVarietyTheory.Proofs.FoundationProofs.Imports
+M062550 patched   pinned=8346ab1a2ad969004c73ca534f3803349bf208c5bd35953326c80ab9b2bb8d77 built=769022ed70b6879ebe2b142c02a04c5400dbe9ce702a03e90a3653d67d30d96c Development.AbelianVarietyTheory.Proofs.FoundationProofs.ImportsAlt
+M062551 unchanged pinned=bedc7335763743dec8805aac974469c38de54cbb12243d88f5023ab03ed11f63 Development.AbelianVarietyTheory.Proofs.FoundationProofs.ImportsBis
+M062553 unchanged pinned=be5aecddee6beafb26fa6476eeea40796755ea0311e72be7026a1b320fabe7ca Development.AbelianVarietyTheory.Proofs.FoundationProofs.ImportsFurther
+M062554 unchanged pinned=b1b280ab744f77fb151aca1893fd9eaf178f684fcb80978b2ed0745acb339903 Development.AbelianVarietyTheory.Proofs.FoundationProofs.ImportsMore
+M062555 unchanged pinned=acb2c1605b94a14fa96e3e0a1484971de2e5f712406b4e29e85a8bcc8b613d06 Development.AbelianVarietyTheory.Proofs.FoundationProofs.ImportsTer
+M062599 unchanged pinned=7547d628d46c72fb7f2b31c11a1032aadca50ed1189634cc7a4783d4aff74257 Development.AbelianVarietyTheory.Proofs.FoundationProofs.IntegrableOnVerticalRayNormIntegralLe
+M062701 unchanged pinned=d3a4d290eeadd1747a8bc2d672a8b808ad7039eacffdd9c7aa7e9616052d2125 Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsFieldAndPthRootsOfLocalAlgFrobeniusFixed
+M062705 unchanged pinned=89c78fd067b23878713349e0c8be24bf6ca37b4234de949662e291f6ca510028 Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsHeisTrivial
+M062716 unchanged pinned=4dc0f2af06b9cc039602ee5d180a435e168d028864aea070580e4b4d0d517b22 Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsIntegrallyClosedInFractionFieldPowerSeries
+M062731 patched   pinned=6022720950da65e38bd2679371304a6b352d55c618a0bf05326f0222f7878fb1 built=c4fc9c86fdf822c934e9e7ed049c683374c7debf92b0cc62d96e8d624d529a63 Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsLeftCoactionIffIsCoactionComm
+M062798 unchanged pinned=8f11491795e5dcd2e9ff0d1471a18c60422b8ce12aec7846cc5ee7829d033d1c Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsogenyNumeratorCoeffNormLeOne
+M062800 patched   pinned=556fea7bbff7ebb6d60348f3b8fd03b7120236bb9998d5ac6c39c85211021782 built=c4810718bbb1cbcbc405619f4cc1e6a62018d39f02c0282300cc881df808ab76 Development.AbelianVarietyTheory.Proofs.FoundationProofs.IterateDerivativeFunMulSubstLeibniz
+M062816 patched   pinned=d816f617f52f03bf65b6f7bf7760dfa3deb6137414c167dbc78e25ebfd7cbca3 built=2ebe4c0dda8c129c58392dd029eca1e967d7abfb2cb2c7b8bc4528b85aee3007 Development.AbelianVarietyTheory.Proofs.FoundationProofs.JetRelOfWeierstrassSystem
+M062817 unchanged pinned=070620ab7361752e7ecf9362c68c189661467f4f434940d2a5fea0e7203f82b9 Development.AbelianVarietyTheory.Proofs.FoundationProofs.JetsMemSubalgebraOfFiniteTypeAlgebra
+M062908 unchanged pinned=a819f2e67c86d8183deb2a2b96fd75076ae98fc6cb9c14892b8a5145fa7e5954 Development.AbelianVarietyTheory.Proofs.FoundationProofs.LSeriesSummableBoundedMulOfSummableNormSq
+M062933 unchanged pinned=b9857dee3e8aa78009dde7989e277ca20b007397a92c124a41efe80795d539a0 Development.AbelianVarietyTheory.Proofs.FoundationProofs.LaurentFiniteOfTriangularSignedIndicators
+M062937 unchanged pinned=b27a19ab8da21233e37addf1eb04185cd54882b526e1e599c1a09f4b99487e29 Development.AbelianVarietyTheory.Proofs.FoundationProofs.LaurentSeriesEqSumSingleMulPow
+M062970 unchanged pinned=05245fe64961e78075bd1b76d80fc014adb2754b2ca15f78db1cc6ccf104b6ae Development.AbelianVarietyTheory.Proofs.FoundationProofs.LinearIndependentOfDetMemNonZeroDivisors
+M062971 unchanged pinned=730b0b78521ef1321320bb101612813ba974b561a4f8b6c0942efb1ab8b16d07 Development.AbelianVarietyTheory.Proofs.FoundationProofs.LinearIndependentOfJointEigenvectors
+M062972 unchanged pinned=dfb60a9a3a6d086917bd63c1580fe07a001eaf6d4cb1968d2948555e861dd549 Development.AbelianVarietyTheory.Proofs.FoundationProofs.LinearIndependentVecMulOfSpanRat
+M063010 unchanged pinned=c107b974ae9b3a73819e54d8e8b54f3e1d974a64679b2722beb3bfe2e208ba7d Development.AbelianVarietyTheory.Proofs.FoundationProofs.LogFactorialPowMulFactorialPowLe
+M063019 unchanged pinned=7506a67e65321d87e73ba2ad6493ea7633715c4ce22b0890bbdf515e00d5eb63 Development.AbelianVarietyTheory.Proofs.FoundationProofs.LseriesShiftTwist
+M063021 unchanged pinned=d6b3ed7252017d37ac653c94ba4488e7e808e8871e1dc60d2791091f95442f8e Development.AbelianVarietyTheory.Proofs.FoundationProofs.LseriesSquaresEq
+M063023 unchanged pinned=4516b39903d6f6c9b29da193212c00185b399e8fe71efb46ef9aa189d7a280bd Development.AbelianVarietyTheory.Proofs.FoundationProofs.LseriesSummableTwistPowOfSqSummable
+M063032 unchanged pinned=24662cf25b3141a756d8da8a2bdf259c34e18383b4cdbac6930be73e83a9bd0f Development.AbelianVarietyTheory.Proofs.FoundationProofs.MatrixInvEntriesBounded
+M063060 unchanged pinned=253731fcf360e7e4c17cadf6d35aebe639023d0cc8663fcf2d163cf985996ef3 Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemAdjoinDivOfFixed
+M063083 unchanged pinned=a0b4ab7ec81c82e255e5894ca2e5d35ae50462a9842b63b3dfd1f7e25896a53e Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemMaximalPowOfJetsVanish
+M063095 unchanged pinned=803ce0c429ab3cb825f46c84e901a0b9036cc8e32dc8abef7f69a54494ccc5d5 Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemOfSumMulPowMemOfValuationZpow
+M063099 unchanged pinned=7edf5ba7e1ad137fa6afc852f925c41d288c928c045fe2d33c5ddd054b636228 Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemSpanEigenOfBaseChangeEigen
+M063176 patched   pinned=55a5bf64e081feaef43bbe1a6790f8c69c706073da381d20502b47a99eb95fce built=7287972304eaed97e4db166befcd38018a483f62bdca46f87521120ede3590c9 Development.AbelianVarietyTheory.Proofs.FoundationProofs.MonicFactorCoeffNatDegreeLe
+M063198 patched   pinned=19fc799ab5e44d1eee32ee95aa36c27180b430afea2ee2fcc159984a24178002 built=c9382401803845176ecc250531b51a2fd0406b486776a23c14302cf217603228 Development.AbelianVarietyTheory.Proofs.FoundationProofs.MvPowerSeriesThreeEqZeroOfSubstLines
+M063220 unchanged pinned=976d0a7c6ea601f08bb47a0820b4805e4d981e3ae2852955ae21f5d263904ad6 Development.AbelianVarietyTheory.Proofs.FoundationProofs.NewtonPowerSeriesSurjectiveLinearizationSolution
+
+## lake build
+M061758 M061774 M061834 M061843 M061858 M061865 M061875 M061926 
+$ lake build +Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIntegralPolyOfPrimitiveRootTotallyRamified:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIsDiscreteValuationRingOfMaximalIdealEqSpa:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsLowDegreeCoordsModMul:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsMemPowSubMemPowSucc:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsMulOfDetZero:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsNatCoeffsDetSumSmulNeZero:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsNormForm:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsPosFiniteDensityOfAlmostTranslationInvaria:olean 
+⚠ [18250/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsNatCoeffsDetSumSmulNeZero (7.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsNatCoeffsDetSumSmulNeZero.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsNatCoeffsDetSumSmulNeZero.lean:26:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [18251/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsLowDegreeCoordsModMul (7.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsLowDegreeCoordsModMul.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsLowDegreeCoordsModMul.lean:27:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsLowDegreeCoordsModMul.lean:28:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [18252/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsMemPowSubMemPowSucc (7.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsMemPowSubMemPowSucc.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18253/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsMulOfDetZero (7.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsMulOfDetZero.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18254/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsNormForm (7.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsNormForm.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsNormForm.lean:47:39: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsNormForm.lean:47:56: `MvPolynomial.coeff_zero` has been deprecated: Use `AddMonoidAlgebra.coeff_zero` instead
+
+Note: The updated constant has a different type:
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R], AddMonoidAlgebra.coeff 0 = 0
+instead of
+  ∀ {R : Type u} {σ : Type u_1} [inst : CommSemiring R], AddMonoidAlgebra.coeff 0 = 0
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coeff_zero` to `AddMonoidAlgebra.coeff_zero x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsNormForm.lean:50:39: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsNormForm.lean:55:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsNormForm.lean:122:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsNormForm.lean:123:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsNormForm.lean:138:40: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+⚠ [18255/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIsDiscreteValuationRingOfMaximalIdealEqSpa (8.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsIsDiscreteValuationRingOfMaximalIdealEqSpa.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsIsDiscreteValuationRingOfMaximalIdealEqSpa.lean:18:10: `Ideal.mem_jacobson_bot` has been deprecated: Use `Ring.mem_jacobson_iff` instead
+
+Note: The updated constant has a different type:
+  ∀ {R : Type u} [inst : CommRing R] {x : R}, x ∈ Ring.jacobson R ↔ ∀ (y : R), IsUnit (x * y + 1)
+instead of
+  ∀ {R : Type u} [inst : CommRing R] {x : R}, x ∈ ⊥.jacobson ↔ ∀ (y : R), IsUnit (x * y + 1)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mem_jacobson_bot` to `Ring.mem_jacobson_iff x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsIsDiscreteValuationRingOfMaximalIdealEqSpa.lean:71:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsIsDiscreteValuationRingOfMaximalIdealEqSpa.lean:72:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsIsDiscreteValuationRingOfMaximalIdealEqSpa.lean:130:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsIsDiscreteValuationRingOfMaximalIdealEqSpa.lean:132:10: `SetLike.le_def` has been deprecated: Use `IsConcreteLE.le_iff` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.le_def` to `IsConcreteLE.le_iff x`).
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵L̵i̵k̵e̵.̵l̵e̵_̵d̵e̵f̵I̲s̲C̲o̲n̲c̲r̲e̲t̲e̲L̲E̲.̲l̲e̲_̲i̲f̲f̲
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsIsDiscreteValuationRingOfMaximalIdealEqSpa.lean:133:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsIsDiscreteValuationRingOfMaximalIdealEqSpa.lean:173:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsIsDiscreteValuationRingOfMaximalIdealEqSpa.lean:238:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsIsDiscreteValuationRingOfMaximalIdealEqSpa.lean:244:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsIsDiscreteValuationRingOfMaximalIdealEqSpa.lean:245:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsIsDiscreteValuationRingOfMaximalIdealEqSpa.lean:246:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [18256/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIntegralPolyOfPrimitiveRootTotallyRamified (9.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsIntegralPolyOfPrimitiveRootTotallyRamified.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsIntegralPolyOfPrimitiveRootTotallyRamified.lean:15:10: `zero_le'` has been deprecated: Use `zero_le` instead
+
+Hint: Replace the deprecated name:
+  zero_le'̵
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsIntegralPolyOfPrimitiveRootTotallyRamified.lean:16:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsIntegralPolyOfPrimitiveRootTotallyRamified.lean:23:57: `zero_le'` has been deprecated: Use `zero_le` instead
+
+Hint: Replace the deprecated name:
+  zero_le'̵
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsIntegralPolyOfPrimitiveRootTotallyRamified.lean:57:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsIntegralPolyOfPrimitiveRootTotallyRamified.lean:61:39: `zero_le'` has been deprecated: Use `zero_le` instead
+
+Hint: Replace the deprecated name:
+  zero_le'̵
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsIntegralPolyOfPrimitiveRootTotallyRamified.lean:137:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [18257/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsPosFiniteDensityOfAlmostTranslationInvaria (12s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPosFiniteDensityOfAlmostTranslationInvaria.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18257 jobs).
+exit_code = 0
+elapsed_seconds = 16
+
+M061929 M061930 M061933 M061934 M061962 M061967 M061995 M062046 
+$ lake build +Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsPowSmulMemRangeOfSurjectiveBaseChange:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsPowSubOneNormLtOne:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsPrimeDvdMem:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsPrimeNatCastMem:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsRelationGradient:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsRepresentativesQuotientRangeMulVecLin:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsSpectralValuationAlgebraicExtension:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsUniqueAlgEquivOfCompatibleQuotient:olean 
+⚠ [18250/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsPrimeDvdMem (7.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPrimeDvdMem.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPrimeDvdMem.lean:7:49: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [18251/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsPowSubOneNormLtOne (7.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPowSubOneNormLtOne.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18252/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsPrimeNatCastMem (7.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPrimeNatCastMem.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18253/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsSpectralValuationAlgebraicExtension (7.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsSpectralValuationAlgebraicExtension.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsSpectralValuationAlgebraicExtension.lean:14:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsSpectralValuationAlgebraicExtension.lean:18:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsSpectralValuationAlgebraicExtension.lean:20:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsSpectralValuationAlgebraicExtension.lean:21:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [18254/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsRepresentativesQuotientRangeMulVecLin (8.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsRepresentativesQuotientRangeMulVecLin.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsRepresentativesQuotientRangeMulVecLin.lean:110:28: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsRepresentativesQuotientRangeMulVecLin.lean:418:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsRepresentativesQuotientRangeMulVecLin.lean:439:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [18255/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsRelationGradient (9.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsRelationGradient.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsRelationGradient.lean:59:20: This simp argument is unused:
+  Pi.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hj, Ne.symm hj]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsRelationGradient.lean:94:10: `mul_le_one₀` has been deprecated: No replacement, use constituent lemmas from proof.
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsRelationGradient.lean:131:54: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsRelationGradient.lean:121:18: This simp argument is unused:
+  Pi.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hj, Ne.symm hj, eval₂_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsRelationGradient.lean:179:47: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsRelationGradient.lean:215:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [18256/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsUniqueAlgEquivOfCompatibleQuotient (9.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsUniqueAlgEquivOfCompatibleQuotient.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsUniqueAlgEquivOfCompatibleQuotient.lean:121:15: `AlgEquiv.coe_algHom_injective` has been deprecated: Use `AlgEquiv.coe_toAlgHom_injective` instead
+
+Hint: Replace the deprecated name:
+  AlgEquiv.coe_a̵t̲o̲A̲lgHom_injective
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsUniqueAlgEquivOfCompatibleQuotient.lean:180:15: `AlgEquiv.coe_algHom_injective` has been deprecated: Use `AlgEquiv.coe_toAlgHom_injective` instead
+
+Hint: Replace the deprecated name:
+  AlgEquiv.coe_a̵t̲o̲A̲lgHom_injective
+⚠ [18257/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsPowSmulMemRangeOfSurjectiveBaseChange (13s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPowSmulMemRangeOfSurjectiveBaseChange.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPowSmulMemRangeOfSurjectiveBaseChange.lean:285:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPowSmulMemRangeOfSurjectiveBaseChange.lean:286:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPowSmulMemRangeOfSurjectiveBaseChange.lean:287:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPowSmulMemRangeOfSurjectiveBaseChange.lean:288:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPowSmulMemRangeOfSurjectiveBaseChange.lean:289:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPowSmulMemRangeOfSurjectiveBaseChange.lean:292:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPowSmulMemRangeOfSurjectiveBaseChange.lean:297:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPowSmulMemRangeOfSurjectiveBaseChange.lean:370:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPowSmulMemRangeOfSurjectiveBaseChange.lean:371:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPowSmulMemRangeOfSurjectiveBaseChange.lean:386:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPowSmulMemRangeOfSurjectiveBaseChange.lean:387:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPowSmulMemRangeOfSurjectiveBaseChange.lean:416:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPowSmulMemRangeOfSurjectiveBaseChange.lean:417:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPowSmulMemRangeOfSurjectiveBaseChange.lean:460:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPowSmulMemRangeOfSurjectiveBaseChange.lean:461:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPowSmulMemRangeOfSurjectiveBaseChange.lean:462:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPowSmulMemRangeOfSurjectiveBaseChange.lean:498:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsPowSmulMemRangeOfSurjectiveBaseChange.lean:571:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Build completed successfully (18257 jobs).
+exit_code = 0
+elapsed_seconds = 17
+
+M062055 M062061 M062115 M062129 M062134 M062135 M062137 M062162 
+$ lake build +Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsUnitAlgebraMapEqOfValuationEqOne:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsUnitNormOfSelfDualHermitianLattice:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.FiniteDimensionalFixedFieldMapOfFiniteIndex:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.FiniteIndexOfGammaLe:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.FiniteMaximalSpectrumOfFiniteOfIsLocalRing:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.FiniteOfIsClosedTorusZariskiOfPowEqOne:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.FiniteQuotientComap:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.FirstOrderRigid:olean 
+⚠ [18250/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.FiniteQuotientComap (7.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/FiniteQuotientComap.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18251/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.FiniteDimensionalFixedFieldMapOfFiniteIndex (7.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/FiniteDimensionalFixedFieldMapOfFiniteIndex.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/FiniteDimensionalFixedFieldMapOfFiniteIndex.lean:13:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/FiniteDimensionalFixedFieldMapOfFiniteIndex.lean:14:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/FiniteDimensionalFixedFieldMapOfFiniteIndex.lean:103:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/FiniteDimensionalFixedFieldMapOfFiniteIndex.lean:104:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/FiniteDimensionalFixedFieldMapOfFiniteIndex.lean:123:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [18252/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.FiniteIndexOfGammaLe (7.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/FiniteIndexOfGammaLe.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18253/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsUnitAlgebraMapEqOfValuationEqOne (7.0s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsUnitAlgebraMapEqOfValuationEqOne.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsUnitAlgebraMapEqOfValuationEqOne.lean:102:0: automatically included section variable(s) unused in theorem `GlobalTheory.PrimeElement.algebraMap_away_injective`:
+  [IsDomain K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsDomain K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsUnitAlgebraMapEqOfValuationEqOne.lean:102:35: Variable name `hπ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hπ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [18254/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.FiniteOfIsClosedTorusZariskiOfPowEqOne (8.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/FiniteOfIsClosedTorusZariskiOfPowEqOne.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/FiniteOfIsClosedTorusZariskiOfPowEqOne.lean:30:33: `Set.compl_eq_univ_diff` has been deprecated: Use `Set.compl_eq_univ_sdiff` instead
+
+Hint: Replace the deprecated name:
+  Set.compl_eq_univ_s̲diff
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/FiniteOfIsClosedTorusZariskiOfPowEqOne.lean:208:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/FiniteOfIsClosedTorusZariskiOfPowEqOne.lean:209:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/FiniteOfIsClosedTorusZariskiOfPowEqOne.lean:241:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/FiniteOfIsClosedTorusZariskiOfPowEqOne.lean:243:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/FiniteOfIsClosedTorusZariskiOfPowEqOne.lean:269:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/FiniteOfIsClosedTorusZariskiOfPowEqOne.lean:281:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [18255/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsUnitNormOfSelfDualHermitianLattice (8.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsUnitNormOfSelfDualHermitianLattice.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsUnitNormOfSelfDualHermitianLattice.lean:8:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsUnitNormOfSelfDualHermitianLattice.lean:28:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsUnitNormOfSelfDualHermitianLattice.lean:84:41: `padicNorm.nonzero` has been deprecated: Use `padicNorm.ne_zero` instead
+
+Hint: Replace the deprecated name:
+  p̵a̵d̵i̵c̵N̵o̵r̵m̵.̵n̵o̵n̵z̵e̵r̵o̵p̲a̲d̲i̲c̲N̲o̲r̲m̲.̲n̲e̲_̲z̲e̲r̲o̲
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsUnitNormOfSelfDualHermitianLattice.lean:88:6: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [18256/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.FiniteMaximalSpectrumOfFiniteOfIsLocalRing (8.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/FiniteMaximalSpectrumOfFiniteOfIsLocalRing.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/FiniteMaximalSpectrumOfFiniteOfIsLocalRing.lean:12:49: `Ideal.mem_jacobson_bot` has been deprecated: Use `Ring.mem_jacobson_iff` instead
+
+Note: The updated constant has a different type:
+  ∀ {R : Type u} [inst : CommRing R] {x : R}, x ∈ Ring.jacobson R ↔ ∀ (y : R), IsUnit (x * y + 1)
+instead of
+  ∀ {R : Type u} [inst : CommRing R] {x : R}, x ∈ ⊥.jacobson ↔ ∀ (y : R), IsUnit (x * y + 1)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mem_jacobson_bot` to `Ring.mem_jacobson_iff x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/FiniteMaximalSpectrumOfFiniteOfIsLocalRing.lean:21:10: `isLocalHom_of_le_jacobson_bot` has been deprecated: Use `isLocalHom_of_le_jacobson` instead
+
+Note: The updated constant has a different type:
+  ∀ {R : Type u} [inst : CommRing R] {I : Ideal R}, I ≤ Ring.jacobson R → IsLocalHom (Ideal.Quotient.mk I)
+instead of
+  ∀ {R : Type u_1} [inst : CommRing R], ∀ I ≤ ⊥.jacobson, IsLocalHom (Ideal.Quotient.mk I)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/FiniteMaximalSpectrumOfFiniteOfIsLocalRing.lean:45:12: `Ideal.mem_jacobson_bot` has been deprecated: Use `Ring.mem_jacobson_iff` instead
+
+Note: The updated constant has a different type:
+  ∀ {R : Type u} [inst : CommRing R] {x : R}, x ∈ Ring.jacobson R ↔ ∀ (y : R), IsUnit (x * y + 1)
+instead of
+  ∀ {R : Type u} [inst : CommRing R] {x : R}, x ∈ ⊥.jacobson ↔ ∀ (y : R), IsUnit (x * y + 1)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mem_jacobson_bot` to `Ring.mem_jacobson_iff x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/FiniteMaximalSpectrumOfFiniteOfIsLocalRing.lean:273:13: `Submodule.le_of_le_smul_of_le_jacobson_bot` has been deprecated: Use `Submodule.le_of_le_smul_of_le_jacobson` instead
+
+Note: The updated constant has a different type:
+  ∀ {R : Type u_3} {M : Type u_4} [inst : CommRing R] [inst_1 : AddCommGroup M] [inst_2 : Module R M] {I : Ideal R}
+    {N N' : Submodule R M}, N'.FG → I ≤ Ring.jacobson R → N' ≤ N ⊔ I • N' → N' ≤ N
+instead of
+  ∀ {R : Type u_3} {M : Type u_4} [inst : CommRing R] [inst_1 : AddCommGroup M] [inst_2 : Module R M] {I : Ideal R}
+    {N N' : Submodule R M}, N'.FG → I ≤ ⊥.jacobson → N' ≤ N ⊔ I • N' → N' ≤ N
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/FiniteMaximalSpectrumOfFiniteOfIsLocalRing.lean:300:18: `Ideal.mem_jacobson_bot` has been deprecated: Use `Ring.mem_jacobson_iff` instead
+
+Note: The updated constant has a different type:
+  ∀ {R : Type u} [inst : CommRing R] {x : R}, x ∈ Ring.jacobson R ↔ ∀ (y : R), IsUnit (x * y + 1)
+instead of
+  ∀ {R : Type u} [inst : CommRing R] {x : R}, x ∈ ⊥.jacobson ↔ ∀ (y : R), IsUnit (x * y + 1)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mem_jacobson_bot` to `Ring.mem_jacobson_iff x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/FiniteMaximalSpectrumOfFiniteOfIsLocalRing.lean:231:64: This simp argument is unused:
+  eval_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [derivative_mul, derivative_sub, derivative_X, derivative_C, eval_add, eval_mul, eval_sub, eval_X,
+    eval_C, sub_self, zero_mul, add_zero, eval_zero, sub_zero, one_mul] at this
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/FiniteMaximalSpectrumOfFiniteOfIsLocalRing.lean:231:74: This simp argument is unused:
+  eval_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [derivative_mul, derivative_sub, derivative_X, derivative_C, eval_add, eval_mul, eval_sub, eval_X,
+    eval_C, sub_self, zero_mul, add_zero, eval_one, sub_zero, one_mul] at this
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [18257/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.FirstOrderRigid (11s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/FirstOrderRigid.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18257 jobs).
+exit_code = 0
+elapsed_seconds = 15
+
+M062219 M062284 M062293 M062337 M062385 M062516 M062536 M062549 
+$ lake build +Development.AbelianVarietyTheory.Proofs.FoundationProofs.FromBlocksMulInv:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.GaussPowFourHom:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.GeNatCastIff:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.GramDetIndexSublattice:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.HasDerivAtDetOfOne:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.HermitianLatticeNormOneOfNormOneModPrime:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.IdealEqComap:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.Imports:olean 
+⚠ [18250/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.IdealEqComap (7.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IdealEqComap.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IdealEqComap.lean:13:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IdealEqComap.lean:15:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [18251/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.GramDetIndexSublattice (7.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GramDetIndexSublattice.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GramDetIndexSublattice.lean:29:87: This simp argument is unused:
+  Finset.mul_sum
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [sum_inner, real_inner_smul_left, real_inner_smul_right, Finset.sum_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [18252/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.HasDerivAtDetOfOne (7.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/HasDerivAtDetOfOne.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18253/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.FromBlocksMulInv (7.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/FromBlocksMulInv.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18254/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.GeNatCastIff (7.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GeNatCastIff.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GeNatCastIff.lean:17:8: `zero_le'` has been deprecated: Use `zero_le` instead
+
+Hint: Replace the deprecated name:
+  zero_le'̵
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GeNatCastIff.lean:92:30: `zero_le'` has been deprecated: Use `zero_le` instead
+
+Hint: Replace the deprecated name:
+  zero_le'̵
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GeNatCastIff.lean:92:39: `zero_le'` has been deprecated: Use `zero_le` instead
+
+Hint: Replace the deprecated name:
+  zero_le'̵
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GeNatCastIff.lean:103:31: `zero_le'` has been deprecated: Use `zero_le` instead
+
+Hint: Replace the deprecated name:
+  zero_le'̵
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GeNatCastIff.lean:103:40: `zero_le'` has been deprecated: Use `zero_le` instead
+
+Hint: Replace the deprecated name:
+  zero_le'̵
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GeNatCastIff.lean:111:55: Variable name `h1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [18255/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.Imports (7.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/Imports.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/Imports.lean:7:31: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/Imports.lean:7:48: Variable name `inst_1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/Imports.lean:7:67: Variable name `inst_2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/Imports.lean:7:90: Variable name `inst_3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [18256/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.GaussPowFourHom (8.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GaussPowFourHom.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GaussPowFourHom.lean:93:20: `QuotientAddGroup.mk_out_eq_mul` has been deprecated: Use `QuotientAddGroup.mk_out_eq_add` instead
+
+Hint: Replace the deprecated name:
+  QuotientAddGroup.mk_out_eq_m̵u̵l̵a̲d̲d̲
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GaussPowFourHom.lean:155:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GaussPowFourHom.lean:156:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GaussPowFourHom.lean:204:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GaussPowFourHom.lean:183:40: Variable name `cA` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _cA
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GaussPowFourHom.lean:329:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GaussPowFourHom.lean:330:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GaussPowFourHom.lean:331:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GaussPowFourHom.lean:332:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GaussPowFourHom.lean:333:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/GaussPowFourHom.lean:334:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [18257/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.HermitianLatticeNormOneOfNormOneModPrime (8.3s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/HermitianLatticeNormOneOfNormOneModPrime.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/HermitianLatticeNormOneOfNormOneModPrime.lean:16:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/HermitianLatticeNormOneOfNormOneModPrime.lean:50:14: `mul_le_one₀` has been deprecated: No replacement, use constituent lemmas from proof.
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/HermitianLatticeNormOneOfNormOneModPrime.lean:72:41: `padicNorm.nonzero` has been deprecated: Use `padicNorm.ne_zero` instead
+
+Hint: Replace the deprecated name:
+  p̵a̵d̵i̵c̵N̵o̵r̵m̵.̵n̵o̵n̵z̵e̵r̵o̵p̲a̲d̲i̲c̲N̲o̲r̲m̲.̲n̲e̲_̲z̲e̲r̲o̲
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/HermitianLatticeNormOneOfNormOneModPrime.lean:106:6: This simp argument is unused:
+  RingHom.id_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [map_smul, map_smulₛₗ, map_add, map_sub, LinearMap.smul_apply, LinearMap.add_apply,
+    LinearMap.sub_apply, smul_eq_mul, hu, hee, map_mul, map_pow, map_ratCast, map_natCast]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Build completed successfully (18257 jobs).
+exit_code = 0
+elapsed_seconds = 12
+
+M062550 M062551 M062553 M062554 M062555 M062599 M062701 M062705 
+$ lake build +Development.AbelianVarietyTheory.Proofs.FoundationProofs.ImportsAlt:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.ImportsBis:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.ImportsFurther:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.ImportsMore:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.ImportsTer:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.IntegrableOnVerticalRayNormIntegralLe:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsFieldAndPthRootsOfLocalAlgFrobeniusFixed:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsHeisTrivial:olean 
+⚠ [18250/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ImportsBis (7.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ImportsBis.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ImportsBis.lean:5:29: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [18251/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ImportsMore (7.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ImportsMore.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ImportsMore.lean:7:33: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ImportsMore.lean:7:57: Variable name `inst_1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [18252/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ImportsAlt (7.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ImportsAlt.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ImportsAlt.lean:15:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [18253/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ImportsFurther (7.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ImportsFurther.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18254/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.ImportsTer (7.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/ImportsTer.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18255/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsFieldAndPthRootsOfLocalAlgFrobeniusFixed (7.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsFieldAndPthRootsOfLocalAlgFrobeniusFixed.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsFieldAndPthRootsOfLocalAlgFrobeniusFixed.lean:20:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsFieldAndPthRootsOfLocalAlgFrobeniusFixed.lean:31:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsFieldAndPthRootsOfLocalAlgFrobeniusFixed.lean:44:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsFieldAndPthRootsOfLocalAlgFrobeniusFixed.lean:45:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsFieldAndPthRootsOfLocalAlgFrobeniusFixed.lean:46:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsFieldAndPthRootsOfLocalAlgFrobeniusFixed.lean:50:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsFieldAndPthRootsOfLocalAlgFrobeniusFixed.lean:51:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsFieldAndPthRootsOfLocalAlgFrobeniusFixed.lean:52:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [18256/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsHeisTrivial (7.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsHeisTrivial.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsHeisTrivial.lean:94:0: automatically included section variable(s) unused in theorem `GlobalTheory.FinWeil.IsHeis.iso`:
+  [AddCommGroup M]
+  [Module ℂ M]
+  h
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [AddCommGroup M] [Module ℂ M] h in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [18257/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.IntegrableOnVerticalRayNormIntegralLe (7.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IntegrableOnVerticalRayNormIntegralLe.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18257 jobs).
+exit_code = 0
+elapsed_seconds = 11
+
+M062716 M062731 M062798 M062800 M062816 M062817 M062908 M062933 
+$ lake build +Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsIntegrallyClosedInFractionFieldPowerSeries:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsLeftCoactionIffIsCoactionComm:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsogenyNumeratorCoeffNormLeOne:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.IterateDerivativeFunMulSubstLeibniz:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.JetRelOfWeierstrassSystem:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.JetsMemSubalgebraOfFiniteTypeAlgebra:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.LSeriesSummableBoundedMulOfSummableNormSq:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.LaurentFiniteOfTriangularSignedIndicators:olean 
+⚠ [18250/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.JetsMemSubalgebraOfFiniteTypeAlgebra (7.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/JetsMemSubalgebraOfFiniteTypeAlgebra.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18251/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.IterateDerivativeFunMulSubstLeibniz (7.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IterateDerivativeFunMulSubstLeibniz.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IterateDerivativeFunMulSubstLeibniz.lean:28:9: `PowerSeries.derivativeFun` has been deprecated: Use `PowerSeries.derivative` instead
+
+Note: The updated constant has a different type:
+  {R : Type u_1} → [inst : CommSemiring R] → Derivation R (PowerSeries R) (PowerSeries R)
+instead of
+  {R : Type u_1} → [CommSemiring R] → PowerSeries R → PowerSeries R
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IterateDerivativeFunMulSubstLeibniz.lean:30:14: `PowerSeries.derivativeFun` has been deprecated: Use `PowerSeries.derivative` instead
+
+Note: The updated constant has a different type:
+  {R : Type u_1} → [inst : CommSemiring R] → Derivation R (PowerSeries R) (PowerSeries R)
+instead of
+  {R : Type u_1} → [CommSemiring R] → PowerSeries R → PowerSeries R
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IterateDerivativeFunMulSubstLeibniz.lean:31:14: `PowerSeries.derivativeFun` has been deprecated: Use `PowerSeries.derivative` instead
+
+Note: The updated constant has a different type:
+  {R : Type u_1} → [inst : CommSemiring R] → Derivation R (PowerSeries R) (PowerSeries R)
+instead of
+  {R : Type u_1} → [CommSemiring R] → PowerSeries R → PowerSeries R
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IterateDerivativeFunMulSubstLeibniz.lean:35:7: `PowerSeries.derivativeFun` has been deprecated: Use `PowerSeries.derivative` instead
+
+Note: The updated constant has a different type:
+  {R : Type u_1} → [inst : CommSemiring R] → Derivation R (PowerSeries R) (PowerSeries R)
+instead of
+  {R : Type u_1} → [CommSemiring R] → PowerSeries R → PowerSeries R
+⚠ [18252/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.LSeriesSummableBoundedMulOfSummableNormSq (7.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/LSeriesSummableBoundedMulOfSummableNormSq.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18253/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.JetRelOfWeierstrassSystem (7.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/JetRelOfWeierstrassSystem.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18254/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.LaurentFiniteOfTriangularSignedIndicators (7.0s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/LaurentFiniteOfTriangularSignedIndicators.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/LaurentFiniteOfTriangularSignedIndicators.lean:124:37: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+⚠ [18255/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsLeftCoactionIffIsCoactionComm (8.0s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsLeftCoactionIffIsCoactionComm.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18256/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsogenyNumeratorCoeffNormLeOne (8.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsogenyNumeratorCoeffNormLeOne.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18257/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsIntegrallyClosedInFractionFieldPowerSeries (8.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsIntegrallyClosedInFractionFieldPowerSeries.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsIntegrallyClosedInFractionFieldPowerSeries.lean:172:10: `AlgHom.coe_ringHom_injective` has been deprecated: Use `AlgHom.toRingHom_injective` instead
+
+Hint: Replace the deprecated name:
+  A̵l̵g̵H̵o̵m̵.̵c̵o̵e̵_̵r̵i̵n̵g̵H̵o̵m̵_̵i̵n̵j̵e̵c̵t̵i̵v̵e̵A̲l̲g̲H̲o̲m̲.̲t̲o̲R̲i̲n̲g̲H̲o̲m̲_̲i̲n̲j̲e̲c̲t̲i̲v̲e̲
+Build completed successfully (18257 jobs).
+exit_code = 0
+elapsed_seconds = 12
+
+M062937 M062970 M062971 M062972 M063010 M063019 M063021 M063023 
+$ lake build +Development.AbelianVarietyTheory.Proofs.FoundationProofs.LaurentSeriesEqSumSingleMulPow:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.LinearIndependentOfDetMemNonZeroDivisors:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.LinearIndependentOfJointEigenvectors:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.LinearIndependentVecMulOfSpanRat:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.LogFactorialPowMulFactorialPowLe:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.LseriesShiftTwist:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.LseriesSquaresEq:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.LseriesSummableTwistPowOfSqSummable:olean 
+⚠ [18250/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.LinearIndependentOfJointEigenvectors (7.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/LinearIndependentOfJointEigenvectors.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18251/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.LseriesSquaresEq (7.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/LseriesSquaresEq.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/LseriesSquaresEq.lean:14:26: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/LseriesSquaresEq.lean:40:12: `mul_le_one₀` has been deprecated: No replacement, use constituent lemmas from proof.
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/LseriesSquaresEq.lean:40:25: `mul_le_one₀` has been deprecated: No replacement, use constituent lemmas from proof.
+⚠ [18252/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.LinearIndependentOfDetMemNonZeroDivisors (7.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/LinearIndependentOfDetMemNonZeroDivisors.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18253/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.LinearIndependentVecMulOfSpanRat (7.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/LinearIndependentVecMulOfSpanRat.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18254/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.LaurentSeriesEqSumSingleMulPow (7.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/LaurentSeriesEqSumSingleMulPow.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/LaurentSeriesEqSumSingleMulPow.lean:23:23: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+info: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/LaurentSeriesEqSumSingleMulPow.lean:62:4: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+⚠ [18255/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.LogFactorialPowMulFactorialPowLe (7.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/LogFactorialPowMulFactorialPowLe.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18256/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.LseriesSummableTwistPowOfSqSummable (8.0s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/LseriesSummableTwistPowOfSqSummable.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18257/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.LseriesShiftTwist (41s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/LseriesShiftTwist.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18257 jobs).
+exit_code = 0
+elapsed_seconds = 45
+
+M063032 M063060 M063083 M063095 M063099 M063176 M063198 M063220 
+$ lake build +Development.AbelianVarietyTheory.Proofs.FoundationProofs.MatrixInvEntriesBounded:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemAdjoinDivOfFixed:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemMaximalPowOfJetsVanish:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemOfSumMulPowMemOfValuationZpow:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemSpanEigenOfBaseChangeEigen:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.MonicFactorCoeffNatDegreeLe:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.MvPowerSeriesThreeEqZeroOfSubstLines:olean +Development.AbelianVarietyTheory.Proofs.FoundationProofs.NewtonPowerSeriesSurjectiveLinearizationSolution:olean 
+⚠ [18250/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.MatrixInvEntriesBounded (7.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/MatrixInvEntriesBounded.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/MatrixInvEntriesBounded.lean:9:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/MatrixInvEntriesBounded.lean:10:29: `FiniteDimensional.complete` has been deprecated: Use `FiniteDimensional.completeSpace` instead
+
+Hint: Replace the deprecated name:
+  FiniteDimensional.completeS̲p̲a̲c̲e̲
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/MatrixInvEntriesBounded.lean:10:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [18251/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.MonicFactorCoeffNatDegreeLe (7.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/MonicFactorCoeffNatDegreeLe.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18252/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.MvPowerSeriesThreeEqZeroOfSubstLines (7.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/MvPowerSeriesThreeEqZeroOfSubstLines.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/MvPowerSeriesThreeEqZeroOfSubstLines.lean:46:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/MvPowerSeriesThreeEqZeroOfSubstLines.lean:51:23: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/MvPowerSeriesThreeEqZeroOfSubstLines.lean:54:16: `MvPolynomial.coeff_zero` has been deprecated: Use `AddMonoidAlgebra.coeff_zero` instead
+
+Note: The updated constant has a different type:
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R], AddMonoidAlgebra.coeff 0 = 0
+instead of
+  ∀ {R : Type u} {σ : Type u_1} [inst : CommSemiring R], AddMonoidAlgebra.coeff 0 = 0
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coeff_zero` to `AddMonoidAlgebra.coeff_zero x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/MvPowerSeriesThreeEqZeroOfSubstLines.lean:55:43: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/MvPowerSeriesThreeEqZeroOfSubstLines.lean:55:24: This simp argument is unused:
+  Finset.sum_ite_eq
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [P, MvPolynomial.coeff_zero, MvPolynomial.coeff_sum, MvPolynomial.coeff_monomial,
+    Finset.sum_ite_eq', if_pos ((hS d).2 rfl)] at hd
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [18253/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemAdjoinDivOfFixed (7.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/MemAdjoinDivOfFixed.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/MemAdjoinDivOfFixed.lean:13:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/MemAdjoinDivOfFixed.lean:30:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/MemAdjoinDivOfFixed.lean:31:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/MemAdjoinDivOfFixed.lean:32:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [18254/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemOfSumMulPowMemOfValuationZpow (7.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/MemOfSumMulPowMemOfValuationZpow.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/MemOfSumMulPowMemOfValuationZpow.lean:13:37: `zero_le'` has been deprecated: Use `zero_le` instead
+
+Hint: Replace the deprecated name:
+  zero_le'̵
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/MemOfSumMulPowMemOfValuationZpow.lean:40:22: `zero_le'` has been deprecated: Use `zero_le` instead
+
+Hint: Replace the deprecated name:
+  zero_le'̵
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/MemOfSumMulPowMemOfValuationZpow.lean:59:39: `zero_le'` has been deprecated: Use `zero_le` instead
+
+Hint: Replace the deprecated name:
+  zero_le'̵
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/MemOfSumMulPowMemOfValuationZpow.lean:63:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [18255/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.NewtonPowerSeriesSurjectiveLinearizationSolution (7.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/NewtonPowerSeriesSurjectiveLinearizationSolution.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/NewtonPowerSeriesSurjectiveLinearizationSolution.lean:56:20: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/NewtonPowerSeriesSurjectiveLinearizationSolution.lean:71:19: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+⚠ [18256/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemMaximalPowOfJetsVanish (7.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/MemMaximalPowOfJetsVanish.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18257/18257] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemSpanEigenOfBaseChangeEigen (8.3s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/MemSpanEigenOfBaseChangeEigen.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/MemSpanEigenOfBaseChangeEigen.lean:21:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/MemSpanEigenOfBaseChangeEigen.lean:22:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/MemSpanEigenOfBaseChangeEigen.lean:23:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/MemSpanEigenOfBaseChangeEigen.lean:25:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/MemSpanEigenOfBaseChangeEigen.lean:26:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/MemSpanEigenOfBaseChangeEigen.lean:41:22: `TensorProduct.induction_on` has been deprecated: Use `TensorProduct.inductionOn` instead
+
+Note: The updated constant has a different type:
+  ∀ {R : Type u_1} [inst : CommSemiring R] {M : Type u_5} {N : Type u_6} [inst_1 : AddCommMonoid M]
+    [inst_2 : AddCommMonoid N] [inst_3 : Module R M] [inst_4 : Module R N] {motive : M ⊗[R] N → Prop} (z : M ⊗[R] N),
+    (∀ (x : M) (y : N), motive (x ⊗ₜ[R] y)) → (∀ (x y : M ⊗[R] N), motive x → motive y → motive (x + y)) → motive z
+instead of
+  ∀ {R : Type u_1} [inst : CommSemiring R] {M : Type u_5} {N : Type u_6} [inst_1 : AddCommMonoid M]
+    [inst_2 : AddCommMonoid N] [inst_3 : Module R M] [inst_4 : Module R N] {motive : M ⊗[R] N → Prop} (z : M ⊗[R] N),
+    motive 0 →
+      (∀ (x : M) (y : N), motive (x ⊗ₜ[R] y)) → (∀ (x y : M ⊗[R] N), motive x → motive y → motive (x + y)) → motive z
+Build completed successfully (18257 jobs).
+exit_code = 0
+elapsed_seconds = 11
+
+## Compiled objects
+M061758 8e0bdc1cb6ee2682e6275909bfe16ad4c46d6bd978967b28030ca1885837b9c4 Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIntegralPolyOfPrimitiveRootTotallyRamified.olean
+M061774 b18e7dfb3ece37596a7679387c82c56d5be52404f9d366baaeb5f75710d94414 Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIsDiscreteValuationRingOfMaximalIdealEqSpa.olean
+M061834 61ec644c8a07e0708ab5115630f141ce1007bc9d8bb6b90bee5c81fed963d744 Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsLowDegreeCoordsModMul.olean
+M061843 0979d944fea1ea2d77bd44ee0caf385b290bca347b01eb8f1b222ea3fe783241 Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsMemPowSubMemPowSucc.olean
+M061858 86e689b7408ccc3635811ebb2eb018915fc57620c561474bdd785ee4e66512c7 Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsMulOfDetZero.olean
+M061865 f5cc78fc3920d4d28283600cb00459901873e770be74a77e35eb45b5ebef3830 Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsNatCoeffsDetSumSmulNeZero.olean
+M061875 644319a886da12f361fe532d31ed667e5599e182aeea2ad84d8a0a49209a664d Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsNormForm.olean
+M061926 e61ac124a59563541ab54e90f84410eef331038732e022e281545339feaa3c8c Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsPosFiniteDensityOfAlmostTranslationInvaria.olean
+M061929 abae0d6d301fc6a7b66a512cb2be882e44f64f3920186e138da04521ad0b7d4f Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsPowSmulMemRangeOfSurjectiveBaseChange.olean
+M061930 3b180cd9ea0dcb9b57247647c80f2b47d8b8dfe460451b921a4acdef3374029a Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsPowSubOneNormLtOne.olean
+M061933 7cd022b4b238f1b3ca7a73c0ff53054609b16e13d57e7bd97c93c09083c8e901 Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsPrimeDvdMem.olean
+M061934 3555c89ae67b83bf0ce002f19925e5b6feafea3e4f208809891c57721da268da Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsPrimeNatCastMem.olean
+M061962 f3e89a99c1130ced833b0fae8851c96728b0ad0381268d5ff91d392c31d19537 Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsRelationGradient.olean
+M061967 8e71ab3fa304fd69a085b590b6f094ff13c2dddadd7b698a067a50148baad889 Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsRepresentativesQuotientRangeMulVecLin.olean
+M061995 9dd95bf6ed4cf73dc3869cd13aac4c1c8fbdd8ecd977b9cf361d456928a03bba Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsSpectralValuationAlgebraicExtension.olean
+M062046 f3b67bbcf14c111120e6c5101aea9e4b1b612f7feaa6e1c4da08bd8abbb0a1fd Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsUniqueAlgEquivOfCompatibleQuotient.olean
+M062055 14d91f8898a78916e5b3ce536c316040211d8f76e604d8e04e1ffe767cd3cd06 Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsUnitAlgebraMapEqOfValuationEqOne.olean
+M062061 085537b477d33f76dd6add434658fee9afc322a61b89ac4afc093e4e404521a5 Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsUnitNormOfSelfDualHermitianLattice.olean
+M062115 2141c72c950f2bfc5c34067de9366606b1b1ced03e7b75513c3bc5710a617797 Development.AbelianVarietyTheory.Proofs.FoundationProofs.FiniteDimensionalFixedFieldMapOfFiniteIndex.olean
+M062129 7f74be088cb8045553e0f9e39c13836121f19c5bad121997fa48104fb2f88f45 Development.AbelianVarietyTheory.Proofs.FoundationProofs.FiniteIndexOfGammaLe.olean
+M062134 305d6bd48dd0322b955640a16ce80d1007ec4000dbcaec005a985e8a31fa90ea Development.AbelianVarietyTheory.Proofs.FoundationProofs.FiniteMaximalSpectrumOfFiniteOfIsLocalRing.olean
+M062135 81b2ee6124609cddfb79cbb0538945e4f8c5998a39374027c9b1c38f7929a429 Development.AbelianVarietyTheory.Proofs.FoundationProofs.FiniteOfIsClosedTorusZariskiOfPowEqOne.olean
+M062137 45bb5f812cf3819abe25df6d1bf02b77762219c9e634312071288fd501af3652 Development.AbelianVarietyTheory.Proofs.FoundationProofs.FiniteQuotientComap.olean
+M062162 877635b3fd7b9c84959c44f824b99049b63b333830ee0e84bc83b9cff642ed69 Development.AbelianVarietyTheory.Proofs.FoundationProofs.FirstOrderRigid.olean
+M062219 6f31c5cd53b5a126598b2c33692c3389be390b0b1cf6138dfca0a58e59dc8666 Development.AbelianVarietyTheory.Proofs.FoundationProofs.FromBlocksMulInv.olean
+M062284 1787cbd5f9384372e50d34231a3560bdb02063420cd8c468c57e66115ebc54ad Development.AbelianVarietyTheory.Proofs.FoundationProofs.GaussPowFourHom.olean
+M062293 c53bb0709348a3b61166b641654f5cef10f2e3ce02c4f54d1f5dc7f19dfe0c0f Development.AbelianVarietyTheory.Proofs.FoundationProofs.GeNatCastIff.olean
+M062337 8a2d850b085705aa4d70b24582dd82543bbe4b97f52c3256c19d465652f1639d Development.AbelianVarietyTheory.Proofs.FoundationProofs.GramDetIndexSublattice.olean
+M062385 259990fa44b4a3d20eb7595fa95c1dd7c23e3ada7bc0d044432173ba7f469c0f Development.AbelianVarietyTheory.Proofs.FoundationProofs.HasDerivAtDetOfOne.olean
+M062516 985e187d8b536d7c8b00def0b21b863bd12c88320ed413d80cf9b2c83f0ad838 Development.AbelianVarietyTheory.Proofs.FoundationProofs.HermitianLatticeNormOneOfNormOneModPrime.olean
+M062536 0c618a8d2e2c14fb6ae4eda7599fcf33a8e7d9d34bf60c9b336094b3cd24daa7 Development.AbelianVarietyTheory.Proofs.FoundationProofs.IdealEqComap.olean
+M062549 8254254312adbfdec36a2e1010e497befd3f246b5bd1bd8d955ed09a08c0a56c Development.AbelianVarietyTheory.Proofs.FoundationProofs.Imports.olean
+M062550 f9832f96f10147d1fe0bf0a814bac5450f1be644b6afdbaf4c9812dc0d9ece76 Development.AbelianVarietyTheory.Proofs.FoundationProofs.ImportsAlt.olean
+M062551 76db9bb31753d580a2b37c75abbd664b8caca601ad0a6470f4293ab418cfd966 Development.AbelianVarietyTheory.Proofs.FoundationProofs.ImportsBis.olean
+M062553 b34a3ec5091553a42d1813a02fc11464d8b5689bbce742928535a4754f8a018e Development.AbelianVarietyTheory.Proofs.FoundationProofs.ImportsFurther.olean
+M062554 094c13ce324fc376b1cc3df0271f12a11653f9e29e531a1f964012273da3ec5f Development.AbelianVarietyTheory.Proofs.FoundationProofs.ImportsMore.olean
+M062555 6509a7b4faf018d9e676be96711041750dc06b99b58385d6ab26dd20c721e41e Development.AbelianVarietyTheory.Proofs.FoundationProofs.ImportsTer.olean
+M062599 fd6b1394c6f1ae6771774e848f3b252f11b7b059b2a120d51f1853d7795f442b Development.AbelianVarietyTheory.Proofs.FoundationProofs.IntegrableOnVerticalRayNormIntegralLe.olean
+M062701 f03c17729256255645fe58f20a4e94447a5ea79d6cb06e062be56f092af40ec2 Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsFieldAndPthRootsOfLocalAlgFrobeniusFixed.olean
+M062705 dd50221af669ee512e78ba340a8f1ec83a7c61e27ab154b50f8df3ba053b589e Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsHeisTrivial.olean
+M062716 c5ddb54e78128a33aca4063f0985fa1a8d42da2c2c0884d3b608052c5d7ea632 Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsIntegrallyClosedInFractionFieldPowerSeries.olean
+M062731 c6fcc5e744caaabf96d2bc2af7b68b25241b453364561946edc5036ca44ab01b Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsLeftCoactionIffIsCoactionComm.olean
+M062798 efb4b6bcaa6d591e6bb7f194ab6d75bae32b0126faba0edf562e336429f94238 Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsogenyNumeratorCoeffNormLeOne.olean
+M062800 8f306e755b4309fb6da93c61c433facd016d4ed5521e510e74073c136f40c492 Development.AbelianVarietyTheory.Proofs.FoundationProofs.IterateDerivativeFunMulSubstLeibniz.olean
+M062816 2a5719f43f22055705e92f686379e127a42269d679d1eadf74cbfba8c47400c9 Development.AbelianVarietyTheory.Proofs.FoundationProofs.JetRelOfWeierstrassSystem.olean
+M062817 03d916b695f6fd961ffb68e8ef42737b563f13af70aaa545a12169b8773007dd Development.AbelianVarietyTheory.Proofs.FoundationProofs.JetsMemSubalgebraOfFiniteTypeAlgebra.olean
+M062908 96e386b4add4af76874367ce81ef3faa4ca888e690d124698173f03f964d397f Development.AbelianVarietyTheory.Proofs.FoundationProofs.LSeriesSummableBoundedMulOfSummableNormSq.olean
+M062933 87e9ddbade83b057540c19f4141649e1e094cd55871536c00dd73307b20ab8a9 Development.AbelianVarietyTheory.Proofs.FoundationProofs.LaurentFiniteOfTriangularSignedIndicators.olean
+M062937 0a45fc77a094a61945b31e3dc570c19447ca53217039f0565fb7901b1f620e66 Development.AbelianVarietyTheory.Proofs.FoundationProofs.LaurentSeriesEqSumSingleMulPow.olean
+M062970 02313904911721914d998ebc960e93f368c91069e9013cd219a1ed249c7d6f45 Development.AbelianVarietyTheory.Proofs.FoundationProofs.LinearIndependentOfDetMemNonZeroDivisors.olean
+M062971 dd8348a7f127ff434d8ace7c75e654710f2af165f6eae1841a70fc29dce18766 Development.AbelianVarietyTheory.Proofs.FoundationProofs.LinearIndependentOfJointEigenvectors.olean
+M062972 c45135e4c207052da62233cbda2566cc5b2ca4ac663a05bac38d65bf9f3aa0b4 Development.AbelianVarietyTheory.Proofs.FoundationProofs.LinearIndependentVecMulOfSpanRat.olean
+M063010 6fb11d3a1706f5e964683b663b5b0456ae6fa74df5c83e60364462fd0305dd2a Development.AbelianVarietyTheory.Proofs.FoundationProofs.LogFactorialPowMulFactorialPowLe.olean
+M063019 be0200ee6cdcf00f1677f93871852ef9b3bd5e1bbb957d62a9935d939a7bc9c5 Development.AbelianVarietyTheory.Proofs.FoundationProofs.LseriesShiftTwist.olean
+M063021 fd436eb99f417a525ebec8478dae812ca2f813711ae84f42dfd8b50a907f9b91 Development.AbelianVarietyTheory.Proofs.FoundationProofs.LseriesSquaresEq.olean
+M063023 7f17f7090b2ffd1c8c8e7b20f0fbb2c23e589a27515c7eb3dbfc170571be899c Development.AbelianVarietyTheory.Proofs.FoundationProofs.LseriesSummableTwistPowOfSqSummable.olean
+M063032 aed9b7fc4eed100db45e8849c8e6482c1660ac04a2edc1c643a38b686759ab36 Development.AbelianVarietyTheory.Proofs.FoundationProofs.MatrixInvEntriesBounded.olean
+M063060 556c8cac11c1f1cae5edb056da6e1294b23c5de22c398b3357231a2ff6885413 Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemAdjoinDivOfFixed.olean
+M063083 2cd306737456e418175e60f940b2f5c18e930915e3917a86b0b6c5cc7e5cbd0a Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemMaximalPowOfJetsVanish.olean
+M063095 42dae9dd23e1f127df4a85b01f26f68ca61accefb0f6acee426fa3c21a0cd1cd Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemOfSumMulPowMemOfValuationZpow.olean
+M063099 a0cf26b3159045a83bfb03e656b3166f5038847ba9cd18c0e43035de441c2d27 Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemSpanEigenOfBaseChangeEigen.olean
+M063176 085a2e43082ef13e8a67bb5ca620a305b3c03cb6362609f598edb5796241cc2b Development.AbelianVarietyTheory.Proofs.FoundationProofs.MonicFactorCoeffNatDegreeLe.olean
+M063198 2d349e87852f67b1a0d5cd6ff04c6883d9b8496a91134b9ad52556cfbd7eac15 Development.AbelianVarietyTheory.Proofs.FoundationProofs.MvPowerSeriesThreeEqZeroOfSubstLines.olean
+M063220 5463da57b0846c09b579f2e2d44cffdab0785867d84747ca1a0f5d4b30bbf24e Development.AbelianVarietyTheory.Proofs.FoundationProofs.NewtonPowerSeriesSurjectiveLinearizationSolution.olean
+
+overall: SUCCESS
