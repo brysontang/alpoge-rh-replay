@@ -1,0 +1,954 @@
+# P0024 port build transcript
+date: 2026-11-21T14:59:05Z
+host: Darwin 27.2.0 arm64
+lean-toolchain: leanprover/lean4:v4.36.0
+lean --version: Lean (version 4.36.0, arm64-apple-darwin24.6.0, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+port/target.json: {"lean":"leanprover/lean4:v4.36.0","mathlib":"fc4f59e577feb1a4956671bc04ac18aaaf8cd842","mathlib_note":"Mathlib'sreleasetagv4.36.0(matchesLeanv4.36.0).Approvedbythemaintainer2026-11-21.","replay_pins_unchanged":{"lean":"leanprover/lean4:v4.33.1","mathlib":"0df444a360eaa60ab8c11dca51a86af692955474"}}
+replay repo commit the patches were cut against: 36dd90ff992fca0cd2938b3a3f224360c9a95124
+
+## Sources: pinned archive files (SHA-256 checked against tracker/modules.jsonl.gz), then port/patches applied
+M056635 unchanged pinned=fbff4e7b2451a865462d0f9e1151206653d4e29d1b31fb6aef89c5da951e68cb Development.AbelianVarietyTheory.Proofs.FlagMeasures.AbsSubLeExpNegSixteenthMul
+M056685 unchanged pinned=2161403787d4c7f9ea1107ba226d4948163acd106ba0b0ab6c6ffec2fb4d2338 Development.AbelianVarietyTheory.Proofs.FlagMeasures.AeEqOfDenseOfLocalSqBound
+M056687 patched   pinned=04bea701cd5606c64bfd2e895156154a632d88078892c99a0d1e9ac6f6b58ca2 built=23ee63bbae97a5d6dd30b5783fdf2b7ad05985186c05701e838b1d4bfbd26c8e Development.AbelianVarietyTheory.Proofs.FlagMeasures.AestronglyMeasurableCompRep
+M056978 unchanged pinned=add281443b9faedb03b63fa239f47b610b2b39a3e65d61cdc75d2ebf05be809f Development.AbelianVarietyTheory.Proofs.FlagMeasures.CardQuotPow
+M056993 unchanged pinned=6f9960aae3987de6ba1dead49de8e22f8571f726f96ce6339da415c3f4a97fa4 Development.AbelianVarietyTheory.Proofs.FlagMeasures.CauchySchwarz
+M057044 unchanged pinned=1bc127b5efa6b75e9c8fd664ed599cdc2cfd01b41e62d7017f066b347bdb211b Development.AbelianVarietyTheory.Proofs.FlagMeasures.CoeFnSumSmulAeEq
+M057045 patched   pinned=6863489186401825e0895974f85b1a818dc6672c1e97d0decb79e51d8c97f152 built=2193904c83e7ea5e8f1ab29ebf2d6db2e645526ee234c3245dbdb0e81462b1e4 Development.AbelianVarietyTheory.Proofs.FlagMeasures.CoeSmulMem
+M057235 unchanged pinned=172f9660eb4d9df5e7dccc9f7d1749d53ff9daba1dcac220afa4f8e5421e889c Development.AbelianVarietyTheory.Proofs.FlagMeasures.DecayOfMemSpan
+M057242 unchanged pinned=b345fc9429f95893e60c43a7404f8620de7b86a82f7c18faba5d111b529ca510 Development.AbelianVarietyTheory.Proofs.FlagMeasures.DeepRegionExponents
+M057295 unchanged pinned=25348b7e8910abd812bb3a6ad8a7e506af20bd0962243fa2a1b7104b9c376c38 Development.AbelianVarietyTheory.Proofs.FlagMeasures.DetUpdateRowLastSingle
+M057304 unchanged pinned=551215b7e1a9ed106156dcc6a1964e0163ac8b619317a3f10f4d9b28d031f662 Development.AbelianVarietyTheory.Proofs.FlagMeasures.DifferentSmulMemOfTraceIntegral
+M057323 patched   pinned=628477c588bb095a14224093b8f6fa9ca3635594e8c2870ba3d998850c63057b built=3831d0faa4519c3416f043eb2414dac2249697c390c750e3e74c92061fc07850 Development.AbelianVarietyTheory.Proofs.FlagMeasures.DiscreteSubgroupCountableAndExistsStrictFundamen
+M057466 unchanged pinned=00382e9db807be3bcb5bca698f66133f72f3dece61c4423605b91bc83edb5b20 Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsConsecutiveRatioLeRpow
+M057575 patched   pinned=c693bc12ce6ef0900ee582f9a7c3ddbfc568090e4310d899958a6d1b0b68ca28 built=5bb51067e6b0d761100f053e4f624094ecdcc4dcc1a1694438b1bb2f41dc174f Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsHaarMapProdEq
+M057590 patched   pinned=5a99e72b5e90d107c0bd0eb9af25e974e92f3e7c99cd30a5511a7773964d1384 built=8b15ae1934b71ec2183c9d6bb60b5904e2ac3f77a9ade68faab8e2a2619ec62b Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsIntSmulEqInteger
+M057591 unchanged pinned=2687ff566dbcab0a2954e0bf003c109106f2f08d4f12e5484b2f70bb6df6ae51 Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsIntSmulIsIntegral
+M057592 unchanged pinned=66eb0f834747b756b74fb395bc9a98fd00f40f0e33ffc822923f416b27dad219 Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsIntSmulLe
+M057593 patched   pinned=5f70fe03ec7dd58437f9210c87189ec57888069756a0ab47269eeb12c17a4e9b built=9ae8104444d73f3c255b9c3317c1c2b00b6dbd32e0e42bcc63eb181b0978f2b0 Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsIntSmulMemLattice
+M057594 unchanged pinned=78f3cf1b8149dfdc97e823d6467bdb416c83e9702d6711bafbbdad8a034215a8 Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsIntSubMemPow
+M057627 unchanged pinned=e5c350ca3a1f14f2227f0a3e96fd94f71c2d989317e0267068ed90f76787f578 Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsIsometricIntertwinerOfMatrixCoeffEq
+M057666 patched   pinned=c1e93c62bcd781c1678665c039683032bbd6fb1fa1a430e7f17865a19d56994d built=918e4386fab503f81d76db2942991008f8fa772de9c54b903ee95a2e18dabc53 Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsMapMulRightEqSmul
+M057675 unchanged pinned=d390f6e5b89ab6ccc951611cb24496276dd0a7ea4203d5c8159f40e6ac5b3a38 Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsMeasurableCosetSection
+M057679 unchanged pinned=40fe39cd7f490474a59d3f2ca80a36c9663c0d9295fded7530ab7bb9d3a947dc Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsMeasurableFundamentalDomain
+M057680 patched   pinned=c52316fbbc6d873f4aa73e1d58e1110032b90218d71ccfd0d90f59d385911d08 built=506c880414aa2a3d3600f4dce052d7842a8c31722dcd31968da7a07c2dc107fd Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsMeasurableLintegralCosetEqOneClosedSubgrou
+M057684 unchanged pinned=8b21afdbf7592cafe14ac2f7adf54d02f4c4ed6c0cf0249548509c6e5473664b Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsMemFractionalIdealGeneratorAtPrimesOver
+M057737 unchanged pinned=0ed5210fc20cba1ca3877d34189af9d398b659eba7a124f6bfe4a394ded5db66 Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsPowSmulMem
+M057757 unchanged pinned=42f9547b3ad918d4c0f7c303de59c90684788e958f31cc318a186149521d4d38 Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsRealSubmoduleBlockFinrankLe
+M057820 unchanged pinned=16ddb4c7eb6bc0419d4bf16b41b170b0df8aa1dabf022bd0e9bb8c5024de537c Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsSubmoduleSkewBlockFinrankLe
+M057837 unchanged pinned=3bebe867b3d27e070d17f6335bbf91e40009c175e8993c9f76edb66d2d6351ce Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsUnimodularLiftOfUnimodularMod
+M057871 unchanged pinned=d4392f2564827786be7346d75ae0452129fba0b808d5c236b12891ba6a2092bc Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsUnitaryMulVecEqOfFormEq
+M057888 unchanged pinned=be94ee496869d62ba722d624ddf5943af142ff9458902eab6042a31fe373da1e Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExpQuadraticLowerAndLogLinearLower
+M057892 unchanged pinned=b99ca0d5a874d6216dc68031a77a59f0d50d799ef583f20167f4d7a71373afc9 Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExponentDivisorSumLe
+M057897 patched   pinned=3b96e14a1e18c2647b4a859bdedfe430bef6a6c7636d28f4bef613c337f05436 built=57d4ea17d7f7f7ea417b8ae560ab0c8b6f8390ae55227c615db75de13fe3b6fa Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExtendAeLinearOfLocalSqBoundDense
+M057937 unchanged pinned=9b5bcae5966a19eee4bd16b5b3720c70ebcb43768ca9d971eda1d2f7a801434f Development.AbelianVarietyTheory.Proofs.FlagMeasures.FiniteAndNcardLeProdOfLevels
+M057959 unchanged pinned=54326589c5af452f083a583b1c9fdf7a402f7ecffcd6dcfabdaf535f7b6288f0 Development.AbelianVarietyTheory.Proofs.FlagMeasures.FinprodEqProdMulFinprodIte
+M058057 unchanged pinned=cd8c3c95959372ccc15dcc7fa84a154af44740528db2a63f2b0b5a1ba46b2383 Development.AbelianVarietyTheory.Proofs.FlagMeasures.FormallyUnramifiedRingOfIntegersIffDifferentIdea
+M058135 unchanged pinned=8beeea40d41cfa0dd67dec84a2d711a02fad099c09c0e09ce37a38e99f1661ec Development.AbelianVarietyTheory.Proofs.FlagMeasures.GapThresholdPaysFarTerms
+M058332 unchanged pinned=d42a10727811a56f97c4588b05f516cae888de808d2f0aa0833e090b1836144c Development.AbelianVarietyTheory.Proofs.FlagMeasures.HasFDerivAtOfContinuousPartials
+M058567 unchanged pinned=df9771ea11b15f3fef81a8dbfa79244b553bd713a0288e0333fcf8e4efe22d4e Development.AbelianVarietyTheory.Proofs.FlagMeasures.Imports
+M058568 unchanged pinned=1635dc5a8f5e081c2865aa004ec3270d78f2df130b0ee4c549625ee9e0f422b9 Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsBis
+M058569 patched   pinned=fe8c05b9672e90612274daef279940ac536916a658c19f92e2c8786f620d3006 built=3f0e274710e8ccff402b8e5709bd03e949754512f89656c7655523a8860db25f Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsBisBis
+M058570 unchanged pinned=130ee33d82da1691c4f6d21c8e031d6930c2fac44de0a8e27994dabca243c145 Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsBisExtra
+M058572 unchanged pinned=cca2f30495bfcfebe748e9b38dab132206dcbc9341dfb01007b1222b053d13c9 Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsBisMore
+M058574 patched   pinned=036614f8253ee5c0a85c8844c8325e1c7c30507768b93e53672e3b7d59db5920 built=8410e2a71520d78c3335750dc1546c784cfa1a43bb26654ed0504781c1759f2b Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsBisSide
+M058576 unchanged pinned=247aee9bb16e0e6cfd0887a0f686d0e519b119436a305511d02585cdbf0ded88 Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsBisTer
+M058577 unchanged pinned=879bb4139965fc8afd57aa1870849bf9cb5e70237f6a858a8b7cc2aaa4e929e2 Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsExtra
+M058578 unchanged pinned=ede14458a78bb9032de508ded39e0e44d6581cb419367d0c2a6bf53d8ec84cf4 Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsFurther
+M058579 patched   pinned=6e91b4b4be94e7af419a6b2a7f28d88a80d31c0cd0a176d71fe583fa537b2dd3 built=5db26fa1ab62ee157ba7532c169289fd548bc47d346feab3f54851227e3290bc Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsLast
+M058580 unchanged pinned=856b9fd60059b7f1db74928874da7c443225b1eba31479c0354dd8ff3cc1ddaa Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsMore
+M058581 patched   pinned=3183ebc279b26ac0d98e27c43243db698392f2c831351246b6c9263ddb917a92 built=ccf723b6903375824fbb0dbcbfb21d752d7518c39a04c4900516cee5858be685 Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsRest
+M058582 unchanged pinned=40897597ecdd5f41c227c0c935ae78a9e94aa7443ce3b6e856b33fe27d3b41a1 Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsSide
+M058583 unchanged pinned=2fb5609d72f52470a90f5c710d4cecb8ccdaeec1ada44800f3cb6dbc7310d3cf Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsTail
+M058584 unchanged pinned=063ccd6dcefbd5527a854588a4276042dabf324a06be14a07c0af72fed0e2bed Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsTer
+M058613 unchanged pinned=eba255323302c346737a70c453907521152a1eea7405b8ff4f585aa03ece01ff Development.AbelianVarietyTheory.Proofs.FlagMeasures.InnerAddInnerEqZeroSpan
+M058646 unchanged pinned=a09c39efbb78c5966299f8e3cfbca2422b0a4b38d71a96f65e2b243fbe53d863 Development.AbelianVarietyTheory.Proofs.FlagMeasures.IntegrableExpNegMulAbs
+M058647 patched   pinned=20f46cd54443f00a048807080ed27b94fddde48759feb75f8d7199c198b30019 built=62fa0d89ae217cff7838a2e9f6092af264d9133ac1d0cee0b81a43b257578fbe Development.AbelianVarietyTheory.Proofs.FlagMeasures.IntegrableExpNegMulOfSublevelGrowth
+M058666 patched   pinned=d9713e6f20377627a87e8544c84f450d8a7e8d6f1661a5d10a3971ebd1b05812 built=9daf162c72917431ab4bcda71fb0d08ee86da9b66591e7e73bca009aed8079ef Development.AbelianVarietyTheory.Proofs.FlagMeasures.IntegralNonnegOfSums
+M058695 unchanged pinned=b58e86a8bdf19f2c986567c861ba25d26866225b7f9c9ed52f9297fd75a58f9f Development.AbelianVarietyTheory.Proofs.FlagMeasures.IntegratedOperatorIsStarProjectionAndSandwich
+M058770 patched   pinned=fe5e6902ec9a766c7373d8f6a0c29c42a88a8f8bc275f5c7cfd8568b405476c1 built=cbd7096a65c902bbd6e1047b181992e7f3f0c0f9279fa17ccb65a2f5410dae93 Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsLatticeComapSubtype
+M058792 patched   pinned=b42b9d226199578111e92124ecb71d1b104672e20ffe6ca90474d3beb8214335 built=1b50947ecf30a26930627f83a9b9b9bdd4eb2e73f07dbd1625b3a3864042d402 Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsRadicalSpanPrimeOfNcardPrimesOverEqFinrank
+M058898 unchanged pinned=35f332a0ae114fb1bfd5b4d2e94f4ab19fc1ec4bb9470d21404eef0f1d820df5 Development.AbelianVarietyTheory.Proofs.FlagMeasures.IwasawaSliceIndicatorLintegralLe
+M059031 unchanged pinned=292d2d4e2e92286516357eb5a7d5b9b74d6480372484c355790d0c2b98dd11c0 Development.AbelianVarietyTheory.Proofs.FlagMeasures.LintegralBoundByDyadicSummation
+M059107 unchanged pinned=1d9c3571b054fca0d065342e913a33da273b3a9c67b4c960d7b1ee9bfd316d0b Development.AbelianVarietyTheory.Proofs.FlagMeasures.LocalGen
+M059217 unchanged pinned=eb6f9975fc4d8de3ee395d93a2834540c307df6aa6390dbf757b072e4c4b3694 Development.AbelianVarietyTheory.Proofs.FlagMeasures.MainTheorem
+
+## lake build
+M056635 M056685 M056687 M056978 M056993 M057044 M057045 M057235 
+$ lake build +Development.AbelianVarietyTheory.Proofs.FlagMeasures.AbsSubLeExpNegSixteenthMul:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.AeEqOfDenseOfLocalSqBound:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.AestronglyMeasurableCompRep:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.CardQuotPow:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.CauchySchwarz:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.CoeFnSumSmulAeEq:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.CoeSmulMem:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.DecayOfMemSpan:olean 
+⚠ [18250/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.DecayOfMemSpan (20s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/DecayOfMemSpan.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18251/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.CardQuotPow (20s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/CardQuotPow.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18252/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.CoeFnSumSmulAeEq (20s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/CoeFnSumSmulAeEq.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18253/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.CoeSmulMem (20s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/CoeSmulMem.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/CoeSmulMem.lean:21:29: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/CoeSmulMem.lean:34:8: Unused tactic linter: `push_cast` does not change the goal.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [18254/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.CauchySchwarz (21s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/CauchySchwarz.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/CauchySchwarz.lean:35:27: This simp argument is unused:
+  RingHom.map_neg
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Complex.add_re, Complex.mul_re, Complex.mul_im, Complex.conj_re, Complex.conj_im, Complex.neg_re,
+    Complex.neg_im, Complex.ofReal_re, Complex.ofReal_im, map_mul, map_neg, Complex.conj_ofReal, Complex.conj_conj,
+    ← hb, Complex.add_im, mul_zero, sub_zero, neg_zero, zero_mul, add_zero] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/CauchySchwarz.lean:35:85: This simp argument is unused:
+  mul_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Complex.add_re, Complex.mul_re, Complex.mul_im, Complex.conj_re, Complex.conj_im, Complex.neg_re,
+    Complex.neg_im, Complex.ofReal_re, Complex.ofReal_im, map_mul, map_neg, Complex.conj_ofReal, RingHom.map_neg,
+    Complex.conj_conj, ← hb, Complex.add_im, sub_zero, neg_zero, zero_mul, add_zero] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/CauchySchwarz.lean:51:65: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/CauchySchwarz.lean:51:89: Variable name `inst_1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [18255/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.AestronglyMeasurableCompRep (21s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/AestronglyMeasurableCompRep.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/AestronglyMeasurableCompRep.lean:40:0: automatically included section variable(s) unused in theorem `GlobalTheory.RightRegFund.ae_good`:
+  [TopologicalSpace G]
+  [IsTopologicalGroup G]
+  [BorelSpace G]
+  [μ.IsMulLeftInvariant]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [TopologicalSpace G] [IsTopologicalGroup G] [BorelSpace G] [μ.IsMulLeftInvariant] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/AestronglyMeasurableCompRep.lean:96:20: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/AestronglyMeasurableCompRep.lean:96:30: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/AestronglyMeasurableCompRep.lean:97:20: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/AestronglyMeasurableCompRep.lean:97:30: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/AestronglyMeasurableCompRep.lean:108:24: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/AestronglyMeasurableCompRep.lean:113:22: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/AestronglyMeasurableCompRep.lean:117:0: automatically included section variable(s) unused in theorem `GlobalTheory.RightRegFund.map_one`:
+  [μ.IsMulRightInvariant]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [μ.IsMulRightInvariant] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/AestronglyMeasurableCompRep.lean:135:10: `ContinuousLinearMap.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵m̵u̵l̵_̵a̵p̵p̵l̵y̵m̲u̲l̲_̲a̲p̲p̲l̲y̲_̲e̲q̲_̲c̲o̲m̲p̲
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/AestronglyMeasurableCompRep.lean:142:4: `MeasureTheory.eLpNorm_eq_lintegral_rpow_enorm_toReal` has been deprecated: Use `MeasureTheory.eLpNorm_eq_lintegral_rpow_eNorm_toReal` instead
+
+Hint: Replace the deprecated name:
+  eLpNorm_eq_lintegral_rpow_en̵N̲orm_toReal
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/AestronglyMeasurableCompRep.lean:144:4: `MeasureTheory.eLpNorm_eq_lintegral_rpow_enorm_toReal` has been deprecated: Use `MeasureTheory.eLpNorm_eq_lintegral_rpow_eNorm_toReal` instead
+
+Hint: Replace the deprecated name:
+  eLpNorm_eq_lintegral_rpow_en̵N̲orm_toReal
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/AestronglyMeasurableCompRep.lean:173:15: `MeasureTheory.eLpNorm_mono_enorm_ae` has been deprecated: Use `MeasureTheory.eLpNorm_mono_eNorm_ae` instead
+
+Hint: Replace the deprecated name:
+  eLpNorm_mono_en̵N̲orm_ae
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/AestronglyMeasurableCompRep.lean:217:66: `enorm_ne_top` has been deprecated: Use `eNorm_ne_top` instead
+
+Hint: Replace the deprecated name:
+  en̵N̲orm_ne_top
+⚠ [18256/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.AeEqOfDenseOfLocalSqBound (21s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/AeEqOfDenseOfLocalSqBound.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/AeEqOfDenseOfLocalSqBound.lean:23:33: `MeasureTheory.AEStronglyMeasurable.nnnorm` has been deprecated: Use `MeasureTheory.AEStronglyMeasurable.nnNorm` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/AeEqOfDenseOfLocalSqBound.lean:45:88: `nnnorm_sub_le` has been deprecated: Use `nnNorm_sub_le` instead
+
+Hint: Replace the deprecated name:
+  nnn̵N̲orm_sub_le
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/AeEqOfDenseOfLocalSqBound.lean:64:33: `MeasureTheory.AEStronglyMeasurable.nnnorm` has been deprecated: Use `MeasureTheory.AEStronglyMeasurable.nnNorm` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/AeEqOfDenseOfLocalSqBound.lean:71:53: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/AeEqOfDenseOfLocalSqBound.lean:71:53: Unused tactic linter: `exact hwδ` is never executed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [18257/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.AbsSubLeExpNegSixteenthMul (22s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/AbsSubLeExpNegSixteenthMul.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18257 jobs).
+exit_code = 0
+elapsed_seconds = 26
+
+M057242 M057295 M057304 M057323 M057466 M057575 M057590 M057591 
+$ lake build +Development.AbelianVarietyTheory.Proofs.FlagMeasures.DeepRegionExponents:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.DetUpdateRowLastSingle:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.DifferentSmulMemOfTraceIntegral:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.DiscreteSubgroupCountableAndExistsStrictFundamen:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsConsecutiveRatioLeRpow:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsHaarMapProdEq:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsIntSmulEqInteger:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsIntSmulIsIntegral:olean 
+⚠ [18250/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsHaarMapProdEq (7.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsHaarMapProdEq.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18251/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsIntSmulEqInteger (7.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsIntSmulEqInteger.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18252/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsIntSmulIsIntegral (7.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsIntSmulIsIntegral.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18253/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.DifferentSmulMemOfTraceIntegral (7.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/DifferentSmulMemOfTraceIntegral.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/DifferentSmulMemOfTraceIntegral.lean:66:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/DifferentSmulMemOfTraceIntegral.lean:67:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/DifferentSmulMemOfTraceIntegral.lean:68:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [18254/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.DiscreteSubgroupCountableAndExistsStrictFundamen (7.0s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/DiscreteSubgroupCountableAndExistsStrictFundamen.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18255/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.DetUpdateRowLastSingle (8.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/DetUpdateRowLastSingle.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/DetUpdateRowLastSingle.lean:27:63: This simp argument is unused:
+  Pi.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.updateRow_apply, hD, Matrix.diagonal_apply, hi, hj, eq_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/DetUpdateRowLastSingle.lean:33:63: This simp argument is unused:
+  Pi.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.updateRow_apply, hD, Matrix.diagonal_apply, hi, hj, eq_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/DetUpdateRowLastSingle.lean:39:63: This simp argument is unused:
+  Pi.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.updateRow_apply, hD, Matrix.diagonal_apply, hi, hj, eq_comm, Equiv.swap_apply_def]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/DetUpdateRowLastSingle.lean:27:101: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/DetUpdateRowLastSingle.lean:33:101: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/DetUpdateRowLastSingle.lean:40:34: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/DetUpdateRowLastSingle.lean:27:97: Unused tactic linter: `<;>` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/DetUpdateRowLastSingle.lean:27:101: Unused tactic linter: `grind` is never executed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/DetUpdateRowLastSingle.lean:33:97: Unused tactic linter: `<;>` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/DetUpdateRowLastSingle.lean:33:101: Unused tactic linter: `grind` is never executed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/DetUpdateRowLastSingle.lean:40:30: Unused tactic linter: `<;>` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/DetUpdateRowLastSingle.lean:40:34: Unused tactic linter: `grind` is never executed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [18256/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsConsecutiveRatioLeRpow (8.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsConsecutiveRatioLeRpow.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsConsecutiveRatioLeRpow.lean:37:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [18257/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.DeepRegionExponents (11s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/DeepRegionExponents.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18257 jobs).
+exit_code = 0
+elapsed_seconds = 15
+
+M057592 M057593 M057594 M057627 M057666 M057675 M057679 M057680 
+$ lake build +Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsIntSmulLe:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsIntSmulMemLattice:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsIntSubMemPow:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsIsometricIntertwinerOfMatrixCoeffEq:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsMapMulRightEqSmul:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsMeasurableCosetSection:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsMeasurableFundamentalDomain:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsMeasurableLintegralCosetEqOneClosedSubgrou:olean 
+⚠ [18250/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsIntSmulLe (7.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsIntSmulLe.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18251/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsIntSmulMemLattice (7.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsIntSmulMemLattice.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsIntSmulMemLattice.lean:39:63: This simp argument is unused:
+  Algebra.algebraMap_self
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Pi.smul_apply, Algebra.smul_def, map_intCast, RingHom.id_apply, Int.cast_mul, map_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsIntSmulMemLattice.lean:40:8: This simp argument is unused:
+  RingHom.id_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Pi.smul_apply, Algebra.smul_def, map_intCast, Algebra.algebraMap_self, Int.cast_mul, map_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [18252/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsIntSubMemPow (7.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsIntSubMemPow.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18253/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsMeasurableFundamentalDomain (7.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsMeasurableFundamentalDomain.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18254/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsMeasurableLintegralCosetEqOneClosedSubgrou (7.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsMeasurableLintegralCosetEqOneClosedSubgrou.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsMeasurableLintegralCosetEqOneClosedSubgrou.lean:86:35: `ENNReal.tsum_le_tsum` has been deprecated: Use `tsum_le_tsum` instead
+
+Note: The updated constant has a different type:
+  ∀ {ι : Type u_1} {α : Type u_3} [inst : AddCommMonoid α] [inst_1 : CompleteLattice α] [CanonicallyOrderedAdd α]
+    [inst_3 : TopologicalSpace α] [SupConvergenceClass α] {f g : ι → α} [IsOrderedAddMonoid α] [OrderClosedTopology α],
+    f ≤ g → ∑' (a : ι), f a ≤ ∑' (a : ι), g a
+instead of
+  ∀ {α : Type u_1} {f g : α → ℝ≥0∞}, (∀ (a : α), f a ≤ g a) → ∑' (a : α), f a ≤ ∑' (a : α), g a
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.tsum_le_tsum` to `tsum_le_tsum x`).
+⚠ [18255/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsMapMulRightEqSmul (7.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsMapMulRightEqSmul.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsMapMulRightEqSmul.lean:66:29: `MeasureTheory.Measure.coe_zero` has been deprecated: Use `FunLike.coe_zero` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_zero` to `FunLike.coe_zero x`).
+
+Hint: Replace the deprecated name:
+  M̵e̵a̵s̵u̵r̵e̵.̵c̵o̵e̵_̵z̵e̵r̵o̵F̲u̲n̲L̲i̲k̲e̲.̲c̲o̲e̲_̲z̲e̲r̲o̲
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsMapMulRightEqSmul.lean:82:15: `MeasureTheory.Measure.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+
+Hint: Replace the deprecated name:
+  M̵e̵a̵s̵u̵r̵e̵.̵s̵m̵u̵l̵_̵a̵p̵p̵l̵y̵s̲m̲u̲l̲_̲a̲p̲p̲l̲y̲
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsMapMulRightEqSmul.lean:82:15: `MeasureTheory.Measure.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+
+Hint: Replace the deprecated name:
+  M̵e̵a̵s̵u̵r̵e̵.̵s̵m̵u̵l̵_̵a̵p̵p̵l̵y̵s̲m̲u̲l̲_̲a̲p̲p̲l̲y̲
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsMapMulRightEqSmul.lean:18:17: Variable name `hT` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hT
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsMapMulRightEqSmul.lean:100:34: This simp argument is unused:
+  Set.indicator_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hx]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [18256/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsMeasurableCosetSection (7.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsMeasurableCosetSection.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18257/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsIsometricIntertwinerOfMatrixCoeffEq (7.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsIsometricIntertwinerOfMatrixCoeffEq.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18257 jobs).
+exit_code = 0
+elapsed_seconds = 12
+
+M057684 M057737 M057757 M057820 M057837 M057871 M057888 M057892 
+$ lake build +Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsMemFractionalIdealGeneratorAtPrimesOver:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsPowSmulMem:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsRealSubmoduleBlockFinrankLe:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsSubmoduleSkewBlockFinrankLe:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsUnimodularLiftOfUnimodularMod:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsUnitaryMulVecEqOfFormEq:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExpQuadraticLowerAndLogLinearLower:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExponentDivisorSumLe:olean 
+⚠ [18250/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsMemFractionalIdealGeneratorAtPrimesOver (7.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsMemFractionalIdealGeneratorAtPrimesOver.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsMemFractionalIdealGeneratorAtPrimesOver.lean:12:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsMemFractionalIdealGeneratorAtPrimesOver.lean:42:28: `SetLike.not_le_iff_exists` has been deprecated: Use `IsConcreteLE.not_le_iff_exists` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.not_le_iff_exists` to `IsConcreteLE.not_le_iff_exists x`).
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵L̵i̵k̵e̵.̵n̵o̵t̵_̵l̵e̵_̵i̵f̵f̵_̵e̵x̵i̵s̵t̵s̵I̲s̲C̲o̲n̲c̲r̲e̲t̲e̲L̲E̲.̲n̲o̲t̲_̲l̲e̲_̲i̲f̲f̲_̲e̲x̲i̲s̲t̲s̲
+⚠ [18251/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsPowSmulMem (7.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsPowSmulMem.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsPowSmulMem.lean:31:29: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsPowSmulMem.lean:31:60: Variable name `inst_1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsPowSmulMem.lean:31:86: Variable name `inst_2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [18252/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsUnimodularLiftOfUnimodularMod (7.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsUnimodularLiftOfUnimodularMod.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsUnimodularLiftOfUnimodularMod.lean:12:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsUnimodularLiftOfUnimodularMod.lean:14:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsUnimodularLiftOfUnimodularMod.lean:26:19: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsUnimodularLiftOfUnimodularMod.lean:33:19: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsUnimodularLiftOfUnimodularMod.lean:47:8: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [18253/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsUnitaryMulVecEqOfFormEq (7.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsUnitaryMulVecEqOfFormEq.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18254/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExpQuadraticLowerAndLogLinearLower (7.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExpQuadraticLowerAndLogLinearLower.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18255/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsSubmoduleSkewBlockFinrankLe (8.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsSubmoduleSkewBlockFinrankLe.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsSubmoduleSkewBlockFinrankLe.lean:16:15: `ContinuousLinearMap.add_apply` has been deprecated: Use `add_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `add_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵a̵d̵d̵_̵a̵p̵p̵l̵y̵a̲d̲d̲_̲a̲p̲p̲l̲y̲
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsSubmoduleSkewBlockFinrankLe.lean:50:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsSubmoduleSkewBlockFinrankLe.lean:67:45: `Submodule.orthogonalProjection` has been deprecated: Use `Submodule.orthogonalProjectionOnto` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsSubmoduleSkewBlockFinrankLe.lean:70:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsSubmoduleSkewBlockFinrankLe.lean:74:12: `Submodule.orthogonalProjection` has been deprecated: Use `Submodule.orthogonalProjectionOnto` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsSubmoduleSkewBlockFinrankLe.lean:78:6: `Submodule.inner_orthogonalProjection_eq_of_mem_left` has been deprecated: Use `Submodule.inner_orthogonalProjectionOnto_eq_of_mem_left` instead
+
+Hint: Replace the deprecated name:
+  Submodule.inner_orthogonalProjectionO̲n̲t̲o̲_eq_of_mem_left
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsSubmoduleSkewBlockFinrankLe.lean:79:6: `Submodule.inner_orthogonalProjection_eq_of_mem_right` has been deprecated: Use `Submodule.inner_orthogonalProjectionOnto_eq_of_mem_right` instead
+
+Hint: Replace the deprecated name:
+  Submodule.inner_orthogonalProjectionO̲n̲t̲o̲_eq_of_mem_right
+⚠ [18256/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsRealSubmoduleBlockFinrankLe (8.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsRealSubmoduleBlockFinrankLe.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsRealSubmoduleBlockFinrankLe.lean:15:46: `Submodule.orthogonalProjection` has been deprecated: Use `Submodule.orthogonalProjectionOnto` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExistsRealSubmoduleBlockFinrankLe.lean:18:46: `Submodule.orthogonalProjection` has been deprecated: Use `Submodule.orthogonalProjectionOnto` instead
+⚠ [18257/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExponentDivisorSumLe (9.0s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExponentDivisorSumLe.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExponentDivisorSumLe.lean:9:5: Variable name `hdG` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hdG
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Build completed successfully (18257 jobs).
+exit_code = 0
+elapsed_seconds = 12
+
+M057897 M057937 M057959 M058057 M058135 M058332 M058567 M058568 
+$ lake build +Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExtendAeLinearOfLocalSqBoundDense:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.FiniteAndNcardLeProdOfLevels:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.FinprodEqProdMulFinprodIte:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.FormallyUnramifiedRingOfIntegersIffDifferentIdea:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.GapThresholdPaysFarTerms:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.HasFDerivAtOfContinuousPartials:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.Imports:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsBis:olean 
+⚠ [18250/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.FinprodEqProdMulFinprodIte (7.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/FinprodEqProdMulFinprodIte.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18251/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.FormallyUnramifiedRingOfIntegersIffDifferentIdea (7.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/FormallyUnramifiedRingOfIntegersIffDifferentIdea.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18252/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.Imports (7.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/Imports.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/Imports.lean:32:33: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/Imports.lean:32:66: Variable name `inst_2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/Imports.lean:32:92: Variable name `inst_3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/Imports.lean:32:114: Variable name `inst_4` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_4
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [18253/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsBis (7.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ImportsBis.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ImportsBis.lean:7:29: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ImportsBis.lean:7:46: Variable name `inst_1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ImportsBis.lean:7:72: Variable name `inst_2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [18254/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.FiniteAndNcardLeProdOfLevels (7.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/FiniteAndNcardLeProdOfLevels.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/FiniteAndNcardLeProdOfLevels.lean:38:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [18255/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.HasFDerivAtOfContinuousPartials (8.3s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/HasFDerivAtOfContinuousPartials.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/HasFDerivAtOfContinuousPartials.lean:75:14: `ContinuousLinearMap.sum_apply` has been deprecated: Use `sum_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sum_apply` to `sum_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵s̵u̵m̵_̵a̵p̵p̵l̵y̵s̲u̲m̲_̲a̲p̲p̲l̲y̲
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/HasFDerivAtOfContinuousPartials.lean:75:14: This simp argument is unused:
+  ContinuousLinearMap.sum_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [ha]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [18256/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExtendAeLinearOfLocalSqBoundDense (8.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExtendAeLinearOfLocalSqBoundDense.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExtendAeLinearOfLocalSqBoundDense.lean:56:11: `ENNReal.tsum_eq_zero` has been deprecated: Use `tsum_eq_zero_iff` instead
+
+Note: The updated constant has a different type:
+  ∀ {ι : Type u_1} {α : Type u_3} [inst : AddCommMonoid α] [inst_1 : CompleteLattice α] [CanonicallyOrderedAdd α]
+    [inst_3 : TopologicalSpace α] [SupConvergenceClass α] {f : ι → α} [IsOrderedAddMonoid α] [OrderClosedTopology α],
+    ∑' (i : ι), f i = 0 ↔ ∀ (i : ι), f i = 0
+instead of
+  ∀ {α : Type u_1} {f : α → ENNReal}, ∑' (i : α), f i = 0 ↔ ∀ (i : α), f i = 0
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.tsum_eq_zero` to `tsum_eq_zero_iff x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExtendAeLinearOfLocalSqBoundDense.lean:57:8: `MeasureTheory.Measure.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+
+Hint: Replace the deprecated name:
+  M̵e̵a̵s̵u̵r̵e̵.̵s̵m̵u̵l̵_̵a̵p̵p̵l̵y̵s̲m̲u̲l̲_̲a̲p̲p̲l̲y̲
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExtendAeLinearOfLocalSqBoundDense.lean:61:36: `ENNReal.tsum_eq_zero` has been deprecated: Use `tsum_eq_zero_iff` instead
+
+Note: The updated constant has a different type:
+  ∀ {ι : Type u_1} {α : Type u_3} [inst : AddCommMonoid α] [inst_1 : CompleteLattice α] [CanonicallyOrderedAdd α]
+    [inst_3 : TopologicalSpace α] [SupConvergenceClass α] {f : ι → α} [IsOrderedAddMonoid α] [OrderClosedTopology α],
+    ∑' (i : ι), f i = 0 ↔ ∀ (i : ι), f i = 0
+instead of
+  ∀ {α : Type u_1} {f : α → ENNReal}, ∑' (i : α), f i = 0 ↔ ∀ (i : α), f i = 0
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.tsum_eq_zero` to `tsum_eq_zero_iff x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExtendAeLinearOfLocalSqBoundDense.lean:64:10: `MeasureTheory.Measure.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+
+Hint: Replace the deprecated name:
+  M̵e̵a̵s̵u̵r̵e̵.̵s̵m̵u̵l̵_̵a̵p̵p̵l̵y̵s̲m̲u̲l̲_̲a̲p̲p̲l̲y̲
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExtendAeLinearOfLocalSqBoundDense.lean:75:11: `ENNReal.tsum_le_tsum` has been deprecated: Use `tsum_le_tsum` instead
+
+Note: The updated constant has a different type:
+  ∀ {ι : Type u_1} {α : Type u_3} [inst : AddCommMonoid α] [inst_1 : CompleteLattice α] [CanonicallyOrderedAdd α]
+    [inst_3 : TopologicalSpace α] [SupConvergenceClass α] {f g : ι → α} [IsOrderedAddMonoid α] [OrderClosedTopology α],
+    f ≤ g → ∑' (a : ι), f a ≤ ∑' (a : ι), g a
+instead of
+  ∀ {α : Type u_1} {f g : α → ENNReal}, (∀ (a : α), f a ≤ g a) → ∑' (a : α), f a ≤ ∑' (a : α), g a
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.tsum_le_tsum` to `tsum_le_tsum x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExtendAeLinearOfLocalSqBoundDense.lean:118:20: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExtendAeLinearOfLocalSqBoundDense.lean:121:20: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExtendAeLinearOfLocalSqBoundDense.lean:125:25: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ExtendAeLinearOfLocalSqBoundDense.lean:140:14: `ENNReal.le_tsum` has been deprecated: Use `le_tsum` instead
+
+Note: The updated constant has a different type:
+  ∀ {ι : Type u_1} {α : Type u_3} [inst : AddCommMonoid α] [inst_1 : CompleteLattice α] [CanonicallyOrderedAdd α]
+    [inst_3 : TopologicalSpace α] [SupConvergenceClass α] [IsOrderedAddMonoid α] [OrderClosedTopology α] (f : ι → α)
+    (a : ι), f a ≤ ∑' (a : ι), f a
+instead of
+  ∀ {α : Type u_1} {f : α → ENNReal} (a : α), f a ≤ ∑' (a : α), f a
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.le_tsum` to `le_tsum x`).
+⚠ [18257/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.GapThresholdPaysFarTerms (11s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/GapThresholdPaysFarTerms.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18257 jobs).
+exit_code = 0
+elapsed_seconds = 16
+
+M058569 M058570 M058572 M058574 M058576 M058577 M058578 M058579 
+$ lake build +Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsBisBis:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsBisExtra:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsBisMore:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsBisSide:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsBisTer:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsExtra:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsFurther:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsLast:olean 
+⚠ [18250/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsBisMore (7.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ImportsBisMore.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18251/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsBisSide (7.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ImportsBisSide.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18252/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsBisTer (7.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ImportsBisTer.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ImportsBisTer.lean:14:31: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ImportsBisTer.lean:14:64: Variable name `inst_2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ImportsBisTer.lean:14:90: Variable name `inst_3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ImportsBisTer.lean:15:5: Variable name `inst_4` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_4
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [18253/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsExtra (7.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ImportsExtra.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18254/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsBisExtra (7.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ImportsBisExtra.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ImportsBisExtra.lean:33:29: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ImportsBisExtra.lean:33:76: Variable name `inst_1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [18255/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsFurther (7.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ImportsFurther.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18256/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsLast (7.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ImportsLast.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18257/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsBisBis (7.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ImportsBisBis.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18257 jobs).
+exit_code = 0
+elapsed_seconds = 11
+
+M058580 M058581 M058582 M058583 M058584 M058613 M058646 M058647 
+$ lake build +Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsMore:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsRest:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsSide:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsTail:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsTer:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.InnerAddInnerEqZeroSpan:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.IntegrableExpNegMulAbs:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.IntegrableExpNegMulOfSublevelGrowth:olean 
+⚠ [18250/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsTail (7.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ImportsTail.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18251/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.IntegrableExpNegMulAbs (7.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IntegrableExpNegMulAbs.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18252/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsMore (7.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ImportsMore.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18253/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsSide (7.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ImportsSide.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ImportsSide.lean:7:29: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [18254/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsTer (7.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ImportsTer.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18255/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.InnerAddInnerEqZeroSpan (7.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/InnerAddInnerEqZeroSpan.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18256/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsRest (7.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/ImportsRest.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18257/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.IntegrableExpNegMulOfSublevelGrowth (7.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IntegrableExpNegMulOfSublevelGrowth.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IntegrableExpNegMulOfSublevelGrowth.lean:83:38: `ENNReal.tsum_le_tsum` has been deprecated: Use `tsum_le_tsum` instead
+
+Note: The updated constant has a different type:
+  ∀ {ι : Type u_1} {α : Type u_3} [inst : AddCommMonoid α] [inst_1 : CompleteLattice α] [CanonicallyOrderedAdd α]
+    [inst_3 : TopologicalSpace α] [SupConvergenceClass α] {f g : ι → α} [IsOrderedAddMonoid α] [OrderClosedTopology α],
+    f ≤ g → ∑' (a : ι), f a ≤ ∑' (a : ι), g a
+instead of
+  ∀ {α : Type u_1} {f g : α → ENNReal}, (∀ (a : α), f a ≤ g a) → ∑' (a : α), f a ≤ ∑' (a : α), g a
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.tsum_le_tsum` to `tsum_le_tsum x`).
+Build completed successfully (18257 jobs).
+exit_code = 0
+elapsed_seconds = 11
+
+M058666 M058695 M058770 M058792 M058898 M059031 M059107 M059217 
+$ lake build +Development.AbelianVarietyTheory.Proofs.FlagMeasures.IntegralNonnegOfSums:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.IntegratedOperatorIsStarProjectionAndSandwich:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsLatticeComapSubtype:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsRadicalSpanPrimeOfNcardPrimesOverEqFinrank:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.IwasawaSliceIndicatorLintegralLe:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.LintegralBoundByDyadicSummation:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.LocalGen:olean +Development.AbelianVarietyTheory.Proofs.FlagMeasures.MainTheorem:olean 
+⚠ [18250/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.LocalGen (7.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/LocalGen.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/LocalGen.lean:14:26: `SetLike.not_le_iff_exists` has been deprecated: Use `IsConcreteLE.not_le_iff_exists` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.not_le_iff_exists` to `IsConcreteLE.not_le_iff_exists x`).
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵L̵i̵k̵e̵.̵n̵o̵t̵_̵l̵e̵_̵i̵f̵f̵_̵e̵x̵i̵s̵t̵s̵I̲s̲C̲o̲n̲c̲r̲e̲t̲e̲L̲E̲.̲n̲o̲t̲_̲l̲e̲_̲i̲f̲f̲_̲e̲x̲i̲s̲t̲s̲
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/LocalGen.lean:25:26: `SetLike.not_le_iff_exists` has been deprecated: Use `IsConcreteLE.not_le_iff_exists` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.not_le_iff_exists` to `IsConcreteLE.not_le_iff_exists x`).
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵L̵i̵k̵e̵.̵n̵o̵t̵_̵l̵e̵_̵i̵f̵f̵_̵e̵x̵i̵s̵t̵s̵I̲s̲C̲o̲n̲c̲r̲e̲t̲e̲L̲E̲.̲n̲o̲t̲_̲l̲e̲_̲i̲f̲f̲_̲e̲x̲i̲s̲t̲s̲
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/LocalGen.lean:33:29: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [18251/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.MainTheorem (7.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/MainTheorem.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/MainTheorem.lean:15:38: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/MainTheorem.lean:7:37: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [18252/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsRadicalSpanPrimeOfNcardPrimesOverEqFinrank (7.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IsRadicalSpanPrimeOfNcardPrimesOverEqFinrank.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IsRadicalSpanPrimeOfNcardPrimesOverEqFinrank.lean:21:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IsRadicalSpanPrimeOfNcardPrimesOverEqFinrank.lean:38:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [18253/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.IwasawaSliceIndicatorLintegralLe (7.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IwasawaSliceIndicatorLintegralLe.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18254/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsLatticeComapSubtype (7.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IsLatticeComapSubtype.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18255/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.IntegralNonnegOfSums (8.0s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IntegralNonnegOfSums.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IntegralNonnegOfSums.lean:32:12: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IntegralNonnegOfSums.lean:58:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [18256/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.IntegratedOperatorIsStarProjectionAndSandwich (8.3s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IntegratedOperatorIsStarProjectionAndSandwich.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IntegratedOperatorIsStarProjectionAndSandwich.lean:14:10: `ContinuousLinearMap.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵m̵u̵l̵_̵a̵p̵p̵l̵y̵m̲u̲l̲_̲a̲p̲p̲l̲y̲_̲e̲q̲_̲c̲o̲m̲p̲
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IntegratedOperatorIsStarProjectionAndSandwich.lean:15:6: `ContinuousLinearMap.one_apply` has been deprecated: Use `one_apply_eq_self` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.one_apply` to `one_apply_eq_self x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵o̵n̵e̵_̵a̵p̵p̵l̵y̵o̲n̲e̲_̲a̲p̲p̲l̲y̲_̲e̲q̲_̲s̲e̲l̲f̲
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IntegratedOperatorIsStarProjectionAndSandwich.lean:30:6: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵s̵m̵u̵l̵_̵a̵p̵p̵l̵y̵s̲m̲u̲l̲_̲a̲p̲p̲l̲y̲
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IntegratedOperatorIsStarProjectionAndSandwich.lean:37:28: `ContinuousLinearMap.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵m̵u̵l̵_̵a̵p̵p̵l̵y̵m̲u̲l̲_̲a̲p̲p̲l̲y̲_̲e̲q̲_̲c̲o̲m̲p̲
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/IntegratedOperatorIsStarProjectionAndSandwich.lean:41:28: `ContinuousLinearMap.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵m̵u̵l̵_̵a̵p̵p̵l̵y̵m̲u̲l̲_̲a̲p̲p̲l̲y̲_̲e̲q̲_̲c̲o̲m̲p̲
+⚠ [18257/18257] Built Development.AbelianVarietyTheory.Proofs.FlagMeasures.LintegralBoundByDyadicSummation (8.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/LintegralBoundByDyadicSummation.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/LintegralBoundByDyadicSummation.lean:141:13: `ENNReal.tsum_prod'` has been deprecated: Use `tsum_prod'` instead
+
+Note: The updated constant has a different type:
+  ∀ {ι : Type u_1} {α : Type u_3} [inst : AddCommMonoid α] [inst_1 : CompleteLattice α] [CanonicallyOrderedAdd α]
+    [inst_3 : TopologicalSpace α] [SupConvergenceClass α] {ι' : Type u_4} [ContinuousAdd α] [T3Space α]
+    {f : ι × ι' → α}, ∑' (p : ι × ι'), f p = ∑' (a : ι) (b : ι'), f (a, b)
+instead of
+  ∀ {α : Type u_1} {β : Type u_2} {f : α × β → ℝ≥0∞}, ∑' (p : α × β), f p = ∑' (a : α) (b : β), f (a, b)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.tsum_prod'` to `tsum_prod' x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/LintegralBoundByDyadicSummation.lean:236:13: `ENNReal.tsum_le_tsum` has been deprecated: Use `tsum_le_tsum` instead
+
+Note: The updated constant has a different type:
+  ∀ {ι : Type u_1} {α : Type u_3} [inst : AddCommMonoid α] [inst_1 : CompleteLattice α] [CanonicallyOrderedAdd α]
+    [inst_3 : TopologicalSpace α] [SupConvergenceClass α] {f g : ι → α} [IsOrderedAddMonoid α] [OrderClosedTopology α],
+    f ≤ g → ∑' (a : ι), f a ≤ ∑' (a : ι), g a
+instead of
+  ∀ {α : Type u_1} {f g : α → ℝ≥0∞}, (∀ (a : α), f a ≤ g a) → ∑' (a : α), f a ≤ ∑' (a : α), g a
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.tsum_le_tsum` to `tsum_le_tsum x`).
+Build completed successfully (18257 jobs).
+exit_code = 0
+elapsed_seconds = 12
+
+## Compiled objects
+M056635 b3c7d2575a9f596341c3fd936638d111b369950a32f3f83c34e04bd5a8af7cf6 Development.AbelianVarietyTheory.Proofs.FlagMeasures.AbsSubLeExpNegSixteenthMul.olean
+M056685 64bd16904a53d01bc814e43dfb13b96a2ad00b059935cd8b5a9dce405e053b9e Development.AbelianVarietyTheory.Proofs.FlagMeasures.AeEqOfDenseOfLocalSqBound.olean
+M056687 122cd3428d5c90e083add04ba8ccaacf8c6c81008cce4cbd19d687c7d78614b9 Development.AbelianVarietyTheory.Proofs.FlagMeasures.AestronglyMeasurableCompRep.olean
+M056978 5f3a220d51fe1111c9a98e6e61eb4efeaf35bc9d9db41aebdfadefea00032460 Development.AbelianVarietyTheory.Proofs.FlagMeasures.CardQuotPow.olean
+M056993 20831749dffc29ad9bf150cc9f14ae4983978ff35ed10c1fb84198e7dcd01cfc Development.AbelianVarietyTheory.Proofs.FlagMeasures.CauchySchwarz.olean
+M057044 5acdbcd1ca39221ebfeab187e3d054226120f34eba7b038d482175bb15e5251b Development.AbelianVarietyTheory.Proofs.FlagMeasures.CoeFnSumSmulAeEq.olean
+M057045 28565104c79ae4b5ea5ac52313d03d3e5e90aef69b6b48d1b2ec353e83215cc6 Development.AbelianVarietyTheory.Proofs.FlagMeasures.CoeSmulMem.olean
+M057235 39f1cb12bd56517dc7968f6c18e1bc14266fe1d038b958c191dc991a46e1ae8a Development.AbelianVarietyTheory.Proofs.FlagMeasures.DecayOfMemSpan.olean
+M057242 1b6a01688d409ba00b461aae887da27dbd705556ee433aceb7396bc4e62b9ffd Development.AbelianVarietyTheory.Proofs.FlagMeasures.DeepRegionExponents.olean
+M057295 954ba95872b03cdf1ed590e9cf61f4e16658e14045441f5bc63ee0acb21e2aa9 Development.AbelianVarietyTheory.Proofs.FlagMeasures.DetUpdateRowLastSingle.olean
+M057304 a8494ae5121e5166ec6a819248d539ff5cc095b62d8271006b2a95b0e4f04389 Development.AbelianVarietyTheory.Proofs.FlagMeasures.DifferentSmulMemOfTraceIntegral.olean
+M057323 951f1faf8cf5eb6cc3e3f3415d5fdc58bb4aac49f4f00bd1de1a6ed18b79c3b8 Development.AbelianVarietyTheory.Proofs.FlagMeasures.DiscreteSubgroupCountableAndExistsStrictFundamen.olean
+M057466 6c8b86fda5fe1465196f79ffa0884f5793ea9dea2f38ba7edecbe64bd8e2a85c Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsConsecutiveRatioLeRpow.olean
+M057575 da4f05b7411775edbc833a4fff82275a8b094b519363e344de03aa554d9c3638 Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsHaarMapProdEq.olean
+M057590 ce1d6312066b4f0e07e63860fc08cb5bee7d5f252bbc73b8794b50f20c70f378 Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsIntSmulEqInteger.olean
+M057591 4c50bc8a36c3cece61e01e6ec4dc98d7fcbd1e50600ce7a1994ebc20ce53ac2a Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsIntSmulIsIntegral.olean
+M057592 a6e8a2563f14629599be6cc4c9b1aa2de6c5bd3d9e2119ba1f8608680ec33676 Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsIntSmulLe.olean
+M057593 8d164bfef27b1be8cbb8e865d83472921c263e4cb4c630f7d2406255df185983 Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsIntSmulMemLattice.olean
+M057594 140d988349c44fb746603b5db7743a58ca7e5cae8d02001f22e8daf10e43d5f5 Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsIntSubMemPow.olean
+M057627 dbebbce000f6fd6e442631469c10ca0d67bea8889223395389f27df76b6ec0d7 Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsIsometricIntertwinerOfMatrixCoeffEq.olean
+M057666 9a85d239c188c9503f4afd42e6f9eae06e69b1e1434656e17947d51b336167a7 Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsMapMulRightEqSmul.olean
+M057675 aa3532c069ae5caeaecefe47ffdf3b1b376a611a938cbdfa348f0215054bf76d Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsMeasurableCosetSection.olean
+M057679 b8b809044b58180011b01cdd6b36617d5a20bd04d9b0e41dde3cf28ba5c6350a Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsMeasurableFundamentalDomain.olean
+M057680 ddede71571b3e53b4d25a59c1209d7d75c687f4b17f1e3bb23795cf5e1d85355 Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsMeasurableLintegralCosetEqOneClosedSubgrou.olean
+M057684 2372e4703b564b60a7fc8e47321d87499b3665f8eb7b254b8fc51ef9ee5a1890 Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsMemFractionalIdealGeneratorAtPrimesOver.olean
+M057737 6d12d6352da25ffe9f4b243928efd5b70ef02d40f5997b2e106bc5f5c7f38fb7 Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsPowSmulMem.olean
+M057757 e689f28d73378c9cebacd5cabfe843163a7fec22e1a07c2036e8520473d2f61d Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsRealSubmoduleBlockFinrankLe.olean
+M057820 34d59c3a8452e1a8dde2326c5e8158f82f6c4846b6ebbe4de2f3b83d26a1e219 Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsSubmoduleSkewBlockFinrankLe.olean
+M057837 a965e498e43c0e1e1da9fc62a2ae608c160b01881c0f8d712b48acb825238437 Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsUnimodularLiftOfUnimodularMod.olean
+M057871 fddf708a18c5a2cb4f78c9c679e2233676b2b3bae748a09da34631526afb3090 Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsUnitaryMulVecEqOfFormEq.olean
+M057888 c450ab9dc68b6425b586d8705294aa732c51947d89a938a3b9412e5434fbee18 Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExpQuadraticLowerAndLogLinearLower.olean
+M057892 5d9aba099ae4277e4a17ece49f81d58f839beb6775031d807fa3776db01f97f7 Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExponentDivisorSumLe.olean
+M057897 94409a8070daeb1ff1a22ba999cfc9ee9621340128379bd7a54c3830190d10ef Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExtendAeLinearOfLocalSqBoundDense.olean
+M057937 b74c9229a5531db1a01bdea6162f4b49c90f2690b8f8887512a55a83d894ef86 Development.AbelianVarietyTheory.Proofs.FlagMeasures.FiniteAndNcardLeProdOfLevels.olean
+M057959 4f6df2de00e7e50fbdc5938f3ccaf07890ae270a2eb5473839bf93e037c21d0d Development.AbelianVarietyTheory.Proofs.FlagMeasures.FinprodEqProdMulFinprodIte.olean
+M058057 4a8f1bb9133affa4205f98d6b1e00ccb413aaed7672cf0746493acf2d93cf2e6 Development.AbelianVarietyTheory.Proofs.FlagMeasures.FormallyUnramifiedRingOfIntegersIffDifferentIdea.olean
+M058135 07b0376e75ffee5e7fa8d1210b6f0040d290262d9b4407233c5135d26bb91a1d Development.AbelianVarietyTheory.Proofs.FlagMeasures.GapThresholdPaysFarTerms.olean
+M058332 19b9bb535a457d694e37c876bfe90f72268bf1532d5f51d0b8572c6c404408f6 Development.AbelianVarietyTheory.Proofs.FlagMeasures.HasFDerivAtOfContinuousPartials.olean
+M058567 1f8b8c082a61a6d337bf0aa393a477f2e7e88f6f5ee2d86789319ef298c5dccd Development.AbelianVarietyTheory.Proofs.FlagMeasures.Imports.olean
+M058568 c79ea85995498eb5c49925b9c43e56a5fe46ba8d46694d764b29fdcc7e8d70e1 Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsBis.olean
+M058569 a25b8c015d589167e252808a65d7ad9fa944167331bde84bda6b8cd3f8b55427 Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsBisBis.olean
+M058570 5b215f3b11e00a9c5eb51cb608f6a279868843066ecca79907944a66deef7b86 Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsBisExtra.olean
+M058572 cf6016bf3aef9896a65faa5e4b5a4e497adc0ab543a5189e434c78c2d2863d38 Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsBisMore.olean
+M058574 b381c3ce00530ca169cab3c3f87f304eb3652f00595f50403fd7420e2ea18a3e Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsBisSide.olean
+M058576 640a968540808d0c3c9f98da55b3bee810c6cdb01ae0e8c0fbeb676073d6cc01 Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsBisTer.olean
+M058577 3d1a7fef5a2a6211943b165a9be174148373694a83a62d992386bdcfdd284e95 Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsExtra.olean
+M058578 f91981185f02dba6136d28dce181d7665b6dc5921df27adeedb5e6753c3fe8e6 Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsFurther.olean
+M058579 6de4e3a97d291a9a4c60adfffdec0570e83511832bfa1635ed0adc6d491f44c4 Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsLast.olean
+M058580 64403a56d592895a6742bd9510ab57d3e89cc6be66ff1055da456ad5a35e9a0c Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsMore.olean
+M058581 3ae93949276e0302c43e5a49ac73cc218715f28951c9d54730b9353d3984a19a Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsRest.olean
+M058582 ae2b20cf80e9ba0005f6d78eb011485902cea66b1a99abcd61e21d39f065ed13 Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsSide.olean
+M058583 d58f2bd9d8a2bbc26f31178380d012cbf4ab80861458f0b806c27cb0ceb8b1b1 Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsTail.olean
+M058584 62a0befd6e6659527836ab97b95f134e3af8341a1dd8d102e4386e87c0e2ed54 Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsTer.olean
+M058613 a325406e1ed7dbf30c48c53d4f08fe90cc4347e7408e2f9ff4a3370098a41203 Development.AbelianVarietyTheory.Proofs.FlagMeasures.InnerAddInnerEqZeroSpan.olean
+M058646 11ac00550b21ef6de623befca22e7ec8d7779713f3fb700c54ddb58a0b7313b5 Development.AbelianVarietyTheory.Proofs.FlagMeasures.IntegrableExpNegMulAbs.olean
+M058647 506bb5acc9cbb24f5616cf4208dd197c1d338f718054d0a7a1dba6d88fe757ba Development.AbelianVarietyTheory.Proofs.FlagMeasures.IntegrableExpNegMulOfSublevelGrowth.olean
+M058666 79c27755b3adf0536616f3694d8e8672cbe0e96f05a709265e7056ebb392b761 Development.AbelianVarietyTheory.Proofs.FlagMeasures.IntegralNonnegOfSums.olean
+M058695 6d812ad1dde8655dee85b0aca2b666b444af12cd8e1a24f8cb096783c62ad565 Development.AbelianVarietyTheory.Proofs.FlagMeasures.IntegratedOperatorIsStarProjectionAndSandwich.olean
+M058770 3f70b38e51c7d9e765dc22546fe18234502cb8450a80c9c70da7e30e737acdc7 Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsLatticeComapSubtype.olean
+M058792 d0051dc81149161c50433d0ffa520e92c27a2ccaca3a4959ae0c14943bd94b5d Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsRadicalSpanPrimeOfNcardPrimesOverEqFinrank.olean
+M058898 1e2690899c2f42413d724466005be4443b84f6c5fcd0462e19b68acb0d628931 Development.AbelianVarietyTheory.Proofs.FlagMeasures.IwasawaSliceIndicatorLintegralLe.olean
+M059031 8cb57a6f601b2392faa5c03e51373c90a88386d0802763a93b64f68d70854f3e Development.AbelianVarietyTheory.Proofs.FlagMeasures.LintegralBoundByDyadicSummation.olean
+M059107 696306acbc72f00f88af59cc50369eea5d985c417b509a8ee95ba4bfe9247ee5 Development.AbelianVarietyTheory.Proofs.FlagMeasures.LocalGen.olean
+M059217 080ebf277b6d2c3382a9ed7b696142bab328cf992c5c154f67d06b13a092ed6d Development.AbelianVarietyTheory.Proofs.FlagMeasures.MainTheorem.olean
+
+overall: SUCCESS
