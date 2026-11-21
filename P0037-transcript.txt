@@ -1,0 +1,1280 @@
+# P0037 port build transcript
+date: 2026-11-21T16:17:06Z
+host: Darwin 27.2.0 arm64
+lean-toolchain: leanprover/lean4:v4.36.0
+lean --version: Lean (version 4.36.0, arm64-apple-darwin24.6.0, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+port/target.json: {"lean":"leanprover/lean4:v4.36.0","mathlib":"fc4f59e577feb1a4956671bc04ac18aaaf8cd842","mathlib_note":"Mathlib'sreleasetagv4.36.0(matchesLeanv4.36.0).Approvedbythemaintainer2026-11-21.","replay_pins_unchanged":{"lean":"leanprover/lean4:v4.33.1","mathlib":"0df444a360eaa60ab8c11dca51a86af692955474"}}
+replay repo commit the patches were cut against: 690c7be7a90559fdbfb07eb60889c0db5f4294af
+
+## Sources: pinned archive files (SHA-256 checked against tracker/modules.jsonl.gz), then port/patches applied
+M081899 patched   pinned=c4a52eb5ddbc25dcf1bd6fec869f3c6f0088e3e48b94e05d5d4d5a3856d8fe11 built=486a5d1790ef5dc507e6afffd49d1103ed53eaa44622679d657758eae05f09f9 Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ResidueFieldIsAlgebraicOfEtale
+M081900 unchanged pinned=6d4f3055f7cd36efbfa3e36ca2a4eaf1048948544273ade1ee91f2e1acd61938 Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ResidueFieldIsoInvCompSpec
+M081901 unchanged pinned=1bada8b9c8dc327b11b7a36ce853f9bca8479f65058e3c8d76a2e65aa4c89c91 Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ResidueFieldMapFiniteOfQuasiFinite
+M081935 patched   pinned=f6b802832fb2ebdd6ac81afb4ba122436824853afa976a449aaaeee789479a4b built=c93c736eead52fbb75121d8f14439f0266c76df579f24c37568a4180ece671b5 Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RiemannZetaNeZeroOfMemIoo
+M081938 unchanged pinned=04fdd54b630976d4cb9439cf757ac1f0bc7222468011834d7fa3ed7981767a34 Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RightTranslationCurveSqLeAndIntegralDerivEqZeroA
+M081949 patched   pinned=d85736cd74f22b9126b355c2498ad30ab82623674877c0054272a1ed12944d1c built=78217dc66a0157859cfe1701acd0fa133dd86096f9ccc2f43251e090cd814ee8 Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RingKrullDimLtTopOfEssFiniteType
+M082057 unchanged pinned=8170d4a2073731293fe83f59132da7be05aac2e3ee12020e2bff94c398060daf Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SchurComplementBlockQuadraticLowerBound
+M082067 patched   pinned=60bdaf12a746768b394a7c25a03effde142646eb54cc02a7e401299120690fb2 built=aa6cf8ee4e53a4128ba943616bfac862812e5d824ed6755cb117b6c653ca25ce Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SchurOrthogonalitySubgroupMeasureOne
+M082106 unchanged pinned=4df432824c80dfb3c1806c74890a6152d1e79f548c4b0c10b4b73483bf0d8572 Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SelfDualLatticeStandardAtRationalPrime
+M082255 unchanged pinned=7904fa1c0b81fa8c4e874b29ee28b47cae4b120c667a825bd446ef72465473a5 Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SpanMkQOneTmul
+M082266 unchanged pinned=327ab8ea943ee5c16ecd1ed0cfcfc08ea247f8d0a2555b87b46f2e68ec444c93 Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SpanValuationLe
+M082359 unchanged pinned=d3f8d84dbbab0849c8128aa876af235a4888c738e7c719d9c6e82602e3b0c509 Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StalkGenerizationGermCompat
+M082366 unchanged pinned=99d3a938c352bc07932c98cb2918b736ea80aaa699288e6ad1313bf9b3eec419 Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StalkLocalizationEqGenerization
+M082499 unchanged pinned=a073f5749206f974d79d5150e253c0351f0d1182f7e1f61538f73d75b05dbec3 Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SubrepTopToSubmodule
+M082507 unchanged pinned=81f2b76d4217c42fe81d87899fc65145e5ac37c934425399de702c9548e6e202 Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SumLogEmbeddingAddFinsumLogAdicAbvEqZero
+M082537 unchanged pinned=f7790980e421816fc0bd69de769d47b7e58bcafdec8061c9c95e99ba66c6b11c Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SymmetricFormSumOfSquares
+M082605 unchanged pinned=aabf0c4abbd29aeff869cccf38e0686826d7a5817d3dc0d27332323f4566a7ae Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TendstoOfForallIntegral
+M082610 unchanged pinned=015d3f7b62fad5b792706f66b9fd9854ab568d44d3e29ba0007c1bf9eaeee83d Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TensorDomainBirational
+M082622 unchanged pinned=78663826e347ebd6bbf07f00f970def45eb539d589144971c5177c45ac1dd1e6 Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TensorResidueUnramifiedFinite
+M082758 patched   pinned=93be084649a18b7c0e7dee3987fc7b7784a2fd918638b64c2b91215793e3a829 built=7a1535c3af108a048a0de4a32d112204fb1dc1c8681d4a0e2746e67e44727851 Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TotalDegreeAevalLeOfLinear
+M082764 unchanged pinned=be79792b1da7432413ad955e841405c1d597a2d5c4bbcd2b6aff1a53fd660beb Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TracePowEq
+M082791 patched   pinned=a89abcf05a9d3b15017d53435b413b58d5e51e058e57b32053d5e1bbc3bb70f4 built=0e2f523aca044c050ab848d04841f24c96b9263c0f4581d7a757477db3cb015f Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TrdegLeGenerators
+M082793 unchanged pinned=cbe3c82e62c1000cb4e1c5f98ca16ec1071f2aa7517fbf08c1b2733d353bd5e0 Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TrdegResidueFieldEq
+M083016 unchanged pinned=c2b22c237afe9c14de2b1ea2b007fae86e6917902e34f64d92c084c59278b0e3 Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnitaryFamilyEqCayleyOfSkewFamily
+M083045 unchanged pinned=74db8bff9d745ae88b86641994bc5bada0913c0b0a747b16dfa12e71cf67978c Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnitriangularInductionTransvection
+M083069 unchanged pinned=b00225c9a69ff40f43fe944cbf2edc739c205fd93828fe886654f3cf1481b56e Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UpperTriangularMul
+M083109 unchanged pinned=76d6f4e46f9eb2099b9c050cf251c0588b0994f252e8f5381a0980c06db2e8c7 Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ValuationPowSubPowLe
+M083123 patched   pinned=1d8ce7d296afb80e409944fdac56969b0105d3d269b17a2627216afc864abb15 built=2cabd23ceef9d48ba1d97a8d224ab2fd5d3e2a5eabe67e258cb26d686a0988f8 Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.VecMulVecComm
+M083394 unchanged pinned=32bcc59913921a6a67ab08576bc05e81afabe7d0a2d2a2a45b242b61147811c3 Development.AbelianVarietyTheory.Proofs.JetHarmonics.CardFilterLeSuccAndSqSumLePow
+M083449 patched   pinned=0de40f5c1112fcf371dc9e8006f9c1b4296b5a40f6c49b362c250edf0a3a7932 built=df4c79bec3507ab36c5113c713baa80c60e897b7d619928d6305e587ae4676ec Development.AbelianVarietyTheory.Proofs.JetHarmonics.CoeffProdXSubCNormLe
+M083482 patched   pinned=cf1b91006c1bbe8f2953018164e1f03074be142802521b67e365168bc9089d83 built=683065b53dec08d29a761f22787e30ccf7966a0a4112a10caf0e826942b6effb Development.AbelianVarietyTheory.Proofs.JetHarmonics.ContDiffOnIffLocalExtension
+M083539 unchanged pinned=6dfcc7efcf9e90f344d40d1f1a4577aa0b69d6e3e308211103c6395d2ee51476 Development.AbelianVarietyTheory.Proofs.JetHarmonics.DerivationMemPowOfMemPowSucc
+M083628 unchanged pinned=cf8a9df8d4c71bdff5ca3c61cb89a3f03234b53ab4aae4a71de1cafd0b3d70a7 Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsCutIntoBoundedGroupsFinset
+M083632 unchanged pinned=99ea89f24d1f064066be20a7ca61483cca882b3c954d63e07fe978e23279c8b2 Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsDualFormsOfSeparatedTypes
+M083644 unchanged pinned=371161170b52ae8426dece1ff88c6076fc711a37d4912ab82ebc4ad862c5fede Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsExtensionCharacter
+M083682 unchanged pinned=849453b2870fb7a050c8730fc1c0d51effa585b4a40abdb6c995551bdc43609a Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsIntCoordsOfRegularParam
+M083696 patched   pinned=11e4d2da939105c220b61c2c4a31de868ae2d575acbea656a59f54d84eea6ccf built=7557f307301d532928f581677b1ae5a68c3c24cfa17a177ccce1365c367c7330 Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsIsLocalHomExtension
+M083698 unchanged pinned=638c75c3e3e81e3ef49e1358c16ae187774d500e29f54a22050146506ac18301 Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsIsUnitSubOfRingHomNe
+M083700 unchanged pinned=4d9486098161e79e7a98cdee12273b665078a4c8c21578678ddf0ca444b40d5e Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsIsometryOfIntertwinerOfIrreducible
+M083736 patched   pinned=4c2fbee6ef9971e3db316e0b8473c5cff1f484a86b8c9d7faf46b0385818a09f built=72e3472d2443902b450ee6731f47e46fcb3d7cca716ee658b1e1aa3546502e2f Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsNormSubEqOne
+M083916 unchanged pinned=26273e14d933dae42762a43c7f220a4b2ea2a933970b36f957d493dd3856b4ea Development.AbelianVarietyTheory.Proofs.JetHarmonics.GroupLikeIntegralOfFiniteFree
+M083956 patched   pinned=358fb2e4f49829e64f79b00c8fcebefd2fc2776923d8ffb2f8ce937b4422dd0b built=814c08f1301b4fde0befe8fd1d282992d98838a405d5aa3de961b5dddbc6e3d9 Development.AbelianVarietyTheory.Proofs.JetHarmonics.HomValueCongruentIntModPrime
+M083970 unchanged pinned=200140c4933ef8c8953e79d44aabb2158d3e58a483fe88c92b70931d3ab6afc5 Development.AbelianVarietyTheory.Proofs.JetHarmonics.Imports
+M083971 unchanged pinned=90d1b0aee4b83652a4b99c3e72c2de47ebcf2a9c3032140c932ec4493822da1f Development.AbelianVarietyTheory.Proofs.JetHarmonics.ImportsAlt
+M084063 patched   pinned=d56bfaed349dd4253eb4cf76535266386a081832561e8ee7813d6b637b8c1a03 built=0cbe61a4f8879035076146e51075fac1bab88150438ff8da6b95aa89ec054157 Development.AbelianVarietyTheory.Proofs.JetHarmonics.IteratedFDerivProdCoordAt
+M084148 unchanged pinned=f4fc607bd90e6ed35dcde59570ad30183247972b97344c19db706a4a9c919029 Development.AbelianVarietyTheory.Proofs.JetHarmonics.MeasurePreservingSnocMeasurableEquiv
+M084152 unchanged pinned=2e1d4ab3a3d7ffd96e7649f1ff9892bf5293c58b836c88252d75eded2ef00212 Development.AbelianVarietyTheory.Proofs.JetHarmonics.MemLpAndTendstoIntegralInnerOfEventuallyEq
+M084153 patched   pinned=aff727d5a8d6c73835ba8663687d61a2f431d81349a4241418e2e9017649ce38 built=8e4e1242709352d6536fd883e8cb5995e23197850000a096e85229c5a76b189f Development.AbelianVarietyTheory.Proofs.JetHarmonics.MemLpTwoAndTendstoOfCauchyOfAeTendsto
+M084167 unchanged pinned=4d84939868d56cbe836aa5378c45a346bf8e06261ebdb2a722d6f865c619bc35 Development.AbelianVarietyTheory.Proofs.JetHarmonics.MonicEqProd
+M084179 unchanged pinned=08d545175afcbd4edea3e32c20a3684c334dfe70e035b881141aec546e5e395f Development.AbelianVarietyTheory.Proofs.JetHarmonics.MvPowerSeriesCoeffEqZeroOfMulCoeffEqZero
+M084212 unchanged pinned=be09da59bf341855480076dfa0d9bb4461fb0ba6321cccb07b3810df286a4687 Development.AbelianVarietyTheory.Proofs.JetHarmonics.NormEigenLePowMulNormSum
+M084218 unchanged pinned=06380cd000ff2e69a401fc16857c5bc2e95170ab80e78bcd8f4dc97a600ac398 Development.AbelianVarietyTheory.Proofs.JetHarmonics.NormSqAdjointAddGeOfJointEigenspaces
+M084222 patched   pinned=1665ceb023a793eee952dbce1da66fc1609d420a40ce573763abc3d74a78b8ba built=61be1a16c77437988e9402c01415b15ada2f13c40fae3e2bf92fd217dd8bf3d1 Development.AbelianVarietyTheory.Proofs.JetHarmonics.NormSumEigenprojectorLeOfResolventBound
+M084243 unchanged pinned=1fd58e1458dd10ddcc7ee89bf4562f1c2ae8f9ea05b843b63bd3b5dc8ad24cb5 Development.AbelianVarietyTheory.Proofs.JetHarmonics.NotLeSqSup
+M084283 unchanged pinned=f7f159820faab367c14507502a05a54e27b2c4c8ce4f55312ae03cf2d81ead49 Development.AbelianVarietyTheory.Proofs.JetHarmonics.PolarisationOnSubspace
+M084300 unchanged pinned=d6eb68356942c3e9106514aaf83971d23a31fa41e43d7640ca324dd4ebf3dbef Development.AbelianVarietyTheory.Proofs.JetHarmonics.PowSubSelfMemSpanOfSplitsCompletely
+M084307 patched   pinned=ea524b767b1df7a123773282ddb247691aac0b74248dd50bcb4faee82fa7ebd9 built=23fb24d41a045204ff8b53053c44c01e23a9257a2ca154127632f13a64225241 Development.AbelianVarietyTheory.Proofs.JetHarmonics.ProdLeOfInterlacingPairing
+M084364 unchanged pinned=5c777dab3a2b62d8f14367695a7f4fb33dcd46a5a0d341a78cf8720c7ad38358 Development.AbelianVarietyTheory.Proofs.JetHarmonics.ReInnerLeOnImageOfIntertwining
+M084400 unchanged pinned=8bf2489bd5a768065a84a28ceae5ecdc291313699971de4d0c01e58ec5502985 Development.AbelianVarietyTheory.Proofs.JetHarmonics.SideSucc
+M084443 unchanged pinned=fbe57216e8e8623ac8b8ae67f40938dcb8aede823fa802cbaa6ae0549645feac Development.AbelianVarietyTheory.Proofs.JetHarmonics.SumEigenvectorsOfAevalProdLinearEqZero
+M084452 unchanged pinned=a4ac86d73eb2ecd570ca243c74ea4344d6b682486702867f50f1ffa6b1233c2d Development.AbelianVarietyTheory.Proofs.JetHarmonics.SumNormAddSqLeOfBounds
+M084460 unchanged pinned=0ee7cd6ca750642f2903ec256085a0fa8ce214f03d91c005048173d3318967fe Development.AbelianVarietyTheory.Proofs.JetHarmonics.SumPosOfTensorPos
+M084461 unchanged pinned=d7d762fb22cba91d269b8ea8cf48064874c1581989ad3f8d99b7cd0122004510 Development.AbelianVarietyTheory.Proofs.JetHarmonics.SumPrimeLogDivPredLeLogAdd
+M084467 unchanged pinned=412aaf6a380081f87072f0149294df1509bb37d57a88fb90916d39fc1fc6d468 Development.AbelianVarietyTheory.Proofs.JetHarmonics.SumStarProjectionEigenspaceEqSelfOfEigenvaluesLi
+
+## lake build
+M081899 M081900 M081901 M081935 M081938 M081949 M082057 M082067 
+$ lake build +Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ResidueFieldIsAlgebraicOfEtale:olean +Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ResidueFieldIsoInvCompSpec:olean +Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ResidueFieldMapFiniteOfQuasiFinite:olean +Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RiemannZetaNeZeroOfMemIoo:olean +Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RightTranslationCurveSqLeAndIntegralDerivEqZeroA:olean +Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RingKrullDimLtTopOfEssFiniteType:olean +Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SchurComplementBlockQuadraticLowerBound:olean +Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SchurOrthogonalitySubgroupMeasureOne:olean 
+⚠ [18250/18257] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ResidueFieldMapFiniteOfQuasiFinite (7.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ResidueFieldMapFiniteOfQuasiFinite.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18251/18257] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RingKrullDimLtTopOfEssFiniteType (7.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/RingKrullDimLtTopOfEssFiniteType.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/RingKrullDimLtTopOfEssFiniteType.lean:31:28: `ENat.coe_lt_top` has been deprecated: Use `ENat.natCast_lt_top` instead
+
+Hint: Replace the deprecated name:
+  E̵N̵a̵t̵.̵c̵o̵e̵_̵l̵t̵_̵t̵o̵p̵E̲N̲a̲t̲.̲n̲a̲t̲C̲a̲s̲t̲_̲l̲t̲_̲t̲o̲p̲
+⚠ [18252/18257] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ResidueFieldIsAlgebraicOfEtale (7.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ResidueFieldIsAlgebraicOfEtale.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ResidueFieldIsAlgebraicOfEtale.lean:12:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ResidueFieldIsAlgebraicOfEtale.lean:14:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ResidueFieldIsAlgebraicOfEtale.lean:15:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ResidueFieldIsAlgebraicOfEtale.lean:16:10: `Localization.AtPrime.IsLiesOverAlgebra` has been deprecated: Use `IsScalarTower` instead.
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ResidueFieldIsAlgebraicOfEtale.lean:16:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ResidueFieldIsAlgebraicOfEtale.lean:17:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ResidueFieldIsAlgebraicOfEtale.lean:18:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ResidueFieldIsAlgebraicOfEtale.lean:28:64: This simp argument is unused:
+  Localization.AtPrime.algebraOfLiesOver
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Ideal.ResidueField.map, RingHom.algebraMap_toAlgebra, Localization.mk_eq_mk']
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [18253/18257] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RightTranslationCurveSqLeAndIntegralDerivEqZeroA (7.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/RightTranslationCurveSqLeAndIntegralDerivEqZeroA.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18254/18257] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ResidueFieldIsoInvCompSpec (7.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ResidueFieldIsoInvCompSpec.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ResidueFieldIsoInvCompSpec.lean:10:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ResidueFieldIsoInvCompSpec.lean:11:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ResidueFieldIsoInvCompSpec.lean:12:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [18255/18257] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RiemannZetaNeZeroOfMemIoo (8.0s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/RiemannZetaNeZeroOfMemIoo.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/RiemannZetaNeZeroOfMemIoo.lean:115:62: This simp argument is unused:
+  add_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Fin.sum_univ_two, br, Fin.val_zero, Fin.val_one, add_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [18256/18257] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SchurOrthogonalitySubgroupMeasureOne (8.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SchurOrthogonalitySubgroupMeasureOne.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SchurOrthogonalitySubgroupMeasureOne.lean:169:6: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [18257/18257] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SchurComplementBlockQuadraticLowerBound (9.0s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SchurComplementBlockQuadraticLowerBound.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18257 jobs).
+exit_code = 0
+elapsed_seconds = 12
+
+M082106 M082255 M082266 M082359 M082366 M082499 M082507 M082537 
+$ lake build +Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SelfDualLatticeStandardAtRationalPrime:olean +Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SpanMkQOneTmul:olean +Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SpanValuationLe:olean +Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StalkGenerizationGermCompat:olean +Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StalkLocalizationEqGenerization:olean +Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SubrepTopToSubmodule:olean +Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SumLogEmbeddingAddFinsumLogAdicAbvEqZero:olean +Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SymmetricFormSumOfSquares:olean 
+⚠ [18250/18257] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SpanValuationLe (7.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SpanValuationLe.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SpanValuationLe.lean:24:29: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SpanValuationLe.lean:24:46: Variable name `inst_1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [18251/18257] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SubrepTopToSubmodule (7.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SubrepTopToSubmodule.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SubrepTopToSubmodule.lean:35:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SubrepTopToSubmodule.lean:13:29: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SubrepTopToSubmodule.lean:13:57: Variable name `inst_1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SubrepTopToSubmodule.lean:13:83: Variable name `inst_2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [18252/18257] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SumLogEmbeddingAddFinsumLogAdicAbvEqZero (7.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SumLogEmbeddingAddFinsumLogAdicAbvEqZero.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18253/18257] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SpanMkQOneTmul (7.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SpanMkQOneTmul.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SpanMkQOneTmul.lean:11:20: `TensorProduct.induction_on` has been deprecated: Use `TensorProduct.inductionOn` instead
+
+Note: The updated constant has a different type:
+  ∀ {R : Type u_1} [inst : CommSemiring R] {M : Type u_5} {N : Type u_6} [inst_1 : AddCommMonoid M]
+    [inst_2 : AddCommMonoid N] [inst_3 : Module R M] [inst_4 : Module R N] {motive : TensorProduct R M N → Prop}
+    (z : TensorProduct R M N),
+    (∀ (x : M) (y : N), motive (x ⊗ₜ[R] y)) →
+      (∀ (x y : TensorProduct R M N), motive x → motive y → motive (x + y)) → motive z
+instead of
+  ∀ {R : Type u_1} [inst : CommSemiring R] {M : Type u_5} {N : Type u_6} [inst_1 : AddCommMonoid M]
+    [inst_2 : AddCommMonoid N] [inst_3 : Module R M] [inst_4 : Module R N] {motive : TensorProduct R M N → Prop}
+    (z : TensorProduct R M N),
+    motive 0 →
+      (∀ (x : M) (y : N), motive (x ⊗ₜ[R] y)) →
+        (∀ (x y : TensorProduct R M N), motive x → motive y → motive (x + y)) → motive z
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SpanMkQOneTmul.lean:22:44: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SpanMkQOneTmul.lean:22:64: Variable name `inst_1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SpanMkQOneTmul.lean:22:85: Variable name `inst_2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SpanMkQOneTmul.lean:22:113: Variable name `inst_3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SpanMkQOneTmul.lean:22:177: Variable name `inst_4` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_4
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SpanMkQOneTmul.lean:22:198: Variable name `inst_5` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_5
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SpanMkQOneTmul.lean:22:570: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SpanMkQOneTmul.lean:22:590: Variable name `inst_1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SpanMkQOneTmul.lean:22:611: Variable name `inst_2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SpanMkQOneTmul.lean:22:639: Variable name `inst_3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SpanMkQOneTmul.lean:22:703: Variable name `inst_4` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_4
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SpanMkQOneTmul.lean:22:976: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SpanMkQOneTmul.lean:22:996: Variable name `inst_1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SpanMkQOneTmul.lean:22:1017: Variable name `inst_2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SpanMkQOneTmul.lean:22:1045: Variable name `inst_3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SpanMkQOneTmul.lean:22:1113: Variable name `inst_4` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_4
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SpanMkQOneTmul.lean:22:1134: Variable name `inst_5` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_5
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SpanMkQOneTmul.lean:22:1423: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SpanMkQOneTmul.lean:22:1443: Variable name `inst_1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SpanMkQOneTmul.lean:22:1464: Variable name `inst_2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SpanMkQOneTmul.lean:22:1492: Variable name `inst_3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SpanMkQOneTmul.lean:22:1560: Variable name `inst_4` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_4
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SpanMkQOneTmul.lean:22:1581: Variable name `inst_5` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_5
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SpanMkQOneTmul.lean:22:1885: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SpanMkQOneTmul.lean:22:1903: Variable name `inst_1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SpanMkQOneTmul.lean:22:1922: Variable name `inst_2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SpanMkQOneTmul.lean:22:1948: Variable name `inst_3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SpanMkQOneTmul.lean:22:2010: Variable name `inst_4` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_4
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SpanMkQOneTmul.lean:22:2029: Variable name `inst_5` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_5
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [18254/18257] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StalkGenerizationGermCompat (7.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/StalkGenerizationGermCompat.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/StalkGenerizationGermCompat.lean:52:57: This simp argument is unused:
+  TopCat.Presheaf.germ_res
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [← CommRingCat.comp_apply, Category.assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [18255/18257] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StalkLocalizationEqGenerization (7.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/StalkLocalizationEqGenerization.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18256/18257] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SymmetricFormSumOfSquares (7.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SymmetricFormSumOfSquares.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SymmetricFormSumOfSquares.lean:12:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SymmetricFormSumOfSquares.lean:23:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SymmetricFormSumOfSquares.lean:59:29: This simp argument is unused:
+  smul_eq_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [map_sum, map_smul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [18257/18257] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SelfDualLatticeStandardAtRationalPrime (8.0s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/SelfDualLatticeStandardAtRationalPrime.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18257 jobs).
+exit_code = 0
+elapsed_seconds = 12
+
+M082605 M082610 M082622 M082758 M082764 M082791 M082793 M083016 
+$ lake build +Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TendstoOfForallIntegral:olean +Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TensorDomainBirational:olean +Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TensorResidueUnramifiedFinite:olean +Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TotalDegreeAevalLeOfLinear:olean +Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TracePowEq:olean +Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TrdegLeGenerators:olean +Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TrdegResidueFieldEq:olean +Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnitaryFamilyEqCayleyOfSkewFamily:olean 
+⚠ [18250/18257] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TendstoOfForallIntegral (7.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TendstoOfForallIntegral.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TendstoOfForallIntegral.lean:36:69: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TendstoOfForallIntegral.lean:36:86: Variable name `inst_1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [18251/18257] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TotalDegreeAevalLeOfLinear (7.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TotalDegreeAevalLeOfLinear.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18252/18257] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnitaryFamilyEqCayleyOfSkewFamily (7.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/UnitaryFamilyEqCayleyOfSkewFamily.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18253/18257] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TensorResidueUnramifiedFinite (7.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TensorResidueUnramifiedFinite.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TensorResidueUnramifiedFinite.lean:20:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TensorResidueUnramifiedFinite.lean:22:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [18254/18257] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TracePowEq (7.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TracePowEq.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18255/18257] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TensorDomainBirational (7.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TensorDomainBirational.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TensorDomainBirational.lean:33:24: `TensorProduct.induction_on` has been deprecated: Use `TensorProduct.inductionOn` instead
+
+Note: The updated constant has a different type:
+  ∀ {R : Type u_1} [inst : CommSemiring R] {M : Type u_5} {N : Type u_6} [inst_1 : AddCommMonoid M]
+    [inst_2 : AddCommMonoid N] [inst_3 : Module R M] [inst_4 : Module R N] {motive : M ⊗[R] N → Prop} (z : M ⊗[R] N),
+    (∀ (x : M) (y : N), motive (x ⊗ₜ[R] y)) → (∀ (x y : M ⊗[R] N), motive x → motive y → motive (x + y)) → motive z
+instead of
+  ∀ {R : Type u_1} [inst : CommSemiring R] {M : Type u_5} {N : Type u_6} [inst_1 : AddCommMonoid M]
+    [inst_2 : AddCommMonoid N] [inst_3 : Module R M] [inst_4 : Module R N] {motive : M ⊗[R] N → Prop} (z : M ⊗[R] N),
+    motive 0 →
+      (∀ (x : M) (y : N), motive (x ⊗ₜ[R] y)) → (∀ (x y : M ⊗[R] N), motive x → motive y → motive (x + y)) → motive z
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TensorDomainBirational.lean:47:22: `TensorProduct.induction_on` has been deprecated: Use `TensorProduct.inductionOn` instead
+
+Note: The updated constant has a different type:
+  ∀ {R : Type u_1} [inst : CommSemiring R] {M : Type u_5} {N : Type u_6} [inst_1 : AddCommMonoid M]
+    [inst_2 : AddCommMonoid N] [inst_3 : Module R M] [inst_4 : Module R N] {motive : M ⊗[R] N → Prop} (z : M ⊗[R] N),
+    (∀ (x : M) (y : N), motive (x ⊗ₜ[R] y)) → (∀ (x y : M ⊗[R] N), motive x → motive y → motive (x + y)) → motive z
+instead of
+  ∀ {R : Type u_1} [inst : CommSemiring R] {M : Type u_5} {N : Type u_6} [inst_1 : AddCommMonoid M]
+    [inst_2 : AddCommMonoid N] [inst_3 : Module R M] [inst_4 : Module R N] {motive : M ⊗[R] N → Prop} (z : M ⊗[R] N),
+    motive 0 →
+      (∀ (x : M) (y : N), motive (x ⊗ₜ[R] y)) → (∀ (x y : M ⊗[R] N), motive x → motive y → motive (x + y)) → motive z
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TensorDomainBirational.lean:70:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TensorDomainBirational.lean:74:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [18256/18257] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TrdegLeGenerators (8.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TrdegLeGenerators.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TrdegLeGenerators.lean:14:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TrdegLeGenerators.lean:15:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TrdegLeGenerators.lean:31:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TrdegLeGenerators.lean:38:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TrdegLeGenerators.lean:40:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TrdegLeGenerators.lean:41:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [18257/18257] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TrdegResidueFieldEq (8.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TrdegResidueFieldEq.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TrdegResidueFieldEq.lean:27:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TrdegResidueFieldEq.lean:29:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TrdegResidueFieldEq.lean:31:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TrdegResidueFieldEq.lean:33:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TrdegResidueFieldEq.lean:35:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TrdegResidueFieldEq.lean:44:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TrdegResidueFieldEq.lean:46:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TrdegResidueFieldEq.lean:48:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TrdegResidueFieldEq.lean:50:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TrdegResidueFieldEq.lean:67:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TrdegResidueFieldEq.lean:70:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Build completed successfully (18257 jobs).
+exit_code = 0
+elapsed_seconds = 11
+
+M083045 M083069 M083109 M083123 M083394 M083449 M083482 M083539 
+$ lake build +Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnitriangularInductionTransvection:olean +Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UpperTriangularMul:olean +Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ValuationPowSubPowLe:olean +Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.VecMulVecComm:olean +Development.AbelianVarietyTheory.Proofs.JetHarmonics.CardFilterLeSuccAndSqSumLePow:olean +Development.AbelianVarietyTheory.Proofs.JetHarmonics.CoeffProdXSubCNormLe:olean +Development.AbelianVarietyTheory.Proofs.JetHarmonics.ContDiffOnIffLocalExtension:olean +Development.AbelianVarietyTheory.Proofs.JetHarmonics.DerivationMemPowOfMemPowSucc:olean 
+⚠ [18250/18257] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UpperTriangularMul (7.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/UpperTriangularMul.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/UpperTriangularMul.lean:6:26: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [18251/18257] Built Development.AbelianVarietyTheory.Proofs.JetHarmonics.DerivationMemPowOfMemPowSucc (7.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/DerivationMemPowOfMemPowSucc.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/DerivationMemPowOfMemPowSucc.lean:24:26: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/DerivationMemPowOfMemPowSucc.lean:24:46: Variable name `inst_1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/DerivationMemPowOfMemPowSucc.lean:24:68: Variable name `inst_2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [18252/18257] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ValuationPowSubPowLe (7.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ValuationPowSubPowLe.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18253/18257] Built Development.AbelianVarietyTheory.Proofs.JetHarmonics.CoeffProdXSubCNormLe (7.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/CoeffProdXSubCNormLe.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/CoeffProdXSubCNormLe.lean:46:29: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [18254/18257] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnitriangularInductionTransvection (7.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/UnitriangularInductionTransvection.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/UnitriangularInductionTransvection.lean:12:28: This simp argument is unused:
+  single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.mul_apply, hy, Ne.symm hy]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/UnitriangularInductionTransvection.lean:33:12: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/UnitriangularInductionTransvection.lean:38:12: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/UnitriangularInductionTransvection.lean:71:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/UnitriangularInductionTransvection.lean:77:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/UnitriangularInductionTransvection.lean:96:19: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+⚠ [18255/18257] Built Development.AbelianVarietyTheory.Proofs.JetHarmonics.CardFilterLeSuccAndSqSumLePow (7.0s)
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/CardFilterLeSuccAndSqSumLePow.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18256/18257] Built Development.AbelianVarietyTheory.Proofs.JetHarmonics.ContDiffOnIffLocalExtension (7.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ContDiffOnIffLocalExtension.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18257/18257] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.VecMulVecComm (8.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/VecMulVecComm.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18257 jobs).
+exit_code = 0
+elapsed_seconds = 12
+
+M083628 M083632 M083644 M083682 M083696 M083698 M083700 M083736 
+$ lake build +Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsCutIntoBoundedGroupsFinset:olean +Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsDualFormsOfSeparatedTypes:olean +Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsExtensionCharacter:olean +Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsIntCoordsOfRegularParam:olean +Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsIsLocalHomExtension:olean +Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsIsUnitSubOfRingHomNe:olean +Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsIsometryOfIntertwinerOfIrreducible:olean +Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsNormSubEqOne:olean 
+⚠ [18250/18257] Built Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsCutIntoBoundedGroupsFinset (7.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ExistsCutIntoBoundedGroupsFinset.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ExistsCutIntoBoundedGroupsFinset.lean:23:19: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ExistsCutIntoBoundedGroupsFinset.lean:25:23: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ExistsCutIntoBoundedGroupsFinset.lean:27:32: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ExistsCutIntoBoundedGroupsFinset.lean:31:25: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ExistsCutIntoBoundedGroupsFinset.lean:37:22: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+⚠ [18251/18257] Built Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsExtensionCharacter (7.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ExistsExtensionCharacter.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ExistsExtensionCharacter.lean:30:55: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ExistsExtensionCharacter.lean:30:76: Variable name `inst_1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ExistsExtensionCharacter.lean:31:5: Variable name `inst_2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [18252/18257] Built Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsDualFormsOfSeparatedTypes (7.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ExistsDualFormsOfSeparatedTypes.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ExistsDualFormsOfSeparatedTypes.lean:46:60: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+⚠ [18253/18257] Built Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsIntCoordsOfRegularParam (7.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ExistsIntCoordsOfRegularParam.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18254/18257] Built Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsNormSubEqOne (7.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ExistsNormSubEqOne.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ExistsNormSubEqOne.lean:12:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ExistsNormSubEqOne.lean:14:69: This simp argument is unused:
+  Polynomial.aeval_C
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [map_add, map_pow, Polynomial.aeval_X, map_sum, map_mul, algebraMap_int_eq, eq_intCast,
+    map_intCast] at hp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ExistsNormSubEqOne.lean:15:4: This simp argument is unused:
+  algebraMap_int_eq
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [map_add, map_pow, Polynomial.aeval_X, map_sum, map_mul, Polynomial.aeval_C, eq_intCast,
+    map_intCast] at hp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ExistsNormSubEqOne.lean:49:10: `mul_lt_one_of_nonneg_of_lt_one_left` has been deprecated: No replacement, use constituent lemmas from proof.
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ExistsNormSubEqOne.lean:89:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ExistsNormSubEqOne.lean:90:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ExistsNormSubEqOne.lean:91:15: `Ideal.sum_ramification_inertia` has been deprecated: Use results of RingTheory.RamificationInertia.Basic
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ExistsNormSubEqOne.lean:98:35: `Ideal.inertiaDeg'` has been deprecated: Use `Ideal.inertiaDeg` instead.
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ExistsNormSubEqOne.lean:103:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ExistsNormSubEqOne.lean:104:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ExistsNormSubEqOne.lean:108:58: `Ideal.inertiaDeg'_pos` has been deprecated: Use `Ideal.inertiaDeg_pos` instead.
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ExistsNormSubEqOne.lean:118:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ExistsNormSubEqOne.lean:123:6: `Algebra.isUnramifiedAt_iff_of_isDedekindDomain` has been deprecated: Use `Ideal.ramificationIdx'_eq_one_iff` instead.
+⚠ [18255/18257] Built Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsIsLocalHomExtension (7.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ExistsIsLocalHomExtension.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ExistsIsLocalHomExtension.lean:42:6: `IsLocalRing.local_hom_TFAE` has been deprecated: Use `IsLocalRing.local_hom_tfae` instead
+
+Hint: Replace the deprecated name:
+  IsLocalRing.local_hom_T̵F̵A̵E̵t̲f̲a̲e̲
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ExistsIsLocalHomExtension.lean:47:10: `IsLocalRing.local_hom_TFAE` has been deprecated: Use `IsLocalRing.local_hom_tfae` instead
+
+Hint: Replace the deprecated name:
+  IsLocalRing.local_hom_T̵F̵A̵E̵t̲f̲a̲e̲
+⚠ [18256/18257] Built Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsIsUnitSubOfRingHomNe (7.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ExistsIsUnitSubOfRingHomNe.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ExistsIsUnitSubOfRingHomNe.lean:8:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ExistsIsUnitSubOfRingHomNe.lean:62:8: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp at this
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ExistsIsUnitSubOfRingHomNe.lean:76:15: `Submodule.eq_bot_of_le_smul_of_le_jacobson_bot` has been deprecated: Use `Submodule.eq_bot_of_le_smul_of_le_jacobson` instead
+
+Note: The updated constant has a different type:
+  ∀ {R : Type u_1} {M : Type u_2} [inst : CommRing R] [inst_1 : AddCommGroup M] [inst_2 : Module R M] (I : Ideal R)
+    (N : Submodule R M), N.FG → N ≤ I • N → I ≤ Ring.jacobson R → N = ⊥
+instead of
+  ∀ {R : Type u_1} {M : Type u_2} [inst : CommRing R] [inst_1 : AddCommGroup M] [inst_2 : Module R M] (I : Ideal R)
+    (N : Submodule R M), N.FG → N ≤ I • N → I ≤ ⊥.jacobson → N = ⊥
+⚠ [18257/18257] Built Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsIsometryOfIntertwinerOfIrreducible (7.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ExistsIsometryOfIntertwinerOfIrreducible.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ExistsIsometryOfIntertwinerOfIrreducible.lean:44:43: This simp argument is unused:
+  RCLike.norm_ofReal
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [RCLike.norm_conj, norm_pow, abs_norm, norm_norm, Complex.coe_algebraMap, Complex.norm_real] at h'
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ExistsIsometryOfIntertwinerOfIrreducible.lean:44:63: This simp argument is unused:
+  abs_norm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [RCLike.norm_conj, norm_pow, RCLike.norm_ofReal, norm_norm, Complex.coe_algebraMap,
+    Complex.norm_real] at h'
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Build completed successfully (18257 jobs).
+exit_code = 0
+elapsed_seconds = 11
+
+M083916 M083956 M083970 M083971 M084063 M084148 M084152 M084153 
+$ lake build +Development.AbelianVarietyTheory.Proofs.JetHarmonics.GroupLikeIntegralOfFiniteFree:olean +Development.AbelianVarietyTheory.Proofs.JetHarmonics.HomValueCongruentIntModPrime:olean +Development.AbelianVarietyTheory.Proofs.JetHarmonics.Imports:olean +Development.AbelianVarietyTheory.Proofs.JetHarmonics.ImportsAlt:olean +Development.AbelianVarietyTheory.Proofs.JetHarmonics.IteratedFDerivProdCoordAt:olean +Development.AbelianVarietyTheory.Proofs.JetHarmonics.MeasurePreservingSnocMeasurableEquiv:olean +Development.AbelianVarietyTheory.Proofs.JetHarmonics.MemLpAndTendstoIntegralInnerOfEventuallyEq:olean +Development.AbelianVarietyTheory.Proofs.JetHarmonics.MemLpTwoAndTendstoOfCauchyOfAeTendsto:olean 
+⚠ [18250/18257] Built Development.AbelianVarietyTheory.Proofs.JetHarmonics.MemLpTwoAndTendstoOfCauchyOfAeTendsto (7.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/MemLpTwoAndTendstoOfCauchyOfAeTendsto.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18251/18257] Built Development.AbelianVarietyTheory.Proofs.JetHarmonics.Imports (7.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/Imports.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18252/18257] Built Development.AbelianVarietyTheory.Proofs.JetHarmonics.MemLpAndTendstoIntegralInnerOfEventuallyEq (7.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/MemLpAndTendstoIntegralInnerOfEventuallyEq.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18253/18257] Built Development.AbelianVarietyTheory.Proofs.JetHarmonics.GroupLikeIntegralOfFiniteFree (7.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/GroupLikeIntegralOfFiniteFree.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/GroupLikeIntegralOfFiniteFree.lean:19:23: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/GroupLikeIntegralOfFiniteFree.lean:32:64: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+⚠ [18254/18257] Built Development.AbelianVarietyTheory.Proofs.JetHarmonics.HomValueCongruentIntModPrime (7.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/HomValueCongruentIntModPrime.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18255/18257] Built Development.AbelianVarietyTheory.Proofs.JetHarmonics.MeasurePreservingSnocMeasurableEquiv (7.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/MeasurePreservingSnocMeasurableEquiv.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/MeasurePreservingSnocMeasurableEquiv.lean:40:37: This simp argument is unused:
+  Measure.pi_univ
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Measure.real, volume_pi]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [18256/18257] Built Development.AbelianVarietyTheory.Proofs.JetHarmonics.IteratedFDerivProdCoordAt (7.0s)
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/IteratedFDerivProdCoordAt.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/IteratedFDerivProdCoordAt.lean:38:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/IteratedFDerivProdCoordAt.lean:39:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/IteratedFDerivProdCoordAt.lean:68:15: `ContinuousLinearMap.sum_apply` has been deprecated: Use `sum_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sum_apply` to `sum_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵s̵u̵m̵_̵a̵p̵p̵l̵y̵s̲u̲m̲_̲a̲p̲p̲l̲y̲
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/IteratedFDerivProdCoordAt.lean:68:46: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵s̵m̵u̵l̵_̵a̵p̵p̵l̵y̵s̲m̲u̲l̲_̲a̲p̲p̲l̲y̲
+⚠ [18257/18257] Built Development.AbelianVarietyTheory.Proofs.JetHarmonics.ImportsAlt (12s)
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ImportsAlt.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18257 jobs).
+exit_code = 0
+elapsed_seconds = 16
+
+M084167 M084179 M084212 M084218 M084222 M084243 M084283 M084300 
+$ lake build +Development.AbelianVarietyTheory.Proofs.JetHarmonics.MonicEqProd:olean +Development.AbelianVarietyTheory.Proofs.JetHarmonics.MvPowerSeriesCoeffEqZeroOfMulCoeffEqZero:olean +Development.AbelianVarietyTheory.Proofs.JetHarmonics.NormEigenLePowMulNormSum:olean +Development.AbelianVarietyTheory.Proofs.JetHarmonics.NormSqAdjointAddGeOfJointEigenspaces:olean +Development.AbelianVarietyTheory.Proofs.JetHarmonics.NormSumEigenprojectorLeOfResolventBound:olean +Development.AbelianVarietyTheory.Proofs.JetHarmonics.NotLeSqSup:olean +Development.AbelianVarietyTheory.Proofs.JetHarmonics.PolarisationOnSubspace:olean +Development.AbelianVarietyTheory.Proofs.JetHarmonics.PowSubSelfMemSpanOfSplitsCompletely:olean 
+⚠ [18250/18257] Built Development.AbelianVarietyTheory.Proofs.JetHarmonics.MvPowerSeriesCoeffEqZeroOfMulCoeffEqZero (7.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/MvPowerSeriesCoeffEqZeroOfMulCoeffEqZero.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18251/18257] Built Development.AbelianVarietyTheory.Proofs.JetHarmonics.PolarisationOnSubspace (7.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/PolarisationOnSubspace.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18252/18257] Built Development.AbelianVarietyTheory.Proofs.JetHarmonics.NormEigenLePowMulNormSum (7.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/NormEigenLePowMulNormSum.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18253/18257] Built Development.AbelianVarietyTheory.Proofs.JetHarmonics.PowSubSelfMemSpanOfSplitsCompletely (7.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/PowSubSelfMemSpanOfSplitsCompletely.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18254/18257] Built Development.AbelianVarietyTheory.Proofs.JetHarmonics.NotLeSqSup (7.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/NotLeSqSup.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/NotLeSqSup.lean:11:14: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/NotLeSqSup.lean:33:17: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/NotLeSqSup.lean:25:31: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/NotLeSqSup.lean:25:48: Variable name `inst_1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/NotLeSqSup.lean:25:70: Variable name `inst_2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/NotLeSqSup.lean:60:54: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/NotLeSqSup.lean:60:54: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [18255/18257] Built Development.AbelianVarietyTheory.Proofs.JetHarmonics.MonicEqProd (8.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/MonicEqProd.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/MonicEqProd.lean:108:29: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/MonicEqProd.lean:108:172: Variable name `inst_2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/MonicEqProd.lean:108:194: Variable name `inst_3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/MonicEqProd.lean:108:568: Variable name `inst_5` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_5
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/MonicEqProd.lean:108:590: Variable name `inst_6` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_6
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [18256/18257] Built Development.AbelianVarietyTheory.Proofs.JetHarmonics.NormSumEigenprojectorLeOfResolventBound (8.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/NormSumEigenprojectorLeOfResolventBound.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/NormSumEigenprojectorLeOfResolventBound.lean:38:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/NormSumEigenprojectorLeOfResolventBound.lean:39:30: `FiniteDimensional.complete` has been deprecated: Use `FiniteDimensional.completeSpace` instead
+
+Hint: Replace the deprecated name:
+  FiniteDimensional.completeS̲p̲a̲c̲e̲
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/NormSumEigenprojectorLeOfResolventBound.lean:39:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/NormSumEigenprojectorLeOfResolventBound.lean:66:11: `Submodule.coe_norm` has been deprecated: use `norm_coe`
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/NormSumEigenprojectorLeOfResolventBound.lean:72:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/NormSumEigenprojectorLeOfResolventBound.lean:74:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/NormSumEigenprojectorLeOfResolventBound.lean:99:10: This simp argument is unused:
+  Real.pi_pos.le
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [18257/18257] Built Development.AbelianVarietyTheory.Proofs.JetHarmonics.NormSqAdjointAddGeOfJointEigenspaces (8.3s)
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/NormSqAdjointAddGeOfJointEigenspaces.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18257 jobs).
+exit_code = 0
+elapsed_seconds = 12
+
+M084307 M084364 M084400 M084443 M084452 M084460 M084461 M084467 
+$ lake build +Development.AbelianVarietyTheory.Proofs.JetHarmonics.ProdLeOfInterlacingPairing:olean +Development.AbelianVarietyTheory.Proofs.JetHarmonics.ReInnerLeOnImageOfIntertwining:olean +Development.AbelianVarietyTheory.Proofs.JetHarmonics.SideSucc:olean +Development.AbelianVarietyTheory.Proofs.JetHarmonics.SumEigenvectorsOfAevalProdLinearEqZero:olean +Development.AbelianVarietyTheory.Proofs.JetHarmonics.SumNormAddSqLeOfBounds:olean +Development.AbelianVarietyTheory.Proofs.JetHarmonics.SumPosOfTensorPos:olean +Development.AbelianVarietyTheory.Proofs.JetHarmonics.SumPrimeLogDivPredLeLogAdd:olean +Development.AbelianVarietyTheory.Proofs.JetHarmonics.SumStarProjectionEigenspaceEqSelfOfEigenvaluesLi:olean 
+⚠ [18250/18257] Built Development.AbelianVarietyTheory.Proofs.JetHarmonics.ReInnerLeOnImageOfIntertwining (7.8s)
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ReInnerLeOnImageOfIntertwining.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18251/18257] Built Development.AbelianVarietyTheory.Proofs.JetHarmonics.SumNormAddSqLeOfBounds (7.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/SumNormAddSqLeOfBounds.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18252/18257] Built Development.AbelianVarietyTheory.Proofs.JetHarmonics.SideSucc (7.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/SideSucc.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18253/18257] Built Development.AbelianVarietyTheory.Proofs.JetHarmonics.SumEigenvectorsOfAevalProdLinearEqZero (7.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/SumEigenvectorsOfAevalProdLinearEqZero.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/SumEigenvectorsOfAevalProdLinearEqZero.lean:38:66: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/SumEigenvectorsOfAevalProdLinearEqZero.lean:43:56: `Module.End.one_apply` has been deprecated: Use `one_apply_eq_self` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : One F} [self : IsOneApplyEqSelf F]
+    (x : α), 1 x = x
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M] (x : M), 1 x = x
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.one_apply` to `one_apply_eq_self x`).
+⚠ [18254/18257] Built Development.AbelianVarietyTheory.Proofs.JetHarmonics.ProdLeOfInterlacingPairing (8.3s)
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ProdLeOfInterlacingPairing.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18255/18257] Built Development.AbelianVarietyTheory.Proofs.JetHarmonics.SumStarProjectionEigenspaceEqSelfOfEigenvaluesLi (8.3s)
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/SumStarProjectionEigenspaceEqSelfOfEigenvaluesLi.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/SumStarProjectionEigenspaceEqSelfOfEigenvaluesLi.lean:33:63: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/SumStarProjectionEigenspaceEqSelfOfEigenvaluesLi.lean:33:113: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/SumStarProjectionEigenspaceEqSelfOfEigenvaluesLi.lean:54:17: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵S̲e̲t̲.̲m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/SumStarProjectionEigenspaceEqSelfOfEigenvaluesLi.lean:57:11: `Set.compl_setOf` has been deprecated: Use `Set.compl_ofPred` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵c̵o̵m̵p̵l̵_̵s̵e̵t̵O̵f̵S̲e̲t̲.̲c̲o̲m̲p̲l̲_̲o̲f̲P̲r̲e̲d̲
+⚠ [18256/18257] Built Development.AbelianVarietyTheory.Proofs.JetHarmonics.SumPrimeLogDivPredLeLogAdd (8.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/SumPrimeLogDivPredLeLogAdd.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/SumPrimeLogDivPredLeLogAdd.lean:141:15: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/SumPrimeLogDivPredLeLogAdd.lean:141:15: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [18257/18257] Built Development.AbelianVarietyTheory.Proofs.JetHarmonics.SumPosOfTensorPos (8.0s)
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/SumPosOfTensorPos.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/SumPosOfTensorPos.lean:183:72: `IsAlgebraic.exists_nonzero_dvd` has been deprecated: Use `IsAlgebraic.exists_ne_zero_dvd` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/SumPosOfTensorPos.lean:227:66: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+Build completed successfully (18257 jobs).
+exit_code = 0
+elapsed_seconds = 12
+
+## Compiled objects
+M081899 10cbf2a07900348429c568acbf15dbc43a1504b3a381339a4cbfef008a763cc9 Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ResidueFieldIsAlgebraicOfEtale.olean
+M081900 8d5d85271efc3f519665429fb041f7fd066cc90c8bb921a92d368910a37ecfd8 Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ResidueFieldIsoInvCompSpec.olean
+M081901 6e3d39afe6fa1f4dfffdca1666c48828a93feba09cb2aaa6d055b964349ac007 Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ResidueFieldMapFiniteOfQuasiFinite.olean
+M081935 eb201f7fffe2666c47ad48617366d610b7d94071e33bae298d6d380fa53b439b Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RiemannZetaNeZeroOfMemIoo.olean
+M081938 e4f99fb362aea5f073bda3b8f04b35134c5b5666fbe0b82a77246bcd85e06a13 Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RightTranslationCurveSqLeAndIntegralDerivEqZeroA.olean
+M081949 488cb40192ac09b4ec8b239d29f323f7c7311a3acc1a9b31fa94739ddfdef786 Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RingKrullDimLtTopOfEssFiniteType.olean
+M082057 9d91d4982bc9364bff83d34818b53dc7d02cf876c97f57cf732dc924352f5e4b Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SchurComplementBlockQuadraticLowerBound.olean
+M082067 2e2dd5e026008b809b783570d4d96c9efe9422873bb9a280e65ddb87405ef113 Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SchurOrthogonalitySubgroupMeasureOne.olean
+M082106 e0b080475123fd3905f4c59c77d083c3a7a7c2c7dc15d8267bb9962509aa10ec Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SelfDualLatticeStandardAtRationalPrime.olean
+M082255 0fa2bac70f7ac0eacca819f6049c599ceafeb6b0416151fc8b511a530fb2280a Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SpanMkQOneTmul.olean
+M082266 efee024678b34083ca10aabfcf5b32d687f66cd0eb1342b9f2acafb7553a8802 Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SpanValuationLe.olean
+M082359 5bcbb0b1eabdccbf28c0b0200074ec7f85006c6c7a5f7daab1a86d6d0e8b9117 Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StalkGenerizationGermCompat.olean
+M082366 248109e6544f7f89581af79fb0176fe5d4ba7647ed17189bf12009ba0579932f Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StalkLocalizationEqGenerization.olean
+M082499 62e7e9bdf892f2875855a4dced3367e5ff0e5ce0dc0c9a51dbbf908bd577aa20 Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SubrepTopToSubmodule.olean
+M082507 82c7f01fc8f7c4c650219c344f6987cf4af04023a099b7ea0e54a80757f253a3 Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SumLogEmbeddingAddFinsumLogAdicAbvEqZero.olean
+M082537 ae537b82c4b78044506f8be72c6494e1eeaa949c89c8ebb6e3e0a5d0c5894bc2 Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SymmetricFormSumOfSquares.olean
+M082605 961dee4aabe98f58917257d5bd3954e834aac1bc55d62bebc046cd4e7d923945 Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TendstoOfForallIntegral.olean
+M082610 708b592ad64d3c7d855db6f747c4bd11388281cab16c3de912e6a8d274676d08 Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TensorDomainBirational.olean
+M082622 e682e7920b2f8025c61f1e74413d9e2e744668a2ef897cb71b3d027115502d5b Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TensorResidueUnramifiedFinite.olean
+M082758 ed490a0e1e2658d5cb5b0d72c289bc50002994da6aaf5b65c3f1d100902a408d Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TotalDegreeAevalLeOfLinear.olean
+M082764 be7904328a22e5ed080372e886768e7b0f9e448f7d581f806c69f028a0f4594e Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TracePowEq.olean
+M082791 d313916b63def7a1b16afd41f3e2322c66e186f55dbcb751a234e641a3e6077d Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TrdegLeGenerators.olean
+M082793 d65167776298875d29c10169013878a6bdcca8dfcc304efb3f9ed2e8a685c4ea Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TrdegResidueFieldEq.olean
+M083016 8df9c98bff6838b88534465622e314e0c2dcd004549ecfdd5c38c0ddd14aa5fa Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnitaryFamilyEqCayleyOfSkewFamily.olean
+M083045 6755564076bc3d5bd9fe70ad1b8e70d60c6a66b55ad999f55322add15a4b96af Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnitriangularInductionTransvection.olean
+M083069 d8e6828984cbf60185725af39efd8c63331cddced96cceeb0d9078df0ca4da36 Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UpperTriangularMul.olean
+M083109 250a5c9d88f36789ee403ff6786ddc7ff292d64270645a095d3b87ea97a04082 Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ValuationPowSubPowLe.olean
+M083123 2b70408f053783db864e9f32f044031050dfe5505137920040c79bed9e4d469b Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.VecMulVecComm.olean
+M083394 571c81bd1556105df849fa6b894fc0cacf258c2364adf704fd16d312dcad8bc4 Development.AbelianVarietyTheory.Proofs.JetHarmonics.CardFilterLeSuccAndSqSumLePow.olean
+M083449 6617d5cfe61ac19922d12f787cc3a01b80f6222bb545042f955a260dadb4d9bc Development.AbelianVarietyTheory.Proofs.JetHarmonics.CoeffProdXSubCNormLe.olean
+M083482 894614c5b56d0526cf264e7c89380253384911a3a0633c5516e19f06e52c0dab Development.AbelianVarietyTheory.Proofs.JetHarmonics.ContDiffOnIffLocalExtension.olean
+M083539 7dc706f16259f462d46634ba8414419a1f37e1eb4271845f76cda08cc62df7df Development.AbelianVarietyTheory.Proofs.JetHarmonics.DerivationMemPowOfMemPowSucc.olean
+M083628 1ed0ddca1001db591fd1394faa03b10c727da2d5e1df7ac2e968793155912d61 Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsCutIntoBoundedGroupsFinset.olean
+M083632 80c1df8affabdada94d50dc13517e8da666bef0a419e066260b6d7484cf65d15 Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsDualFormsOfSeparatedTypes.olean
+M083644 b63d720fd0a222ad4f2dfc8358ade043c8eef8a3d7290fce1e4d4ed15b91dcce Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsExtensionCharacter.olean
+M083682 8d8eb9abc2c2480b62765d37238519b82e018d512a285c5d0c427848dbd57405 Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsIntCoordsOfRegularParam.olean
+M083696 2d92e693c1efa81dee9a2105e155e90b2cbd3189ce9ab956248b480d0f6c55a6 Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsIsLocalHomExtension.olean
+M083698 735722dede057c7d52c8db8201b760200e748d1e33bf834e67444c59df0a3de8 Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsIsUnitSubOfRingHomNe.olean
+M083700 8828250658b6167a620ae3a66e075f61ba2e0b2116103339f8de8fb8dea6b358 Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsIsometryOfIntertwinerOfIrreducible.olean
+M083736 7cc2b134d5a7f0755634a05ef2f38893e5b0641c48ff283ccb62a55e2a22b9c6 Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsNormSubEqOne.olean
+M083916 fb7bdc435305375a89808399e64bac3031bd59739c90b6ac468ba4c3f9fbe9f2 Development.AbelianVarietyTheory.Proofs.JetHarmonics.GroupLikeIntegralOfFiniteFree.olean
+M083956 e8410487672af1eb332c696189c3126d6c6126b32922ec52d76753fe80335ffd Development.AbelianVarietyTheory.Proofs.JetHarmonics.HomValueCongruentIntModPrime.olean
+M083970 a787a5cffe2b08dbd162fa3244aa3a6abc020fb03b107305a348aad81315c90d Development.AbelianVarietyTheory.Proofs.JetHarmonics.Imports.olean
+M083971 817d7de6eb6aff39a6f360f548906d3ad5f1c3f525275f5da07a990f362d4594 Development.AbelianVarietyTheory.Proofs.JetHarmonics.ImportsAlt.olean
+M084063 f054a2349acef507cfc381a7a390a9a9e7774c8dbda91ea352a98f6164decebf Development.AbelianVarietyTheory.Proofs.JetHarmonics.IteratedFDerivProdCoordAt.olean
+M084148 6c993c735738c3089082399311abe248fe8f1157025b2c0246b4392135f83466 Development.AbelianVarietyTheory.Proofs.JetHarmonics.MeasurePreservingSnocMeasurableEquiv.olean
+M084152 545aa94a804141bae5cee35106e209f4d015ad27ccf8e8f838158d13535018de Development.AbelianVarietyTheory.Proofs.JetHarmonics.MemLpAndTendstoIntegralInnerOfEventuallyEq.olean
+M084153 65ed987cb3ea2649d9a254e27148212bdaaed96bca7ed703ecf91dd3c0d23a5a Development.AbelianVarietyTheory.Proofs.JetHarmonics.MemLpTwoAndTendstoOfCauchyOfAeTendsto.olean
+M084167 400d79c015a482155f94e6544cbe18207be75b7c50c61d7f67e3fec10b957e6b Development.AbelianVarietyTheory.Proofs.JetHarmonics.MonicEqProd.olean
+M084179 37d7cbe8e243b132d87e8f87cd4ae12e633d52ee0ae18dc11f72af7ea9bf0ae2 Development.AbelianVarietyTheory.Proofs.JetHarmonics.MvPowerSeriesCoeffEqZeroOfMulCoeffEqZero.olean
+M084212 e6b23048a8880a373dc3bf45a3c211b8fd0094c063a1de49796a6cafc4e04d54 Development.AbelianVarietyTheory.Proofs.JetHarmonics.NormEigenLePowMulNormSum.olean
+M084218 c6944334f37390a6e6abd3353e9dc25f9a84ffe238367a47ba56d4312cfa68a8 Development.AbelianVarietyTheory.Proofs.JetHarmonics.NormSqAdjointAddGeOfJointEigenspaces.olean
+M084222 db7e0a7157bb1d4e0b235ad6919c0afeb59a4142f3c292777441a2ae09ef134c Development.AbelianVarietyTheory.Proofs.JetHarmonics.NormSumEigenprojectorLeOfResolventBound.olean
+M084243 df7d7f82464c52913958c1fc04555b3b2fa493b353cd6dae392cf1df2d851255 Development.AbelianVarietyTheory.Proofs.JetHarmonics.NotLeSqSup.olean
+M084283 6023593772d2ca2c147241fabf9e7915cd35df36fd9d81b0541560302abbb930 Development.AbelianVarietyTheory.Proofs.JetHarmonics.PolarisationOnSubspace.olean
+M084300 f2def57ffee85416773d40edbd5d4c2ee9fa796000f47322d8bf9df276c2f5fa Development.AbelianVarietyTheory.Proofs.JetHarmonics.PowSubSelfMemSpanOfSplitsCompletely.olean
+M084307 992be0bf41ac0a471654b05352fcab4778914442e8c48818e30279459c341161 Development.AbelianVarietyTheory.Proofs.JetHarmonics.ProdLeOfInterlacingPairing.olean
+M084364 52a3517a4e98df080b4fd7410ed8d8691196e8ec2b90b19f2e4980daf2dc1f75 Development.AbelianVarietyTheory.Proofs.JetHarmonics.ReInnerLeOnImageOfIntertwining.olean
+M084400 9a7ba896e4b77297b8529dab5dc3f691495d65f6b6b9969f98399d650e23c2d6 Development.AbelianVarietyTheory.Proofs.JetHarmonics.SideSucc.olean
+M084443 304f46a1a2f15c54156c2b55fdbcf195d8a25d82aaee9822ecefde2352358bb2 Development.AbelianVarietyTheory.Proofs.JetHarmonics.SumEigenvectorsOfAevalProdLinearEqZero.olean
+M084452 aa237f3e0ccacf76ebc99e41b3747d456c73842e1b0cd27e30bf87f68509f686 Development.AbelianVarietyTheory.Proofs.JetHarmonics.SumNormAddSqLeOfBounds.olean
+M084460 4ae6525b9bbf20abc730506f17e2a7322c0e20963a3415bf473ad180006ad063 Development.AbelianVarietyTheory.Proofs.JetHarmonics.SumPosOfTensorPos.olean
+M084461 077888d35e0623a4fe52725e925c3674121d0fd524ed3028a3dd1b78c5f07f36 Development.AbelianVarietyTheory.Proofs.JetHarmonics.SumPrimeLogDivPredLeLogAdd.olean
+M084467 0fcb6c43b944169cfad5efc9b0cd7e3c3d3a8ce5dd25225077d71551507a850b Development.AbelianVarietyTheory.Proofs.JetHarmonics.SumStarProjectionEigenspaceEqSelfOfEigenvaluesLi.olean
+
+overall: SUCCESS
